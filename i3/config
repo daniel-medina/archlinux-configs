@@ -27,7 +27,7 @@ set $WS9 9 "Xehra"
 set $WS10 10 "Yhra"
 
 # launch application on boot
-exec --no-startup-id i3-msg 'workspace 1 "Ahra"; exec opera'
+#exec --no-startup-id i3-msg 'workspace 1 "Ahra"; exec firefox'
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/ifthenelse/Stockage/Pictures/Wallpapers/archlinux2.png
