@@ -85,8 +85,16 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# eeebook specific needs
+alias fix-kb="xmodmap -e \"keycode 69=\""
+alias light="xbacklight -set"
+
 # timed shutdowns
 alias sd="shutdown -h now"
+alias sd1m="shutdown -h 1"
+alias sd2m="shutdown -h 2"
+alias sd5m="shutdown -h 5"
+alias sd30m="shutdown -h 30"
 alias sd1h="shutdown -h 60"
 alias sd2h="shutdown -h 120"
 alias sd3h="shutdown -h 180"
@@ -108,3 +116,11 @@ alias esudo="sudo emacs"
 # files
 alias files="thunar"
 
+# Network aliases
+alias tether-probe="ip link"
+alias tether-connect="sudo dhcpcd"
+
+# Dev aliases
+alias nginx-on="sudo systemctl start mysqld nginx php-fpm"
+alias ngin-restart="sudo systemctl restart mysqld nginx php-fpm"
+alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
