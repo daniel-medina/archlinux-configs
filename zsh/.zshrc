@@ -89,6 +89,9 @@ fi
 alias fix-kb="xmodmap -e \"keycode 69=\""
 alias light="xbacklight -set"
 
+# computer infos
+alias check-disks="df -h"
+
 # timed shutdowns
 alias sd="shutdown -h now"
 alias sd1m="shutdown -h 1"
