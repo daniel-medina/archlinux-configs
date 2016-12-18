@@ -1,0 +1,7 @@
+nm-applet &
+redshift-gtk &
+megasync &
+pasystray &
+nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
+xinput set-prop "pointer:ROCCAT ROCCAT Kone XTD" "Device Accel Profile" -1 &
+setxkbmap fr &

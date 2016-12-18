@@ -86,7 +86,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # eeebook specific needs
-alias fix-kb="xmodmap -e \"keycode 69=\""
+alias fix-kb="xmodmap -e \"keycode 69=\" && xset -r 69"
 alias light="xbacklight -set"
 
 # computer infos
@@ -118,6 +118,7 @@ alias esudo="sudo emacs"
 
 # files
 alias files="thunar"
+alias copy="xclip -sel clip <"
 
 # Network aliases
 alias tether-probe="ip link"
@@ -125,5 +126,5 @@ alias tether-connect="sudo dhcpcd"
 
 # Dev aliases
 alias nginx-on="sudo systemctl start mysqld nginx php-fpm"
-alias ngin-restart="sudo systemctl restart mysqld nginx php-fpm"
+alias nginx-restart="sudo systemctl restart mysqld nginx php-fpm"
 alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
