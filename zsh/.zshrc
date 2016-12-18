@@ -85,9 +85,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# eeebook specific needs
-alias fix-kb="xmodmap -e \"keycode 69=\" && xset -r 69"
+# arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
+
+# arch-ifthenelse specific
+alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Forged\ Alliance\ Forever/FAForever.exe"
+alias supcom-fa="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/THQ/Gas\ Powered\ Games/Supreme\ Commander\ -\ Forged\ Alliance/bin/ForgedAlliance.exe"
 
 # computer infos
 alias check-disks="df -h"
