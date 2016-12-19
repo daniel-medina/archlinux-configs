@@ -15,19 +15,34 @@ exec_always compton -b --backend glx --vsync opengl-swc
 set $mod mod4
 
 # setting up workspaces
-set $WS1 1 "Ahra"
-set $WS2 2 "Cehra"
-set $WS3 3 "Mehra"
-set $WS4 4 "Nohra"
-set $WS5 5 "Ohra"
-set $WS6 6 "Tehra"
-set $WS7 7 "Uhra"
-set $WS8 8 "Vehra"
-set $WS9 9 "Xehra"
-set $WS10 10 "Yhra"
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
+set $WS5 5
+set $WS6 6
+set $WS7 7
+set $WS8 8
+set $WS9 9
+set $WS10 10
+
+set $WS11 11
+set $WS12 12
+set $WS13 13
+set $WS14 14
+set $WS15 15
+set $WS16 16
+set $WS17 17
+set $WS18 18
+set $WS19 19
+set $WS20 20
 
 # launch application on boot
 exec --no-startup-id i3-msg 'workspace 1 "Ahra"; exec chromium'
+
+# quick applications launch
+bindsym $mod+b exec chromium
+bindsym $mod+t exec thunar
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/Pictures/Wallpapers/archlinux2.png
@@ -124,6 +139,17 @@ bindsym $mod+7 workspace $WS7
 bindsym $mod+8 workspace $WS8
 bindsym $mod+9 workspace $WS9
 bindsym $mod+0 workspace $WS10
+
+bindsym $mod+Ctrl+1 workspace $WS11
+bindsym $mod+Ctrl+2 workspace $WS12
+bindsym $mod+Ctrl+3 workspace $WS13
+bindsym $mod+Ctrl+4 workspace $WS14
+bindsym $mod+Ctrl+5 workspace $WS15
+bindsym $mod+Ctrl+6 workspace $WS16
+bindsym $mod+Ctrl+7 workspace $WS17
+bindsym $mod+Ctrl+8 workspace $WS18
+bindsym $mod+Ctrl+9 workspace $WS19
+bindsym $mod+Ctrl+0 workspace $WS20
 
 # moving around workspaces
 bindsym $mod+Left workspace prev
