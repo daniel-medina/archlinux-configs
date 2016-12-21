@@ -1,6 +1,7 @@
 [options]
-font = Source Code Pro Semibold 12
+font = Mononoki Semibold 12
 cursor_blink = system
+mouse_autohide = true
 
 [colors]
 
