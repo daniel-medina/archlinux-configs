@@ -1,5 +1,5 @@
 [options]
-font = Mononoki Semibold 12
+font = Mononoki 12
 cursor_blink = system
 mouse_autohide = true
 
