@@ -1,6 +1,6 @@
 ;; key configurations
-(global-set-key "\C-x\C-b" 'buffer-menu)
-(global-set-key (kbd "C-d") 'direx:jump-to-directory)
+(global-set-key (kbd "<f7>") 'buffer-menu)
+(global-set-key (kbd "<f8>") 'direx:jump-to-directory)
 
 ;; management of backups
 (defun make-backup-file-name (FILE)                                             
@@ -30,7 +30,10 @@
 
 ;; loading direx
 (require 'direx)
-(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
+
+;; loading org-bullets
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; loading smart-mode-line
 (setq sml/theme 'dark)
