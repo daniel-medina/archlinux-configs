@@ -1,4 +1,9 @@
 ;; key configurations
+(define-key key-translation-map (kbd "<right>") (kbd "▶"))
+(define-key key-translation-map (kbd "<left>") (kbd "◀"))
+(define-key key-translation-map (kbd "<up>") (kbd "▲"))
+(define-key key-translation-map (kbd "<down>") (kbd "▼"))
+
 (global-set-key (kbd "<f7>") 'buffer-menu)
 (global-set-key (kbd "<f8>") 'direx:jump-to-directory)
 
@@ -45,3 +50,4 @@
 
 ;; theme choice
 (enable-theme 'paganini)
+
