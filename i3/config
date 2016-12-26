@@ -180,6 +180,6 @@ bindsym Ctrl+Shift+Up resize shrink height 3 px or 3 ppt
 bindsym Ctrl+Shift+Right resize grow width 3 px or 3 ppt
 
 bar {
-        status_command i3status
+        status_command i3blocks
 	mode hide
 }
