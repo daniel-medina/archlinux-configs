@@ -8,7 +8,7 @@ export LC_MESSAGES="C"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,6 +87,9 @@ fi
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
+
+# both specific
+alias ta="wine ~/.wine/drive_c/CAVEDOG/TOTALA/TotalA.exe"
 
 # arch-ifthenelse specific
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Forged\ Alliance\ Forever/FAForever.exe"
