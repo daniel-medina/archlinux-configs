@@ -90,10 +90,15 @@ alias light="xbacklight -set"
 
 # both specific
 alias ta="wine ~/.wine/drive_c/CAVEDOG/TOTALA/TotalA.exe"
+alias ta-cd1="fuseiso ~/.wine/drive_c/CAVEDOG/TOTALA/Total\ Annihilation\ CD\ 1.iso /media/iso -o nonempty"
+alias ta-cd2="fuseiso ~/.wine/drive_c/CAVEDOG/TOTALA/Total\ Annihilation\ CD\ 2.iso /media/iso -o nonempty"
 
 # arch-ifthenelse specific
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Forged\ Alliance\ Forever/FAForever.exe"
 alias supcom-fa="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/THQ/Gas\ Powered\ Games/Supreme\ Commander\ -\ Forged\ Alliance/bin/ForgedAlliance.exe"
+
+# devices
+alias umount-iso="sudo umount /media/iso"
 
 # computer infos
 alias check-disks="df -h"
@@ -125,6 +130,7 @@ alias esudo="sudo emacs"
 # files
 alias files="thunar"
 alias copy="xclip -sel clip <"
+
 
 # Network aliases
 alias tether-probe="ip link"
