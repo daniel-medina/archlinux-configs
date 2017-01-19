@@ -1,5 +1,5 @@
 [options]
-font = Terminess Powerline 12
+font = xos4 Terminess Powerline 12
 cursor_blink = system
 mouse_autohide = true
 
