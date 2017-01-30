@@ -6,6 +6,8 @@
 
 (global-set-key (kbd "<f7>") 'buffer-menu)
 (global-set-key (kbd "<f8>") 'direx:jump-to-directory)
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c C-l") 'org-insert-link)
 
 ;; management of backups
 (defun make-backup-file-name (FILE)                                             

@@ -85,6 +85,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Primordials
+alias air="emacs ~/symlinks/org/main.org"
+
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
 
@@ -102,6 +105,8 @@ alias umount-iso="sudo umount /media/iso"
 
 # computer infos
 alias check-disks="df -h"
+alias cpu-stress="stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M --timeout 10s"
+alias gpu-stress="glmark2"
 
 # timed shutdowns
 alias sd="shutdown -h now"
@@ -131,7 +136,6 @@ alias esudo="sudo emacs"
 alias files="thunar"
 alias copy="xclip -sel clip <"
 
-
 # Network aliases
 alias tether-probe="ip link"
 alias tether-connect="sudo dhcpcd"
@@ -140,4 +144,3 @@ alias tether-connect="sudo dhcpcd"
 alias nginx-on="sudo systemctl start mysqld nginx php-fpm"
 alias nginx-restart="sudo systemctl restart mysqld nginx php-fpm"
 alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
-alias air="emacs ~/symlinks/org/index.org"
