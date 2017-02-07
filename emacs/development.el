@@ -43,4 +43,4 @@
 ;; -------------------
 
 (defun laravel-model-scope () (interactive)
-       (insert "/**\n * Local scope\n *\n * Detail of the scope\n*/"))
+       (insert "/**\n * Local scope\n *\n * Detail of the scope\n*/\npublic function scopeName($query)\n{\n/** Scope action ... */\n}\n"))
