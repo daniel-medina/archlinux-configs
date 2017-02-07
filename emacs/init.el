@@ -7,6 +7,7 @@
   (package-initialize)
   ;; loading all separate configuration files
   (load-file "~/.emacs.d/require.el")
+  (load-file "~/.emacs.d/development.el")
   (custom-set-variables)
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -57,28 +57,3 @@
 
 ;; theme choice
 (enable-theme 'paganini)
-
-;; development helpers
-(defun format-buffer ()
-  "indent whole buffer"
-  (interactive)
-  (delete-trailing-whitespace)
-  (indent-region (point-min) (point-max) nil)
-  (untabify (point-min) (point-max)))
-
-(defun comment () (interactive)
-       (insert "/** Comment ... */"))
-(defun comment-big () (interactive)
-       (insert "/**\n * ----> Description title <----\n * -----------------------------\n * Line 1\n * Line 2\n * Etc ...\n */\n\n"))
-(defun comment-function () (interactive)
-       (insert "/**\n * Description of the function. \n * @param \n * @return \n * @exception \n * @see \n */\n\n"))
-(defun comment-file () (interactive)
-       (insert "/**\n * Line 1 ...\n * Line 2 ...\n * @category \n * @license \n * @version \n * @link \n * @author Original Author <Daniel Medina>\n */\n\n"))
-
-;; development helpers - keymaps
-(define-key global-map [(S-f1)] 'comment)
-(define-key global-map [(S-f2)] 'comment-big)
-(define-key global-map [(S-f3)] 'comment-function)
-(define-key global-map [(S-f4)] 'comment-file)
-
-(global-set-key (kbd "<f9>") 'format-buffer)

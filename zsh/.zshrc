@@ -99,6 +99,7 @@ alias ta-cd2="fuseiso ~/.wine/drive_c/CAVEDOG/TOTALA/Total\ Annihilation\ CD\ 2.
 # arch-ifthenelse specific
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Forged\ Alliance\ Forever/FAForever.exe"
 alias supcom-fa="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/THQ/Gas\ Powered\ Games/Supreme\ Commander\ -\ Forged\ Alliance/bin/ForgedAlliance.exe"
+alias ryzom="cd /ssd/games/ryzom && sh ryzom_update.sh && ./ryzom_client"
 
 # devices
 alias umount-iso="sudo umount /media/iso"
