@@ -32,4 +32,4 @@
  '(direx:open-icon "▼")
  '(package-selected-packages
    (quote
-    (org-gcal org-bullets ob-browser smart-mode-line paganini-theme color-theme-sanityinc-tomorrow ample-theme monokai-theme web-mode php-mode markdown-mode load-dir js2-mode direx))))
+    (vue-mode org-gcal org-bullets ob-browser smart-mode-line paganini-theme color-theme-sanityinc-tomorrow ample-theme monokai-theme web-mode php-mode markdown-mode load-dir js2-mode direx))))

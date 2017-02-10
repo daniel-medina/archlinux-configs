@@ -35,10 +35,13 @@
 (setq web-mode-engines-alist
       '(("php"    . "\\.phtml\\'")
         ("blade"  . "\\.blade\\."))
-)
+      )
 
 (setq web-mode-enable-current-element-highlight t)
 (setq web-mode-enable-current-column-highlight t)
+
+(require 'vue-mode)
+(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 ;; loading direx
 (require 'direx)
 
