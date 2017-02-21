@@ -59,6 +59,8 @@ megasync &
 pasystray &
 # nvidia performances
 nvidia-settings -a '[gpu:0]/GPUPowerMizerMode=1' &
+# disabling display shutting down if afk
+xset -dpms &
 # disabling mouse acceleration
 xinput set-prop "pointer:ROCCAT ROCCAT Kone XTD" "Device Accel Profile" -1 &
 setxkbmap fr &
