@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export BROWSER=chromium
+export EDITOR=emacs
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
@@ -86,7 +87,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Primordials
-alias air="emacs ~/symlinks/org/main.org"
+alias air="emacs ~/symlink/org/main.org"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"

@@ -42,7 +42,7 @@ bindsym $mod+b exec chromium
 bindsym $mod+t exec thunar
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/Pictures/Wallpapers/archlinux2.png
+exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/archlinux2.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,7 +69,7 @@ new_window 1pixel
 hide_edge_borders both
 
 # locking the screen
-bindsym $mod+l exec i3lock-fancy
+bindsym $mod+l exec i3lock
 
 # taking screenshots
 bindsym Print exec imgur-screenshot
