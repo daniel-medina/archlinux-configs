@@ -9,8 +9,22 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# gaps
+gaps inner 10
+gaps outer 10
+
+# borders
+new_window none
+
+client.focused          #424242 #285577 #ffffff #812315   #424242
+client.focused_inactive #2B2B2B #5f676a #ffffff #484e50   #2B2B2B
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #812315 #0c0c0c #ffffff #000000   #812315
+client.background       #ffffff
+
 # compton execution
-exec_always compton -b --backend glx --vsync opengl-swc
+#exec compton -b --vsync opengl
 
 set $mod mod4
 
@@ -42,7 +56,7 @@ bindsym $mod+b exec chromium
 bindsym $mod+t exec thunar
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/archlinux2.png
+exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/node.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -69,7 +83,7 @@ new_window 1pixel
 hide_edge_borders both
 
 # locking the screen
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec i3lock -i ~/stockage/picture/wallpaper/auth.png
 
 # taking screenshots
 bindsym Print exec imgur-screenshot
@@ -87,17 +101,14 @@ bindsym $mod+x kill
 # installed.
 bindsym $mod+d exec --no-startup-id rofi -show run
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# switching focuses
+bindsym Ctrl+Up focus up
+bindsym Ctrl+Down focus down
+bindsym Ctrl+Left focus left
+bindsym Ctrl+Right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# disabling mouse focus
+focus_follows_mouse no
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -151,9 +162,6 @@ bindsym $mod+Ctrl+0 workspace $WS20
 # moving around workspaces
 bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
-# alternative with ctrl key
-bindsym Ctrl+Left workspace prev
-bindsym Ctrl+Right workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $WS1
@@ -174,12 +182,14 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym Ctrl+Shift+Left resize shrink width 3 px or 3 ppt
-bindsym Ctrl+Shift+Down resize grow height 3 px or 3 ppt
-bindsym Ctrl+Shift+Up resize shrink height 3 px or 3 ppt
-bindsym Ctrl+Shift+Right resize grow width 3 px or 3 ppt
+bindsym Ctrl+Shift+Left resize shrink width 4 px or 4 ppt
+bindsym Ctrl+Shift+Down resize grow height 4 px or 4 ppt
+bindsym Ctrl+Shift+Up resize shrink height 4 px or 4 ppt
+bindsym Ctrl+Shift+Right resize grow width 4 px or 4 ppt
 
 bar {
+	bindsym button1 nop
+	position top
         status_command i3blocks
 	mode hide
 }
