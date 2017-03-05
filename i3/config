@@ -16,7 +16,7 @@ gaps outer 10
 # borders
 new_window none
 
-client.focused          #424242 #285577 #ffffff #812315   #424242
+client.focused          #424242 #285577 #ffffff #424242   #424242
 client.focused_inactive #2B2B2B #5f676a #ffffff #484e50   #2B2B2B
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
