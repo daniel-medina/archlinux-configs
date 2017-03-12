@@ -24,7 +24,7 @@ client.placeholder      #812315 #0c0c0c #ffffff #000000   #812315
 client.background       #ffffff
 
 # compton execution
-#exec compton -b --vsync opengl
+exec compton -b --vsync opengl
 
 set $mod mod4
 
@@ -52,7 +52,7 @@ set $WS19 19
 set $WS20 20
 
 # quick applications launch
-bindsym $mod+b exec chromium
+bindsym $mod+b exec firefox
 bindsym $mod+t exec thunar
 
 # wallpaper
