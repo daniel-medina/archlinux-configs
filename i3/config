@@ -24,7 +24,7 @@ client.placeholder      #812315 #0c0c0c #ffffff #000000   #812315
 client.background       #ffffff
 
 # compton execution
-exec compton -b --vsync opengl
+exec compton -b --backend glx --vsync opengl-swc
 
 set $mod mod4
 
@@ -147,7 +147,6 @@ bindsym $mod+7 workspace $WS7
 bindsym $mod+8 workspace $WS8
 bindsym $mod+9 workspace $WS9
 bindsym $mod+0 workspace $WS10
-
 bindsym $mod+Ctrl+1 workspace $WS11
 bindsym $mod+Ctrl+2 workspace $WS12
 bindsym $mod+Ctrl+3 workspace $WS13
@@ -163,6 +162,28 @@ bindsym $mod+Ctrl+0 workspace $WS20
 bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
 
+# alternative with numpad
+bindcode $mod+87 workspace $WS1
+bindcode $mod+88 workspace $WS2
+bindcode $mod+89 workspace $WS3
+bindcode $mod+83 workspace $WS4
+bindcode $mod+84 workspace $WS5
+bindcode $mod+85 workspace $WS6
+bindcode $mod+79 workspace $WS7
+bindcode $mod+80 workspace $WS8
+bindcode $mod+81 workspace $WS9
+bindcode $mod+90 workspace $WS10
+bindcode $mod+Ctrl+87 workspace $WS11
+bindcode $mod+Ctrl+88 workspace $WS12
+bindcode $mod+Ctrl+89 workspace $WS13
+bindcode $mod+Ctrl+83 workspace $WS14
+bindcode $mod+Ctrl+84 workspace $WS15
+bindcode $mod+Ctrl+85 workspace $WS16
+bindcode $mod+Ctrl+79 workspace $WS17
+bindcode $mod+Ctrl+80 workspace $WS18
+bindcode $mod+Ctrl+81 workspace $WS19
+bindcode $mod+Ctrl+90 workspace $WS20
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $WS1
 bindsym $mod+Shift+2 move container to workspace $WS2
@@ -174,6 +195,38 @@ bindsym $mod+Shift+7 move container to workspace $WS7
 bindsym $mod+Shift+8 move container to workspace $WS8
 bindsym $mod+Shift+9 move container to workspace $WS9
 bindsym $mod+Shift+0 move container to workspace $WS10
+bindsym $mod+Ctrl+Shift+1 move container to workspace $WS11
+bindsym $mod+Ctrl+Shift+2 move container to workspace $WS12
+bindsym $mod+Ctrl+Shift+3 move container to workspace $WS13
+bindsym $mod+Ctrl+Shift+4 move container to workspace $WS14
+bindsym $mod+Ctrl+Shift+5 move container to workspace $WS15
+bindsym $mod+Ctrl+Shift+6 move container to workspace $WS16
+bindsym $mod+Ctrl+Shift+7 move container to workspace $WS17
+bindsym $mod+Ctrl+Shift+8 move container to workspace $WS18
+bindsym $mod+Ctrl+Shift+9 move container to workspace $WS19
+bindsym $mod+Ctrl+Shift+0 move container to workspace $WS20
+
+# alternative with numpad
+bindcode $mod+Shift+87 move container to workspace $WS1
+bindcode $mod+Shift+88 move container to workspace $WS2
+bindcode $mod+Shift+89 move container to workspace $WS3
+bindcode $mod+Shift+83 move container to workspace $WS4
+bindcode $mod+Shift+84 move container to workspace $WS5
+bindcode $mod+Shift+85 move container to workspace $WS6
+bindcode $mod+Shift+79 move container to workspace $WS7
+bindcode $mod+Shift+80 move container to workspace $WS8
+bindcode $mod+Shift+81 move container to workspace $WS9
+bindcode $mod+Shift+90 move container to workspace $WS10
+bindcode $mod+Shift+Ctrl+87 move container to workspace $WS11
+bindcode $mod+Shift+Ctrl+88 move container to workspace $WS12
+bindcode $mod+Shift+Ctrl+89 move container to workspace $WS13
+bindcode $mod+Shift+Ctrl+83 move container to workspace $WS14
+bindcode $mod+Shift+Ctrl+84 move container to workspace $WS15
+bindcode $mod+Shift+Ctrl+85 move container to workspace $WS16
+bindcode $mod+Shift+Ctrl+79 move container to workspace $WS17
+bindcode $mod+Shift+Ctrl+80 move container to workspace $WS18
+bindcode $mod+Shift+Ctrl+81 move container to workspace $WS19
+bindcode $mod+Shift+Ctrl+90 move container to workspace $WS20
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -187,9 +240,9 @@ bindsym Ctrl+Shift+Down resize grow height 4 px or 4 ppt
 bindsym Ctrl+Shift+Up resize shrink height 4 px or 4 ppt
 bindsym Ctrl+Shift+Right resize grow width 4 px or 4 ppt
 
-bar {
-	bindsym button1 nop
-	position top
-        status_command i3blocks
-	mode hide
-}
+#bar {
+	#bindsym button1 nop
+	#position top
+        #status_command i3blocks
+	#mode hide
+#}

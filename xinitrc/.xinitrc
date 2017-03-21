@@ -64,4 +64,8 @@ xset -dpms &
 # disabling mouse acceleration
 xinput set-prop "pointer:ROCCAT ROCCAT Kone XTD" "Device Accel Profile" -1 &
 setxkbmap fr &
+# conky configs
+conky -c ~/.config/conky/dock &
+conky -c ~/.config/conky/dock2 &
+conky -c ~/.config/conky/desktop &
 exec i3
