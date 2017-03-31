@@ -60,3 +60,23 @@
 
 ;; theme choice
 (enable-theme 'paganini)
+
+;; indent
+(setq-default indent-tabs-mode nil)
+(setq tab-width 2)
+    (defvaralias 'c-basic-offset 'tab-width)
+    (defvaralias 'cperl-indent-level 'tab-width)
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (setq web-mode-attr-indent-offset 2)
+)
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+(setq js-indent-level 2)
+(setq-default js2-basic-offset 2)
+(setq-default css-indent-offset 2)
+(setq-default web-mode-markup-indent-offset 2)

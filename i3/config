@@ -24,7 +24,7 @@ client.placeholder      #812315 #0c0c0c #ffffff #000000   #812315
 client.background       #ffffff
 
 # compton execution
-exec compton -b --backend glx --vsync opengl-swc
+exec compton -b
 
 set $mod mod4
 
@@ -56,7 +56,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+t exec thunar
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/node.png
+exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/archlinux.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -173,6 +173,17 @@ bindcode $mod+79 workspace $WS7
 bindcode $mod+80 workspace $WS8
 bindcode $mod+81 workspace $WS9
 bindcode $mod+90 workspace $WS10
+# sub-alternative with ctrl as mod
+bindcode Ctrl+87 workspace $WS1
+bindcode Ctrl+88 workspace $WS2
+bindcode Ctrl+89 workspace $WS3
+bindcode Ctrl+83 workspace $WS4
+bindcode Ctrl+84 workspace $WS5
+bindcode Ctrl+85 workspace $WS6
+bindcode Ctrl+79 workspace $WS7
+bindcode Ctrl+80 workspace $WS8
+bindcode Ctrl+81 workspace $WS9
+bindcode Ctrl+90 workspace $WS10
 bindcode $mod+Ctrl+87 workspace $WS11
 bindcode $mod+Ctrl+88 workspace $WS12
 bindcode $mod+Ctrl+89 workspace $WS13

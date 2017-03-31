@@ -26,7 +26,7 @@
        (untabify (point-min) (point-max)))
 
 (defun docblock-multi () (interactive)
-       (insert "/**\n * Description\n *\n * Details, explanations\n*/")
+       (insert "/**\n * Description\n* Details, explanations\n*/")
        (delete-trailing-whitespace)
        (indent-region (point-min) (point-max) nil)
        (untabify (point-min) (point-max)))
