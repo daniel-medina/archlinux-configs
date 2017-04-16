@@ -96,12 +96,21 @@ alias light="xbacklight -set"
 alias ta="wine ~/.wine/drive_c/CAVEDOG/TOTALA/TotalA.exe"
 alias ta-cd1="fuseiso ~/.wine/drive_c/CAVEDOG/TOTALA/Total\ Annihilation\ CD\ 1.iso /media/iso -o nonempty"
 alias ta-cd2="fuseiso ~/.wine/drive_c/CAVEDOG/TOTALA/Total\ Annihilation\ CD\ 2.iso /media/iso -o nonempty"
+alias steam-wine-install="wine ~/symlink/wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe steam://rungameid/"
 
 # arch-ifthenelse specific
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Forged\ Alliance\ Forever/FAForever.exe"
 alias "steam-wine"="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 alias bnet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
 alias wasteland="sh /ssd/games/wasteland-2/start.sh"
+alias wow="wine /ssd/wine/world\ of\ warcraft/WoW.exe"
+alias tera="wine TERA-launcher.exe"
+alias eve="wine ~/symlink/wine/drive_c/EVE/eve.exe"
+alias stalker-misery="cd ~/symlink/wine/drive_c/Program\ Files\ \(x86\)/bitComposer\ Games/S.T.A.L.K.E.R.\ -\ Call\ of\ Pripyat && wine bin/xrEngine.exe"
+alias stalker="cd /ssd/wine/S.T.A.L.K.E.R.\ -\ Call\ of\ Chernobyl && wine Stalker-CoC.exe"
+alias warcraft-frozen="wine ~/symlink/wine/drive_c/Program\ Files\ \(x86\)/Warcraft\ III/war3.exe"
+alias warcraft-chaos="wine ~/symlink/wine/drive_c/Program\ Files\ \(x86\)/Warcraft\ III/Warcraft\ III.exe"
+alias sims="wine /ssd/wine/the\ sims\ 3/Game/Bin/TS3W.exe"
 
 # devices
 alias umount-iso="sudo umount /media/iso"
