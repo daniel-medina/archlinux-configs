@@ -1,0 +1,135 @@
+# -------------------------------------------------------------------------------- #
+# >> USE flags here
+# -------------------------------------------------------------------------------- #
+net-libs/nodejs npm
+net-libs/nodejs ssl
+net-libs/nodejs snapshot
+app-editors/emacs-vcs -X
+media-libs/libpng apng
+x11-base/xorg-server glamor
+x11-libs/cairo xcb
+media-sound/cmus aac
+media-sound/cmus pulseaudio
+media-sound/cmus alsa
+media-sound/cmus cddb
+media-sound/cmus cdio
+media-sound/cmus ffmpeg
+media-sound/cmus jack
+media-sound/cmus opus
+media-sound/cmus vorbis
+media-sound/cmus wavpack
+dev-db/sqlite abi_x86_32
+dev-libs/expat abi_x86_32
+dev-libs/glib abi_x86_32
+dev-libs/libffi abi_x86_32
+dev-libs/libpthread-stubs abi_x86_32
+dev-libs/nspr abi_x86_32
+dev-libs/nss abi_x86_32
+dev-util/pkgconfig abi_x86_32
+media-libs/libtxc_dxtn abi_x86_32
+media-libs/mesa abi_x86_32
+net-misc/curl abi_x86_32
+sys-devel/llvm abi_x86_32
+sys-fs/udev abi_x86_32
+sys-libs/gpm abi_x86_32
+sys-libs/ncurses abi_x86_32
+sys-libs/readline abi_x86_32
+sys-libs/zlib abi_x86_32
+virtual/libffi abi_x86_32
+virtual/libiconv abi_x86_32
+virtual/libudev abi_x86_32
+virtual/pkgconfig abi_x86_32
+x11-libs/gdk-pixbuf abi_x86_32
+x11-libs/gtk+:2 abi_x86_32
+x11-libs/libdrm abi_x86_32
+x11-libs/libpciaccess abi_x86_32
+x11-libs/libX11 abi_x86_32
+x11-libs/libXau abi_x86_32
+x11-libs/libxcb abi_x86_32
+x11-libs/libXdamage abi_x86_32
+x11-libs/libXdmcp abi_x86_32
+x11-libs/libXext abi_x86_32
+x11-libs/libXfixes abi_x86_32
+x11-libs/libXScrnSaver abi_x86_32
+x11-libs/libxshmfence abi_x86_32
+x11-libs/libXxf86vm abi_x86_32
+x11-proto/damageproto abi_x86_32
+x11-proto/dri2proto abi_x86_32
+x11-proto/dri3proto abi_x86_32
+x11-proto/fixesproto abi_x86_32
+x11-proto/glproto abi_x86_32
+x11-proto/inputproto abi_x86_32
+x11-proto/kbproto abi_x86_32
+x11-proto/presentproto abi_x86_32
+x11-proto/xcb-proto abi_x86_32
+x11-proto/xextproto abi_x86_32
+x11-proto/xf86bigfontproto abi_x86_32
+x11-proto/xf86driproto abi_x86_32
+x11-proto/xf86vidmodeproto abi_x86_32
+x11-proto/xproto abi_x86_32
+x11-misc/compton opengl drm
+app-emulation/qemu ovmf
+app-emulation/qemu curl
+app-emulation/qemu gtk2
+app-emulation/qemu sdl
+app-emulation/qemu sdl2
+app-emulation/qemu jpeg
+app-emulation/qemu nfs
+app-emulation/qemu virtfs
+app-emulation/qemu gtk
+app-emulation/qemu tci
+app-emulation/qemu ncurses
+app-emulation/qemu aio
+app-emulation/qemu usb
+app-emulation/qemu systemtap
+app-emulation/qemu vhost-net
+app-emulation/virt-manager gtk
+media-video/mpv X
+media-video/mpv archive
+media-video/mpv cli
+media-video/mpv encode
+media-video/mpv gbm
+media-video/mpv egl
+media-video/mpv dvd
+media-video/mpv dvb
+media-video/mpv iconv
+media-video/mpv libass
+media-video/mpv libmpv
+media-video/mpv libcaca
+media-video/mpv opengl
+media-video/mpv oss
+media-video/mpv openal
+media-video/mpv luajit
+media-video/mpv vaapi
+media-video/mpv vdpau
+media-video/mpv xv
+media-video/mpv zsh-completion
+media-video/mpv drm
+media-video/mpv lua
+app-emulation/libvirt qemu
+app-emulation/libvirt virt-network
+app-emulation/libvirt macvtp
+app-emulation/libvirt libvirtd
+app-emulation/libvirt libssh
+app-emulation/libvirt fuse
+app-emulation/libvirt firewalld
+
+# -------------------------------------------------------------------------------- #
+# >> dependencies here
+# -------------------------------------------------------------------------------- #
+>=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
+>=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
+>=dev-lang/python-2.7.12:2.7 sqlite
+>=x11-libs/gdk-pixbuf-2.36.6 tiff jpeg
+>=dev-libs/openssl-1.0.2k -bindist
+>=app-text/xmlto-0.0.26-r1 text
+>=dev-libs/libxml2-2.9.4-r1 python
+>=dev-libs/libpcre-8.40-r1 pcre16
+>=net-misc/spice-gtk-0.31 usbredir gtk3
+>=net-libs/gtk-vnc-0.6.0 python
+>=media-video/libav-11.8 vaapi threads vdpau
+>=media-video/ffmpeg-3.2.4 vaapi vdpau
+>=sys-auth/consolekit-1.1.0-r1 policykit
+>=dev-libs/glib-2.50.3-r1 dbus
+>=net-dns/dnsmasq-2.76-r1 script
+>=dev-python/python-slip-0.6.1 dbus

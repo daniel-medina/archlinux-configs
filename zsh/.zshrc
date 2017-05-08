@@ -9,7 +9,7 @@ export LC_MESSAGES="C"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bira"
+ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,6 +88,7 @@ fi
 
 # Primordials
 alias air="emacs ~/symlink/org/main.org"
+alias emacs="emacs -nw"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"

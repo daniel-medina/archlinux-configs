@@ -1,11 +1,7 @@
 [options]
-font = Terminess Powerline 12
-cursor_blink = on
+font = Terminus 12
+cursor_blink = system
 mouse_autohide = true
-clickable_url = true
-
-# "block", "underline" or "ibeam"
-cursor_shape = underline
 
 [colors]
 

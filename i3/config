@@ -16,7 +16,7 @@ gaps outer 10
 # borders
 new_window none
 
-client.focused          #424242 #285577 #ffffff #424242   #424242
+client.focused          #424242 #285577 #A51F00 #A51F00   #A51F00
 client.focused_inactive #2B2B2B #5f676a #ffffff #484e50   #2B2B2B
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -24,7 +24,7 @@ client.placeholder      #812315 #0c0c0c #ffffff #000000   #812315
 client.background       #ffffff
 
 # compton execution
-exec compton -b
+exec compton -b -c
 
 set $mod mod4
 
@@ -53,10 +53,10 @@ set $WS20 20
 
 # quick applications launch
 bindsym $mod+b exec firefox
-bindsym $mod+t exec thunar
+bindsym $mod+t exec thunar /storage
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale /home/ifthenelse/stockage/picture/wallpaper/archlinux.png
+exec_always --no-startup-id feh --bg-scale /home/ifthenelse/picture/wallpaper/gentoo.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -76,8 +76,8 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# removing windows borders
-new_window 1pixel
+# defining windows borders
+new_window pixel 2
 
 # removing edge borders
 hide_edge_borders both
@@ -99,7 +99,7 @@ bindsym $mod+x kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # switching focuses
 bindsym Ctrl+Up focus up
