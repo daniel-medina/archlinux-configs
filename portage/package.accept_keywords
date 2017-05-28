@@ -20,3 +20,16 @@
 =app-emulation/qt-virt-manager-9999 **
 =sys-firmware/edk2-ovmf-2017_pre20170505 ~amd64
 =sys-kernel/mkinitcpio-9999 **
+=net-wireless/reaver-wps-fork-t6x-1.5.2_p20161210-r2 ~amd64
+=net-wireless/fern-wifi-cracker-2.2 ~amd64
+=net-print/cups-bjnp-2.0 ~amd64
+=net-print/cnijfilter-drivers-3.80 ~amd64
+=net-print/cups-2.2.3 ~amd64
+=dev-lang/python-3.5.3 ~amd64
+=net-misc/youtube-dl-2017.05.09 ~amd64
+=dev-python/setuptools-35.0.2 ~amd64
+=sci-mathematics/geogebra-5.0.339.0_p20170308 ~amd64
+=dev-java/gradle-bin-3.4.1 ~amd64
+=virtual/jdk-1.7 ~amd64
+=dev-util/electron-1.3.13-r1 ~amd64
+=app-eselect/eselect-electron-1.0.0 ~amd64

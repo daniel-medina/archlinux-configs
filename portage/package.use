@@ -83,6 +83,7 @@ app-emulation/qemu aio
 app-emulation/qemu usb
 app-emulation/qemu systemtap
 app-emulation/qemu vhost-net
+app-emulation/qemu -pulseaudio
 app-emulation/virt-manager gtk
 media-video/mpv X
 media-video/mpv archive
@@ -113,6 +114,51 @@ app-emulation/libvirt libvirtd
 app-emulation/libvirt libssh
 app-emulation/libvirt fuse
 app-emulation/libvirt firewalld
+net-firewall/ipset bindist
+net-firewall/ipset -modules
+app-office/libreoffice gtk3
+app-office/libreoffice pdfimport
+app-office/libreoffice cpus
+net-print/cnijfilter-drivers servicetools
+net-print/cnijfilter-drivers mg3200
+dev-vcs/git libressl
+dev-vcs/git curl
+dev-vcs/git libsecret
+dev-vcs/git ppcsha1
+dev-vcs/git tk
+dev-vcs/git xinetd
+app-office/libreoffice-l10n fr
+app-admin/system-config-printer policykit
+app-admin/system-config-printer fr
+app-admin/system-config-printer gnome-keyring
+net-print/cups java
+net-print/cups acl
+net-print/cups dbus
+net-print/cups kerberos
+net-print/cups usb
+net-print/cups zeroconf
+net-print/cups static-libs
+net-print/cups xinetd
+app-text/ghostscript-gpl cups
+app-text/ghostscript-gpl dbus
+app-text/ghostscript-gpl idn
+app-text/ghostscript-gpl static-libs
+app-text/ghostscript-gpl tiff
+net-print/gutenprint cups
+net-print/gutenprint ppds
+net-print/gutenprint nls
+net-print/gutenprint nls
+net-print/gutenprint gimp
+net-print/gutenprint static-libs
+net-print/gutenprint gimp
+net-print/gutenprint gtk
+dev-lang/python ncurses
+dev-lang/python ssl
+x11-drivers/xf86-video-intel sna
+x11-drivers/xf86-video-intel uxa
+x11-drivers/xf86-video-intel dri
+x11-drivers/xf86-video-intel xvmc
+media-sound/audacity ffmpeg
 
 # -------------------------------------------------------------------------------- #
 # >> dependencies here
@@ -133,3 +179,13 @@ app-emulation/libvirt firewalld
 >=dev-libs/glib-2.50.3-r1 dbus
 >=net-dns/dnsmasq-2.76-r1 script
 >=dev-python/python-slip-0.6.1 dbus
+>=dev-python/PyQt4-4.12 webkit
+>=net-wireless/lorcon-0.0_p20150109 python
+>=media-libs/harfbuzz-1.4.5 icu
+>=net-print/cups-2.1.4 dbus
+>=app-crypt/gcr-3.20.0 gtk
+>=dev-ml/lablgl-1.05-r1 glut
+>=dev-java/oracle-jdk-bin-1.8.0.131 javafx
+>=media-video/ffmpeg-3.2.4 vpx vorbis opus
+>=dev-libs/libxml2-2.9.4-r1 icu
+>=sys-libs/zlib-1.2.11 minizip

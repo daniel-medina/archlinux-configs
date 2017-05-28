@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export BROWSER=chromium
 export EDITOR=emacs
+export QEMU_AUDIO_DRV=alsa
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
@@ -87,7 +88,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Primordials
-alias air="emacs ~/symlink/org/main.org"
+alias air="emacs /storage/sshd/mega/org/main.org"
 alias emacs="emacs -nw"
 
 # arch-mobile-ifthenelse specific
@@ -171,3 +172,6 @@ alias vpn-switzerland="cd /etc/openvpn/client && sudo openvpn Switzerland.ovpn"
 alias nginx-on="sudo systemctl start mysqld nginx php-fpm"
 alias nginx-restart="sudo systemctl restart mysqld nginx php-fpm"
 alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
+
+# Server aliases
+alias kehros="ssh ifthenelse@188.166.16.248"
