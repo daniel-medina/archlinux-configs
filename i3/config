@@ -63,7 +63,7 @@ set $WS20 20
 bindsym $mod+b exec firefox
 bindsym $mod+t exec thunar /storage
 bindsym $mod+a exec termite -e 'emacs ~/symlink/cloud/org/main.org'
-bindsym $mod+m exec termite -e htop; exec termite -e htop
+bindsym $mod+m exec termite -e htop; focus parent; layout splitv; exec termite -e htop
 
 # default window modes
 #for_window [class="test"] floating enable
@@ -130,9 +130,9 @@ bindsym Ctrl+Left focus left
 bindsym Ctrl+Right focus right
 
 # moving containers
-bindsym $mod+Ctrl+Left move left
-bindsym $mod+Ctrl+Down move down
 bindsym $mod+Ctrl+Up move up
+bindsym $mod+Ctrl+Down move down        
+bindsym $mod+Ctrl+Left move left
 bindsym $mod+Ctrl+Right move right
 
 # disabling mouse focus
