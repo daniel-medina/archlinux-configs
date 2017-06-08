@@ -66,7 +66,8 @@ bindsym $mod+a exec termite -e 'emacs ~/symlink/cloud/org/main.org'
 bindsym $mod+m exec termite -e htop; focus parent; layout splitv; exec termite -e htop
 
 # default window modes
-#for_window [class="test"] floating enable
+for_window [class="Keepassx"] floating enable, sticky toggle, move window to scratchpad, scratchpad show
+for_window [class="pop-up"] floating enable
 
 # wallpaper
 exec_always --no-startup-id feh --bg-scale /home/ifthenelse/picture/wallpaper/linux.png
@@ -115,6 +116,9 @@ bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+x kill
+
+# scratchpad
+bindsym F1 scratchpad show
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run

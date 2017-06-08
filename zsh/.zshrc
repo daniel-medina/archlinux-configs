@@ -7,7 +7,7 @@ export QEMU_AUDIO_DRV=alsa
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
-ZSH_THEME="bullet-train"
+ZSH_THEME="agnoster"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -73,9 +73,9 @@ alias youtube="mpsyt"
 # admin orders
 alias install="sudo emerge --ask"
 alias uninstall="sudo emerge -C --ask"
-alias update-system="sudo emerge --update --newuse --deep --with-bdeps=y @world"
-alias update-flags="sudo emerge --update --changed-use --deep @world"
-alias update-clean="sudo emerge -av --depclean"
+alias update-system="sudo emerge --ask --update --newuse --deep --with-bdeps=y @world"
+alias update-flags="sudo emerge --ask --update --changed-use --deep @world"
+alias update-clean="sudo emerge --ask -av --depclean"
 alias esudo="sudo emacs"
 
 # files
