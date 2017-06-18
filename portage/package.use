@@ -4,7 +4,8 @@
 net-libs/nodejs npm
 net-libs/nodejs ssl
 net-libs/nodejs snapshot
-app-editors/emacs-vcs -X
+app-editors/emacs -X
+app-editors/emacs -gtk
 media-libs/libpng apng
 x11-base/xorg-server glamor
 x11-libs/cairo xcb
@@ -159,6 +160,15 @@ x11-drivers/xf86-video-intel uxa
 x11-drivers/xf86-video-intel dri
 x11-drivers/xf86-video-intel xvmc
 media-sound/audacity ffmpeg
+app-text/qpdfview pdf
+app-text/qpdfview cups
+www-client/palemoon gtk2
+www-client/palemoon pulseaudio
+www-client/palemoon -alsa
+www-client/palemoon dbus
+www-client/palemoon spell
+x11-misc/polybar i3wm
+app-editors/neovim clipboard nvimpager tui
 
 # -------------------------------------------------------------------------------- #
 # >> dependencies here
@@ -189,3 +199,10 @@ media-sound/audacity ffmpeg
 >=media-video/ffmpeg-3.2.4 vpx vorbis opus
 >=dev-libs/libxml2-2.9.4-r1 icu
 >=sys-libs/zlib-1.2.11 minizip
+>=app-text/poppler-0.45.0 qt4
+>=sys-auth/polkit-qt-0.112.0-r1 qt5
+>=dev-qt/qtcore-5.6.2-r1 icu
+>=virtual/ffmpeg-9-r2 x264
+>=media-video/ffmpeg-3.2.4 x264
+>=dev-lua/mpack-1.0.4 luajit
+>=dev-lua/lpeg-1.0.1 luajit

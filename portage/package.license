@@ -1,2 +1,4 @@
 >=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
 >=dev-java/oracle-jdk-bin-1.8.0.131 Oracle-BCLA-JavaSE
+>=app-emulation/genymotion-bin-2.9.0-r1 genymotion
+>=www-client/vivaldi-1.9.818.50_p1 Vivaldi
