@@ -4,9 +4,15 @@ syntax on
 set number
 set autoindent
 set smartindent
+set hidden
 
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+" Rebinds
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
 " NeoBundle Scripts-----------------------------
 if has('vim_starting')  
