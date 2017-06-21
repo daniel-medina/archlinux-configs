@@ -1,8 +1,12 @@
 set nocompatible
 filetype plugin indent on
 syntax on
+set number
 set autoindent
 set smartindent
+
+let g:airline_theme='wombat'
+let g:airline_powerline_fonts = 1
 
 " NeoBundle Scripts-----------------------------
 if has('vim_starting')  
@@ -27,6 +31,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " PLUGINS HERE
 " ------------------------------------
 NeoBundle 'vimwiki/vimwiki'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'digitaltoad/vim-pug'
+NeoBundle 'pangloss/vim-javascript'
 
 call neobundle#end()  
 filetype plugin indent on

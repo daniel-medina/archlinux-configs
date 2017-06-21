@@ -1,2 +1,6 @@
 neobundle.vim
+vim-airline
+vim-airline-themes
+vim-javascript
+vim-pug
 vimwiki
