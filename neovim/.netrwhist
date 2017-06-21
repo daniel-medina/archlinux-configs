@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/ifthenelse/install'
-let g:netrw_dirhist_2='/home/ifthenelse/install/pipes.sh'
-let g:netrw_dirhist_3='/home/ifthenelse/install'
-let g:netrw_dirhist_4='/home/ifthenelse/download/torrent'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/storage/ssd/dev/quizzar/app/src'
+let g:netrw_dirhist_2='/storage/ssd/dev/quizzar/app/src/renderer'
+let g:netrw_dirhist_3='/storage/ssd/dev/quizzar'
+let g:netrw_dirhist_4='/storage/ssd/dev/quizzar/app'
+let g:netrw_dirhist_5='/storage/ssd/dev/quizzar/app/src'
+let g:netrw_dirhist_6='/storage/ssd/dev/quizzar/app/src/renderer'

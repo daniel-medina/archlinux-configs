@@ -1,6 +1,8 @@
+bufexplorer
 neobundle.vim
 vim-airline
 vim-airline-themes
 vim-javascript
 vim-pug
+vim-vue
 vimwiki
