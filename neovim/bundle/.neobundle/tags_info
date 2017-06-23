@@ -1,4 +1,6 @@
+MatchTagAlways
 bufexplorer
+html5.vim
 neobundle.vim
 vim-airline
 vim-airline-themes

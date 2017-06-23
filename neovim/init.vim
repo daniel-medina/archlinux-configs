@@ -5,16 +5,25 @@ set number
 set autoindent
 set smartindent
 set hidden
+set expandtab
+set shiftwidth=2
+set tabstop=2
 
 " Variables
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
 let g:netrw_banner = 0
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css.pug
+let g:airline#extensions#tabline#enabled = 1
+
+"autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css.pug
 
 " Rebinds
 nmap <silent> <F8> :BufExplorer<CR>
 nmap <silent> <F9> :Explore<CR>
+nmap <silent> <C-n> :tabnew<CR>
+nmap <silent> <C-x> :tabclose<CR>
+nmap <silent> <C-h> :tabp<CR>
+nmap <silent> <C-l> :tabn<CR>
 nmap <silent> <A-n> :sp<CR>
 nmap <silent> <A-p> :vsp<CR>
 nmap <silent> <A-x> <C-W>q<CR>
@@ -56,6 +65,8 @@ NeoBundle 'digitaltoad/vim-pug'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'jlanzarotta/bufexplorer'
 NeoBundle 'posva/vim-vue'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'othree/html5.vim'
 
 call neobundle#end()  
 filetype plugin indent on
