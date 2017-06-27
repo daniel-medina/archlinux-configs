@@ -66,6 +66,7 @@ alias copy="xclip -sel clip <"
 # Network aliases
 alias tether-probe="ip link"
 alias tether-connect="sudo dhcpcd"
+alias wifi="wpa_cli"
 
 # Dev aliases
 alias nginx-on="sudo systemctl start mysqld nginx php-fpm"
