@@ -1,4 +1,5 @@
 MatchTagAlways
+ale
 bufexplorer
 deoplete-ternjs
 deoplete.nvim

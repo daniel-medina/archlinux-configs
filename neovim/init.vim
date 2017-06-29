@@ -14,6 +14,7 @@ let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
 let g:netrw_banner = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
 " omnifuncs
 augroup omnifuncs
@@ -41,6 +42,7 @@ let g:deoplete#omni#functions.javascript = [
   \ 'tern#Complete',
   \ 'jspc#omni'
 \]
+
 set completeopt=longest,menuone,preview
 let g:deoplete#sources = {}
 let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
@@ -51,12 +53,10 @@ let g:tern#arguments = ['--persistent']
 
 " Rebinds
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<C-Enter>"
+let g:UltiSnipsExpandTrigger="<TAB>"
 
-" I allow C-j and C-k in addition of tab to cycle through suggestions
-inoremap <expr><TAB>  pumvisible() ? "\<C-p>" : "\<TAB>"
-inoremap <expr><C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr><C-k>  pumvisible() ? "\<C-p>" : "\<C-k>"
 
 nmap <silent> <F7> :BufExplorer<CR>
 nmap <silent> <F8> :Explore<CR>
@@ -117,6 +117,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'carlitux/deoplete-ternjs'
 NeoBundle 'othree/jspc.vim'
 NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'w0rp/ale'
 
 call neobundle#end()
 filetype plugin indent on
