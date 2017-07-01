@@ -22,8 +22,16 @@ else
   export EDITOR='mvim'
 fi
 
+# Personal wiki
+alias pwiki="vim ~/symlink/dev/personal-wiki/main.wiki"
+alias pwiki-push="cd ~/symlink/dev/personal-wiki && git add -A && git commit -m 'updated' && git push"
+alias pwiki-pull="cd ~/symlink/dev/personal-wiki && git pull"
+
+# Dotfiles
+alias dots-push="cd ~/symlink/dev/dotfiles && git add -A && git commit -m 'updated' && git push"
+alias dots-pull="cd ~/symlink/dev/dotfiles && git pull"
+
 # Primordials
-alias akr="vim ~/symlink/cloud/akr/main.wiki"
 alias vim=nvim
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
