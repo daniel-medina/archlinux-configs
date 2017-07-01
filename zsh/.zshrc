@@ -24,12 +24,12 @@ fi
 
 # Personal wiki
 alias pwiki="vim ~/symlink/dev/personal-wiki/main.wiki"
-alias pwiki-push="cd ~/symlink/dev/personal-wiki && git add -A && git commit -m 'updated' && git push"
-alias pwiki-pull="cd ~/symlink/dev/personal-wiki && git pull"
+alias pwiki-push="cd ~/symlink/dev/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias pwiki-pull="cd ~/symlink/dev/personal-wiki && git pull && cd ~/"
 
 # Dotfiles
-alias dots-push="cd ~/symlink/dev/dotfiles && git add -A && git commit -m 'updated' && git push"
-alias dots-pull="cd ~/symlink/dev/dotfiles && git pull"
+alias dots-push="cd ~/symlink/dev/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/symlink/dev/dotfiles && git pull && cd ~/"
 
 # Primordials
 alias vim=nvim
