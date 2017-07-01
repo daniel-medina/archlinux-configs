@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/storage/ssd/dev/experimentation-1'
-let g:netrw_dirhist_2='/storage/ssd/dev/experimentation-1/routes'
-let g:netrw_dirhist_3='/storage/ssd/dev/experimentation-1'
-let g:netrw_dirhist_4='/storage/ssd/dev/experimentation-1/routes'
+let g:netrw_dirhist_1='/storage/ssd/dev/quizzar/app'
+let g:netrw_dirhist_2='/storage/ssd/dev/quizzar/app/dist'
+let g:netrw_dirhist_3='/storage/ssd/dev/quizzar/app'
+let g:netrw_dirhist_4='/storage/ssd/dev/quizzar'

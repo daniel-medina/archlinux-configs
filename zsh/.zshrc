@@ -23,7 +23,7 @@ else
 fi
 
 # Primordials
-alias akr="emacs ~/symlink/cloud/akr/main.org"
+alias akr="vim ~/symlink/cloud/akr/main.wiki"
 alias vim=nvim
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
