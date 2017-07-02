@@ -14,6 +14,7 @@ let g:airline_theme='wombat'
 let g:airline_powerline_fonts = 1
 let g:netrw_banner = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#ale#enabled = 1
 
 " omnifuncs
@@ -59,7 +60,7 @@ inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr><C-k>  pumvisible() ? "\<C-p>" : "\<C-k>"
 
 nmap <silent> <F7> :BufExplorer<CR>
-nmap <silent> <F8> :Explore<CR>
+nmap <silent> <F8> :Ranger<CR>
 nmap <silent> <F9> :Autoformat<CR>
 nmap <silent> <C-p> :bnext<CR>
 nmap <silent> <C-n> :tabnew<CR>
@@ -118,6 +119,8 @@ NeoBundle 'carlitux/deoplete-ternjs'
 NeoBundle 'othree/jspc.vim'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'w0rp/ale'
+NeoBundle 'rbgrouleff/bclose.vim'
+NeoBundle 'francoiscabrol/ranger.vim'
 
 call neobundle#end()
 filetype plugin indent on

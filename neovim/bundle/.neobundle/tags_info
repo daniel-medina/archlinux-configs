@@ -1,11 +1,13 @@
 MatchTagAlways
 ale
+bclose.vim
 bufexplorer
 deoplete-ternjs
 deoplete.nvim
 html5.vim
 jspc.vim
 neobundle.vim
+ranger.vim
 supertab
 tern_for_vim
 ultisnips
