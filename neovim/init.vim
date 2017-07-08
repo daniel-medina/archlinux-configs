@@ -11,6 +11,7 @@ set tabstop=2
 
 " Variables
 let g:airline_theme='wombat'
+let g:autoformat_remove_trailing_spaces = 0
 let g:airline_powerline_fonts = 1
 let g:netrw_banner = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -59,6 +60,23 @@ let g:UltiSnipsExpandTrigger="<TAB>"
 inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr><C-k>  pumvisible() ? "\<C-p>" : "\<C-k>"
 
+" GrammarousCheck
+let g:grammarous#hooks = {}
+function! g:grammarous#hooks.on_check(errs) abort
+  " If the check has been executed
+  nmap <buffer><A-f> <Plug>(grammarous-fixit)
+  "nmap <buffer><A-l> <Plug>(grammarous-move-to-next-error)
+  "nmap <buffer><A-h> <Plug>(grammarous-move-to-previous-error)
+endfunction
+
+function! g:grammarous#hooks.on_reset(errs) abort
+  " If the check hasn't been executed, returning mappings to previous function
+  nmap <buffer><A-f>
+  "nmap <silent> <A-l> :wincmd l<CR>
+  "nmap <silent> <A-h> :wincmd h<CR>
+endfunction
+
+nmap <silent> <F6> :GrammarousCheck<CR>
 nmap <silent> <F7> :BufExplorer<CR>
 nmap <silent> <F8> :Ranger<CR>
 nmap <silent> <F9> :Autoformat<CR>
@@ -121,6 +139,7 @@ NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'w0rp/ale'
 NeoBundle 'rbgrouleff/bclose.vim'
 NeoBundle 'francoiscabrol/ranger.vim'
+NeoBundle 'rhysd/vim-grammarous'
 
 call neobundle#end()
 filetype plugin indent on

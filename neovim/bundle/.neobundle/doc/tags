@@ -2,6 +2,8 @@
 :AirlineTheme	airline.txt	/*:AirlineTheme*
 :AirlineToggle	airline.txt	/*:AirlineToggle*
 :AirlineToggleWhitespace	airline.txt	/*:AirlineToggleWhitespace*
+:GrammarousCheck	grammarous.txt	/*:GrammarousCheck*
+:GrammarousReset	grammarous.txt	/*:GrammarousReset*
 :NeoBundle	neobundle.txt	/*:NeoBundle*
 :NeoBundleCheck	neobundle.txt	/*:NeoBundleCheck*
 :NeoBundleCheckUpdate	neobundle.txt	/*:NeoBundleCheckUpdate*
@@ -910,6 +912,7 @@ g:vimwiki_use_mouse	vimwiki.txt	/*g:vimwiki_use_mouse*
 g:vimwiki_user_htmls	vimwiki.txt	/*g:vimwiki_user_htmls*
 g:vimwiki_valid_html_tags	vimwiki.txt	/*g:vimwiki_valid_html_tags*
 g:vimwiki_w32_dir_enc	vimwiki.txt	/*g:vimwiki_w32_dir_enc*
+grammarous.txt	grammarous.txt	/*grammarous.txt*
 matchtagalways-contact	matchtagalways.txt	/*matchtagalways-contact*
 matchtagalways-contents	matchtagalways.txt	/*matchtagalways-contents*
 matchtagalways-faq	matchtagalways.txt	/*matchtagalways-faq*
@@ -1051,6 +1054,11 @@ unite-action-neobundle-lazy	neobundle.txt	/*unite-action-neobundle-lazy*
 unite-action-neobundle-search	neobundle.txt	/*unite-action-neobundle-search*
 unite-kind-neobundle	neobundle.txt	/*unite-kind-neobundle*
 vim-airline	airline.txt	/*vim-airline*
+vim-grammarous	grammarous.txt	/*vim-grammarous*
+vim-grammarous-contents	grammarous.txt	/*vim-grammarous-contents*
+vim-grammarous-introduction	grammarous.txt	/*vim-grammarous-introduction*
+vim-grammarous-license	grammarous.txt	/*vim-grammarous-license*
+vim-grammarous-usage	grammarous.txt	/*vim-grammarous-usage*
 vimwiki	vimwiki.txt	/*vimwiki*
 vimwiki-anchors	vimwiki.txt	/*vimwiki-anchors*
 vimwiki-calendar	vimwiki.txt	/*vimwiki-calendar*
