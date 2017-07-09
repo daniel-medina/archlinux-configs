@@ -31,6 +31,11 @@ alias pwiki-pull="cd ~/symlink/dev/personal-wiki && git pull && cd ~/"
 alias dots-push="cd ~/symlink/dev/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias dots-pull="cd ~/symlink/dev/dotfiles && git pull && cd ~/"
 
+# Kernel
+alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
+alias kernel-compile="cd /usr/src/linux && sudo make && cd ~"
+alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
+
 # Primordials
 alias vim=nvim
 # arch-mobile-ifthenelse specific
