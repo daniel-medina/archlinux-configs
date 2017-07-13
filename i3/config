@@ -61,7 +61,7 @@ set $WS20 20
 
 # quick applications launch
 bindsym $mod+b exec chromium
-bindsym $mod+t exec termite -e 'ranger /'
+bindsym $mod+t exec termite -e 'ranger /storage'
 bindsym $mod+m exec termite -e htop; focus parent; layout splitv; exec termite -e htop
 
 # default window modes
