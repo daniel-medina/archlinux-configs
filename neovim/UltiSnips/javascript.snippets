@@ -9,24 +9,29 @@ snippet comment-multi
 endsnippet
 
 # Functions
-snippet function "Function"
+snippet fnc "Function"
 function $1 () {
 }
 endsnippet
 
-snippet function-anonymous "Anonymous function"
+snippet fnc-anon "Anonymous function"
 function () {
 }
 endsnippet
 
-snippet async-function "Asynchronous function"
+snippet async-fnc "Asynchronous function"
 async function $1 () {
 }
 endsnippet
 
-snippet async-function-anonymous "Asynchronous anonymous function"
+snippet async-fnc-anon "Asynchronous anonymous function"
 async function () {
 }
+endsnippet
+
+snippet async-fnc-exec
+(async function () {
+}())
 endsnippet
 
 # ENSBV boilerplate
