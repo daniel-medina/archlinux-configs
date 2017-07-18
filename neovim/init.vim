@@ -8,6 +8,9 @@ set hidden
 set expandtab
 set shiftwidth=2
 set tabstop=2
+set foldmethod=marker
+set foldmarker={{{,}}}
+set relativenumber
 
 " Variables
 let g:airline_theme='wombat'
@@ -17,6 +20,7 @@ let g:netrw_banner = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#ale#enabled = 1
+let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips"
 
 " omnifuncs
 augroup omnifuncs
@@ -28,24 +32,26 @@ augroup omnifuncs
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup end
 
+" Folds
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
 " Deoplete configuration
 let g:deoplete#auto_complete_delay = 5
 let g:deoplete#auto_refresh_delay = 100
 let g:deoplete#enable_at_startup = 1
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
+let g:deoplete#omni#omni_patterns = {}
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
 
 " Tern
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = [
-  \ 'tern#Complete',
-  \ 'jspc#omni'
-\]
+      \ 'tern#Complete',
+      \ 'jspc#omni'
+      \]
 
-set completeopt=longest,menuone,preview
+set completeopt-=preview
+"set completeopt=longest,menuone,preview
 let g:deoplete#sources = {}
 let g:deoplete#sources['javascript.jsx'] = ['file', 'ultisnips', 'ternjs']
 let g:tern#command = ['tern']
@@ -53,12 +59,11 @@ let g:tern#arguments = ['--persistent']
 
 "autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css.pug
 
-" Rebinds
-autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<TAB>"
-
-inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr><C-k>  pumvisible() ? "\<C-p>" : "\<C-k>"
+" Deoplete autocompletion keys
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:UltiSnipsExpandTrigger = "<C-a>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " GrammarousCheck
 let g:grammarous#hooks = {}

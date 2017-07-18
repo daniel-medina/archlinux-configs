@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/storage/ssd/dev/website/sass'
 let g:netrw_dirhist_2='/storage/ssd/dev/website/middlewares/admin/blog'
 let g:netrw_dirhist_3='/storage/ssd/dev/website/middlewares/admin'
 let g:netrw_dirhist_4='/storage/ssd/dev/website/middlewares'
 let g:netrw_dirhist_5='/storage/ssd/dev/website'
+let g:netrw_dirhist_6='/storage/ssd/dev/vue-electron-experiment/test'

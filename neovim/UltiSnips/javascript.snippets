@@ -1,0 +1,138 @@
+snippet comment-single
+/** $1 */
+endsnippet
+
+snippet comment-multi
+/**
+	* $1
+	*/
+endsnippet
+
+# Functions
+snippet function "Function"
+// Function ${1:$1} {{{
+function ${1:name} () {
+	$2
+}
+// }}}
+endsnippet
+
+snippet function-anonymous "Anonymous function"
+// Anonymous function {{{
+function () {
+	$1
+}
+// }}}
+endsnippet
+
+snippet async-function "Asynchronous function"
+// Async function ${1:$1} {{{
+async function ${1:name} () {
+	$2
+}
+// }}}
+endsnippet
+
+snippet async-function-anonymous "Asynchronous anonymous function"
+// Async anonymous function {{{
+async function () {
+	$1
+}
+// }}}
+endsnippet
+
+# ENSBV boilerplate
+snippet ensbv-ml-make "Generate a model file"
+/** MODEL - $1 */
+
+/** Imports goes here */
+import {url} from '../config/database'
+import mongoose from 'mongoose'
+
+const connection = mongoose.createConnection(url)
+mongoose.Promise = global.Promise
+const Schema = mongoose.Schema
+const $1Schema = new Schema({
+	created: Date
+}, {
+	collection: '$2'
+})
+
+module.exports = connection.model('$1', $1Schema)
+endsnippet
+
+snippet ensbv-ml-ref-make "Generate a model ref file"
+/** $1 belongs to $2 */
+
+/** Imports goes here */
+import {url} from '../../config/database'
+import mongoose from 'mongoose'
+
+const Schema = mongoose.Schema
+const connection = mongoose.createConnection(url)
+
+mongoose.Promise = global.Promise
+
+const $1Schema = new Schema({
+	created: Date
+}, {
+	collection: '$3'
+})
+
+const $1 = connection.model('$1', $1Schema)
+
+export { $1Schema, $1 }
+endsnippet
+
+snippet ensbv-vw-make "Generate a view file"
+onche onche
+endsnippet
+
+snippet ensbv-cr-make "Generate a controller file"
+/** $1 Controller */
+
+/** Imports goes here */
+
+module.exports = {
+	// getIndex {{{
+	getIndex: (request, response) => {
+		/** ... */
+	},
+	// }}}
+	// postIndex {{{
+	postIndex: (request, response) => {
+		/** ... */
+	}
+	// }}}
+}
+endsnippet
+
+snippet ensbv-mw-make "Generate a middleware file"
+/** $1 Middleware */
+
+/** Imports goes here */
+
+module.exports = {
+	// middleware {{{
+	middleware: (request, response, next) => {
+		next()
+	}
+	// }}}
+}
+endsnippet
+
+snippet ensbv-cr-insert "Insert a new controller"
+// $1 {{{
+$1: (request, response) => {
+	/** Return or render something ... */
+}
+// }}}
+endsnippet
+
+snippet ensbv-mw-insert "Insert a new middleware"
+// $1 {{{
+$1: (request, response, next) => {
+	next()
+}
+// }}}
+endsnippet

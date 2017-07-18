@@ -34,6 +34,7 @@ alias dots-pull="cd ~/symlink/dev/dotfiles && git pull && cd ~/"
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
 alias kernel-compile="cd /usr/src/linux && sudo make && cd ~"
+alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && cd ~"
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
 # Primordials
