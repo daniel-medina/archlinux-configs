@@ -111,7 +111,7 @@ bindsym $mod+l exec i3lock -i ~/picture/wallpaper/lockscreen.png
 bindsym Print exec imgur-screenshot
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+x kill

@@ -1,8 +1,14 @@
-snippet comment-single
+# ESLint
+snippet eslint-ignore-line
+// eslint-disable-line
+endsnippet
+
+# Comments
+snippet com-sin
 /** $1 */
 endsnippet
 
-snippet comment-multi
+snippet com-mul
 /**
 	* $1
 	*/
@@ -39,7 +45,7 @@ snippet async-fnc-exec
 endsnippet
 
 # ENSBV boilerplate
-snippet ensbv-ml-make "Generate a model file"
+snippet ensbv-mdl-make "Generate a model file"
 /** MODEL - $1 */
 
 /** Imports goes here */
@@ -58,7 +64,7 @@ const $1Schema = new Schema({
 module.exports = connection.model('$1', $1Schema)
 endsnippet
 
-snippet ensbv-ml-ref-make "Generate a model ref file"
+snippet ensbv-mdl-ref-make "Generate a model ref file"
 /** $1 belongs to $2 */
 
 /** Imports goes here */
