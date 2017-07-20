@@ -10,6 +10,7 @@ set shiftwidth=2
 set tabstop=2
 set foldmethod=marker
 set foldmarker={{{,}}}
+highlight Folded ctermbg=black
 set relativenumber
 
 " Variables
