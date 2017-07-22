@@ -10,34 +10,83 @@ endsnippet
 
 snippet com-mul
 /**
-	* $1
-	*/
+ * $1
+ */
 endsnippet
 
 # Functions
-snippet fnc "Function"
-function $1 () {
+snippet function "Function"
+/**
+ * ${1:Function description}
+ *
+ * @param {Type} argName - Arg long description
+ * @returns {Type} description
+ */
+function ${2:Name} ($3) {
+	$4
 }
 endsnippet
 
-snippet fnc-anon "Anonymous function"
-function () {
+snippet object-method "Object method"
+/**
+ * ${1:Function description}
+ *
+ * @param {Type} argName - Arg long description
+ * @returns {Type} description
+ */
+${2:Name}: ($3) => {
+	$4
 }
 endsnippet
 
-snippet async-fnc "Asynchronous function"
-async function $1 () {
+snippet function-anonymous "Anonymous function"
+/**
+ * ${1:Function description}
+ *
+ * @param {Type} argName - Arg long description
+ * @returns {Type} description
+ */
+($2) => {
+	$3
 }
 endsnippet
 
-snippet async-fnc-anon "Asynchronous anonymous function"
-async function () {
+snippet async-function "Asynchronous function"
+/**
+ * ${1:Function description}
+ *
+ * @async
+ * @param {Type} argName - Arg long description
+ * @returns {Type} description
+ */
+async function ${2:Name} ($3) {
+	$4
 }
 endsnippet
 
-snippet async-fnc-exec
-(async function () {
+snippet async-function-anonymous "Asynchronous anonymous function"
+/**
+ * ${1:Function description}
+ *
+ * @async
+ * @param {Type} argName - Arg long description
+ * @returns {Type} description
+ */
+async function ($2) {
+	$3
+}
+endsnippet
+
+snippet async-function-execution
+/**
+ * Asynchronous code execution
+ *
+ * @async
+ * @throws Will throw an error to the console if it catches one
+ */
+(async () => {
 	try {
+		$1
 	} catch (error) {
 		console.log(error)
 	}
@@ -45,12 +94,24 @@ snippet async-fnc-exec
 endsnippet
 
 # ENSBV boilerplate
-snippet ensbv-mdl-make "Generate a model file"
-/** MODEL - $1 */
+snippet model-make "Generate a model file"
+/**
+ * $1 Model
+ * ${2:Description}
+ *
+ * @author Daniel Medina
+ * Date: `system("date +%Y-%m-%d")`
+ */
 
-/** Imports goes here */
-import {url} from '../config/database'
+/** Configs imports */
+import {url} from '../../config/database'
+
+/** Modules imports */
 import mongoose from 'mongoose'
+
+/** Models imports */
+
+/** Libs imports */
 
 const connection = mongoose.createConnection(url)
 mongoose.Promise = global.Promise
@@ -58,18 +119,31 @@ const Schema = mongoose.Schema
 const $1Schema = new Schema({
 	created: Date
 }, {
-	collection: '$2'
+	collection: '$3'
 })
 
 module.exports = connection.model('$1', $1Schema)
 endsnippet
 
-snippet ensbv-mdl-ref-make "Generate a model ref file"
-/** $1 belongs to $2 */
+snippet model-ref-make "Generate a model ref file"
+/**
+ * $1 Model
+ * ${2:Description}
+ *
+ * @see ${3:Parent model}
+ * @author Daniel Medina
+ * Date: `system("date +%Y-%m-%d")`
+ */
 
-/** Imports goes here */
+/** Configs imports */
 import {url} from '../../config/database'
+
+/** Modules imports */
 import mongoose from 'mongoose'
+
+/** Models imports */
+
+/** Libs imports */
 
 const Schema = mongoose.Schema
 const connection = mongoose.createConnection(url)
@@ -87,14 +161,29 @@ const $1 = connection.model('$1', $1Schema)
 export { $1Schema, $1 }
 endsnippet
 
-snippet ensbv-vw-make "Generate a view file"
-onche onche
+snippet view-make "Generate a view file"
+extends ../layout.pug
+
+block content
+	$1
 endsnippet
 
-snippet ensbv-cr-make "Generate a controller file"
-/** $1 Controller */
+snippet controller-make "Generate a controller file"
+/**
+ * $1 Controller
+ * ${2:Description}
+ *
+ * @author Daniel Medina
+ * Date: `system("date +%Y-%m-%d")`
+ */
 
-/** Imports goes here */
+/** Configs imports */
+
+/** Modules imports */
+
+/** Models imports */
+
+/** Libs imports */
 
 module.exports = {
 	// getIndex {{{
@@ -110,10 +199,22 @@ module.exports = {
 }
 endsnippet
 
-snippet ensbv-mw-make "Generate a middleware file"
-/** $1 Middleware */
+snippet middleware-make "Generate a middleware file"
+/**
+ * $1 Middleware
+ * ${2:Description}
+ *
+ * @author Daniel Medina
+ * Date: `system("date +%Y-%m-%d")`
+ */
 
-/** Imports goes here */
+/** Configs imports */
+
+/** Modules imports */
+
+/** Models imports */
+
+/** Libs imports */
 
 module.exports = {
 	// middleware {{{
@@ -124,7 +225,7 @@ module.exports = {
 }
 endsnippet
 
-snippet ensbv-cr-insert "Insert a new controller"
+snippet controller-insert "Insert a new controller"
 // $1 {{{
 $1: (request, response) => {
 	/** Return or render something ... */
@@ -132,7 +233,7 @@ $1: (request, response) => {
 // }}}
 endsnippet
 
-snippet ensbv-mw-insert "Insert a new middleware"
+snippet middleware-insert "Insert a new middleware"
 // $1 {{{
 $1: (request, response, next) => {
 	next()
@@ -140,13 +241,14 @@ $1: (request, response, next) => {
 // }}}
 endsnippet
 
-snippet ensbv-er
+snippet flash-error
 request.flash('error', '$1')
 endsnippet
 
-snippet ensbv-ss
+snippet flash-success
 request.flash('success', '$1')
 endsnippet
 
-snippet ensbv-redir-bck
+snippet redirect-back
+response.redirect('back')
 endsnippet
