@@ -19,8 +19,8 @@ snippet function "Function"
 /**
  * ${1:Function description}
  *
- * @param {Type} argName - Arg long description
- * @returns {Type} description
+ * @param {Type} tag Description
+ * @returns {Type} tag
  */
 function ${2:Name} ($3) {
 	$4
@@ -31,10 +31,10 @@ snippet object-method "Object method"
 /**
  * ${1:Function description}
  *
- * @param {Type} argName - Arg long description
- * @returns {Type} description
+ * @param {Type} tag Description
+ * @returns {Type} tag
  */
-${2:Name}: ($3) => {
+${2:Name}: function ($3) => {
 	$4
 }
 endsnippet
@@ -43,12 +43,22 @@ snippet function-anonymous "Anonymous function"
 /**
  * ${1:Function description}
  *
- * @param {Type} argName - Arg long description
- * @returns {Type} description
+ * @param {Type} tag Description
+ * @returns {Type} tag
  */
-($2) => {
+function ($2) {
 	$3
 }
+endsnippet
+
+snippet function-arrow "Arrow function"
+/**
+ * $1
+ *
+ * @param {Type} tag Description
+ * @returns {Type} tag
+ */
+$1 => $2
 endsnippet
 
 snippet async-function "Asynchronous function"
@@ -56,8 +66,8 @@ snippet async-function "Asynchronous function"
  * ${1:Function description}
  *
  * @async
- * @param {Type} argName - Arg long description
- * @returns {Type} description
+ * @param {Type} tag Description
+ * @returns {Type} tag
  */
 async function ${2:Name} ($3) {
 	$4
@@ -69,8 +79,8 @@ snippet async-function-anonymous "Asynchronous anonymous function"
  * ${1:Function description}
  *
  * @async
- * @param {Type} argName - Arg long description
- * @returns {Type} description
+ * @param {Type} tag Description
+ * @returns {Type} tag
  */
 async function ($2) {
 	$3
@@ -84,7 +94,7 @@ snippet async-function-execution
  * @async
  * @throws Will throw an error to the console if it catches one
  */
-(async () => {
+(async function () {
 	try {
 		$1
 	} catch (error) {
@@ -110,8 +120,6 @@ import {url} from '../../config/database'
 import mongoose from 'mongoose'
 
 /** Models imports */
-
-/** Libs imports */
 
 const connection = mongoose.createConnection(url)
 mongoose.Promise = global.Promise
@@ -185,17 +193,9 @@ snippet controller-make "Generate a controller file"
 
 /** Libs imports */
 
+/** Exporting the controller */
 module.exports = {
-	// getIndex {{{
-	getIndex: (request, response) => {
-		/** ... */
-	},
-	// }}}
-	// postIndex {{{
-	postIndex: (request, response) => {
-		/** ... */
-	}
-	// }}}
+	$3
 }
 endsnippet
 
@@ -216,17 +216,20 @@ snippet middleware-make "Generate a middleware file"
 
 /** Libs imports */
 
+/** Exporting the middleware */
 module.exports = {
-	// middleware {{{
-	middleware: (request, response, next) => {
-		next()
-	}
-	// }}}
+	$3
 }
 endsnippet
 
 snippet controller-insert "Insert a new controller"
 // $1 {{{
+/**
+ * ${2:Controller description}
+ *
+ * @param {HTTP} request
+ * @param {HTTP} response
+ */
 $1: (request, response) => {
 	/** Return or render something ... */
 }
@@ -235,6 +238,13 @@ endsnippet
 
 snippet middleware-insert "Insert a new middleware"
 // $1 {{{
+/**
+ * ${2:Middleware description}
+ *
+ * @param {HTTP} request
+ * @param {HTTP} response
+ * @param {HTTP} next
+ */
 $1: (request, response, next) => {
 	next()
 }
