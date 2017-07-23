@@ -230,7 +230,7 @@ snippet controller-insert "Insert a new controller"
  * @param {HTTP} request
  * @param {HTTP} response
  */
-$1: (request, response) => {
+$1: function (request, response) {
 	/** Return or render something ... */
 }
 // }}}
@@ -245,7 +245,7 @@ snippet middleware-insert "Insert a new middleware"
  * @param {HTTP} response
  * @param {HTTP} next
  */
-$1: (request, response, next) => {
+$1: function (request, response, next) {
 	next()
 }
 // }}}
