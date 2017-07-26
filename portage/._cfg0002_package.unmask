@@ -1,0 +1,6 @@
+# required by net-misc/wget-1.19.1-r1::gentoo
+# required by @system
+# required by @world (argument)
+# /etc/portage/package.mask:
+#dev-libs/openssl-1.0.2k
+=dev-libs/openssl-1.0.2k

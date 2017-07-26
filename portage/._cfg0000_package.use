@@ -1,0 +1,14 @@
+# -------------------------------------------------------------------------------- #
+# >> USE flags here
+# -------------------------------------------------------------------------------- #
+
+
+# -------------------------------------------------------------------------------- #
+# >> dependencies here
+# -------------------------------------------------------------------------------- #media-libs/libpng apng
+x11-base/xorg-server glamor
+x11-libs/cairo xcb
+# required by www-client/firefox-53.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libpng-1.6.29 apng

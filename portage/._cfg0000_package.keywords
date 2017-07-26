@@ -1,0 +1,6 @@
+=app-editors/emacs-25.2 ~amd64
+=x11-terms/termite-9999 **
+# required by megasync (argument)
+=net-misc/megasync-3.0.1 ~amd64
+# required by x11-misc/polybar (argument)
+=x11-misc/polybar-9999 **

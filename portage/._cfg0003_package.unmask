@@ -1,0 +1,5 @@
+# required by @__auto_slot_operator_replace_installed__ (argument)
+# /usr/portage/profiles/package.mask:
+# Lars Wendler <polynomial-c@gentoo.org> (26 Aug 2016)
+# Masked while being tested and reverse deps aren't fully compatible
+=dev-libs/openssl-1.1.0e

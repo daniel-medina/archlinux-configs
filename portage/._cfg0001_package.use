@@ -1,0 +1,16 @@
+# -------------------------------------------------------------------------------- #
+# >> USE flags here
+# -------------------------------------------------------------------------------- #
+net-libs/nodejs npm
+app-editors/emacs-vcs -X
+media-libs/libpng apng
+x11-base/xorg-server glamor
+x11-libs/cairo xcb
+
+# -------------------------------------------------------------------------------- #
+# >> dependencies here
+# -------------------------------------------------------------------------------- #
+>=dev-libs/openssl-1.0.2k -bindist
+# required by net-im/skype-4.3.0.37-r6::gentoo
+# required by net-im/skype (argument)
+>=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

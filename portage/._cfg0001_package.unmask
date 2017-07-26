@@ -1,0 +1,6 @@
+# required by net-misc/iputils-20151218::gentoo[ipv6,ssl,-gcrypt,-static]
+# required by @system
+# required by @world (argument)
+# /etc/portage/package.mask:
+#dev-libs/openssl-1.0.2k
+=dev-libs/openssl-1.0.2k

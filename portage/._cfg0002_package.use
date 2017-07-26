@@ -1,0 +1,18 @@
+# -------------------------------------------------------------------------------- #
+# >> USE flags here
+# -------------------------------------------------------------------------------- #
+net-libs/nodejs npm
+app-editors/emacs-vcs -X
+media-libs/libpng apng
+x11-base/xorg-server glamor
+x11-libs/cairo xcb
+
+# -------------------------------------------------------------------------------- #
+# >> dependencies here
+# -------------------------------------------------------------------------------- #
+>=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
+>=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
+>=dev-lang/python-2.7.12:2.7 sqlite
+>=x11-libs/gdk-pixbuf-2.36.6 tiff jpeg# required by net-libs/nodejs-7.9.0::libressl[-bundled-ssl]
+# required by net-libs/nodejs (argument)
+>=dev-libs/openssl-1.0.2k -bindist

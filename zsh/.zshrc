@@ -23,13 +23,13 @@ else
 fi
 
 # Personal wiki
-alias pwiki="vim ~/symlink/dev/personal-wiki/main.wiki"
-alias pwiki-push="cd ~/symlink/dev/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias pwiki-pull="cd ~/symlink/dev/personal-wiki && git pull && cd ~/"
+alias pwiki="vim ~/symlink/knowledge/repository/personal-wiki/main.wiki"
+alias pwiki-push="cd ~/symlink/knowledge/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias pwiki-pull="cd ~/symlink/knowledge/repository/personal-wiki && git pull && cd ~/"
 
 # Dotfiles
-alias dots-push="cd ~/symlink/dev/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias dots-pull="cd ~/symlink/dev/dotfiles && git pull && cd ~/"
+alias dots-push="cd ~/symlink/knowledge/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/symlink/knowledge/repository/dotfiles && git pull && cd ~/"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"

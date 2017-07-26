@@ -1,0 +1,7 @@
+repos.conf/
+repo.postsync.d/
+postsync.d/
+savedconfig/
+sets/
+bin/
+make.profile

@@ -1,0 +1,7 @@
+# required by =www-client/firefox-53.0 (argument)
+=www-client/firefox-53.0 ~amd64
+# required by x11-libs/cairo-1.14.8::gentoo
+# required by www-client/firefox-53.0::gentoo
+# required by @selected
+# required by @world (argument)
+=media-libs/libpng-1.6.29 ~amd64

@@ -1,0 +1,7 @@
+# required by dev-qt/qtcore-4.8.6-r2::gentoo[ssl]
+# required by dev-qt/qtgui-4.8.6-r4::gentoo
+# required by app-admin/keepassx-2.0.2-r1::gentoo
+# required by @selected
+# required by @world (argument)
+# /etc/portage/package.mask:
+=dev-libs/openssl-1.0.2k

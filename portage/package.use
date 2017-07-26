@@ -70,20 +70,11 @@ x11-proto/xf86vidmodeproto abi_x86_32
 x11-proto/xproto abi_x86_32
 x11-misc/compton opengl drm
 app-emulation/qemu ovmf
-app-emulation/qemu curl
-app-emulation/qemu gtk2
 app-emulation/qemu sdl
 app-emulation/qemu sdl2
-app-emulation/qemu jpeg
-app-emulation/qemu nfs
-app-emulation/qemu virtfs
-app-emulation/qemu gtk
-app-emulation/qemu tci
-app-emulation/qemu ncurses
-app-emulation/qemu aio
 app-emulation/qemu usb
-app-emulation/qemu systemtap
-app-emulation/qemu vhost-net
+app-emulation/qemu usbredir
+app-emulation/qemu alsa
 app-emulation/qemu -pulseaudio
 app-emulation/virt-manager gtk
 media-video/mpv X
@@ -168,7 +159,18 @@ www-client/palemoon -alsa
 www-client/palemoon dbus
 www-client/palemoon spell
 x11-misc/polybar i3wm
-app-editors/neovim clipboard nvimpager tui
+app-editors/neovim clipboard nvimpager tui python
+media-libs/libsdl -pulseaudio
+media-libs/libsdl alsa
+media-libs/libsdl audio
+app-vim/youcompleteme clang
+sys-fs/mtpfs mad debug
+gnome-base/gvfs mtp nfs gtk archive fuse
+www-client/chromium cups
+x11-terms/rxvt-unicode 256-color xft unicode3 pixbuf
+mail-client/mutt sidebar smtp ssl pop imap
+www-client/lynx ssl
+www-client/w3m imlib
 
 # -------------------------------------------------------------------------------- #
 # >> dependencies here
@@ -206,3 +208,21 @@ app-editors/neovim clipboard nvimpager tui
 >=media-video/ffmpeg-3.2.4 x264
 >=dev-lua/mpack-1.0.4 luajit
 >=dev-lua/lpeg-1.0.1 luajit
+>=sys-libs/tdb-1.3.13 python
+>=sys-libs/tevent-0.9.31-r1 python
+>=sci-libs/vtk-6.1.0-r3 imaging
+>=dev-libs/boost-1.62.0-r1 python
+>=dev-libs/xerces-c-3.1.4-r1 icu
+>=dev-python/pyside-1.2.2-r1 svg
+>=sys-devel/llvm-3.9.1-r1 clang
+>=app-editors/vim-8.0.0386 python
+>=xfce-base/thunar-1.6.10-r1 udisks
+>=gnome-base/gvfs-1.30.4 udisks
+>=dev-lang/perl-5.24.1-r2 ithreads
+>=media-gfx/imagemagick-6.9.8.6 perl
+>=app-crypt/qca-2.1.3-r1 qt5
+>=app-text/poppler-0.45.0 qt5
+>=media-video/vlc-2.2.6 vorbis dbus ogg
+>=media-gfx/exiv2-0.25-r2 xmp
+>=app-text/poppler-0.45.0 cairo
+>=dev-java/swt-3.7.2-r1:3.7 cairo
