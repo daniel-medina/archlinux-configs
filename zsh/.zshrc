@@ -37,6 +37,9 @@ alias kernel-compile="cd /usr/src/linux && sudo make && cd ~"
 alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && cd ~"
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
+# Development
+alias dev-website="cd ~/symlink/knowledge/repository/website"
+
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
 
