@@ -37,8 +37,6 @@ alias kernel-compile="cd /usr/src/linux && sudo make && cd ~"
 alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && cd ~"
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
-# Primordials
-alias vim=nvim
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
 
@@ -88,4 +86,4 @@ alias nginx-restart="sudo systemctl restart mysqld nginx php-fpm"
 alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
 
 # Server aliases
-alias kehros="ssh ifthenelse@188.166.16.248"
+alias kehros="ssh ifthenelse@188.166.16.248 -p 4442"
