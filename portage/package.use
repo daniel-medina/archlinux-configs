@@ -69,13 +69,7 @@ x11-proto/xf86driproto abi_x86_32
 x11-proto/xf86vidmodeproto abi_x86_32
 x11-proto/xproto abi_x86_32
 x11-misc/compton opengl drm
-app-emulation/qemu ovmf
-app-emulation/qemu sdl
-app-emulation/qemu sdl2
-app-emulation/qemu usb
-app-emulation/qemu usbredir
-app-emulation/qemu alsa
-app-emulation/qemu -pulseaudio
+app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa -pulseaudio
 app-emulation/virt-manager gtk
 media-video/mpv X
 media-video/mpv archive

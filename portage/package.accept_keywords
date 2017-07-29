@@ -83,3 +83,4 @@
 =media-gfx/w3mimgfb-0.9.1 ~amd64
 =dev-util/webstorm-2017.1.1.171.4073.40 ~amd64
 =dev-util/android-sdk-update-manager-24.4.1 ~amd64
+=net-im/franz-bin-4.0.4-r1 ~amd64

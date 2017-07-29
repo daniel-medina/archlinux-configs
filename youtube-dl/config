@@ -9,5 +9,12 @@
 # Use this proxy
 #--proxy 127.0.0.1:3128
 
+# Ignore errors (like private video)
+--ignore-errors
+
+# Get subtitles
+--write-srt
+--write-auto-sub
+
 # Save all videos under Movies directory in your home directory
 -o ~/download/youtube/%(uploader)s/%(playlist)s/%(title)s.%(ext)s

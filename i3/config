@@ -60,7 +60,7 @@ set $WS19 19
 set $WS20 20
 
 # quick applications launch
-bindsym $mod+b exec chromium
+bindsym $mod+b exec firefox
 bindsym $mod+t exec urxvt -e ranger
 bindsym $mod+m exec urxvt -e htop; focus parent; layout splitv; exec termite -e htop
 
