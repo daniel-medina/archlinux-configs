@@ -84,3 +84,7 @@
 =dev-util/webstorm-2017.1.1.171.4073.40 ~amd64
 =dev-util/android-sdk-update-manager-24.4.1 ~amd64
 =net-im/franz-bin-4.0.4-r1 ~amd64
+=media-video/obs-studio-19.0.2 ~amd64
+=app-emulation/libguestfs-1.28.5-r3 ~amd64
+=app-arch/lzma-9.20-r1 ~amd64
+=app-emulation/libguestfs-appliance-1.28.1-r1 ~amd64

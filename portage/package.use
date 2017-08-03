@@ -1,6 +1,8 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+sys-firmware/edk2-ovmf qemu secure-boot
+sys-firmware/seabios seavgabios
 net-libs/nodejs npm
 net-libs/nodejs ssl
 net-libs/nodejs snapshot
@@ -69,7 +71,7 @@ x11-proto/xf86driproto abi_x86_32
 x11-proto/xf86vidmodeproto abi_x86_32
 x11-proto/xproto abi_x86_32
 x11-misc/compton opengl drm
-app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa -pulseaudio
+app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa virtfs gtk -pulseaudio
 app-emulation/virt-manager gtk
 media-video/mpv X
 media-video/mpv archive
@@ -165,6 +167,7 @@ x11-terms/rxvt-unicode 256-color xft unicode3 pixbuf
 mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl
 www-client/w3m imlib
+net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 
 # -------------------------------------------------------------------------------- #
 # >> dependencies here
@@ -220,3 +223,4 @@ www-client/w3m imlib
 >=media-gfx/exiv2-0.25-r2 xmp
 >=app-text/poppler-0.45.0 cairo
 >=dev-java/swt-3.7.2-r1:3.7 cairo
+>=app-arch/unzip-6.0_p20 natspec

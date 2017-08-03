@@ -1,21 +1,21 @@
 # ESLint
-snippet eslint-ignore-line
+snippet eil "Eslint - disable line"
 // eslint-disable-line
 endsnippet
 
 # Comments
-snippet com-sin
+snippet coms "Single line comment"
 /** $1 */
 endsnippet
 
-snippet com-mul
+snippet comm "Multi line comment"
 /**
  * $1
  */
 endsnippet
 
 # Functions
-snippet function "Function"
+snippet fu "Function"
 /**
  * ${1:Function description}
  *
@@ -27,7 +27,7 @@ function ${2:Name} ($3) {
 }
 endsnippet
 
-snippet object-method "Object method"
+snippet om "Object method"
 /**
  * ${1:Function description}
  *
@@ -39,7 +39,7 @@ ${2:Name}: function ($3) => {
 }
 endsnippet
 
-snippet function-anonymous "Anonymous function"
+snippet fa "Anonymous function"
 /**
  * ${1:Function description}
  *
@@ -51,7 +51,7 @@ function ($2) {
 }
 endsnippet
 
-snippet function-arrow "Arrow function"
+snippet far "Arrow function"
 /**
  * $1
  *
@@ -61,7 +61,7 @@ snippet function-arrow "Arrow function"
 $1 => $2
 endsnippet
 
-snippet async-function "Asynchronous function"
+snippet af "Asynchronous function"
 /**
  * ${1:Function description}
  *
@@ -74,7 +74,7 @@ async function ${2:Name} ($3) {
 }
 endsnippet
 
-snippet async-function-anonymous "Asynchronous anonymous function"
+snippet afa "Asynchronous anonymous function"
 /**
  * ${1:Function description}
  *
@@ -87,7 +87,7 @@ async function ($2) {
 }
 endsnippet
 
-snippet async-function-execution
+snippet afe "Asynchronous code execution"
 /**
  * Asynchronous code execution
  *
@@ -103,8 +103,7 @@ snippet async-function-execution
 }())
 endsnippet
 
-# ENSBV boilerplate
-snippet model-make "Generate a model file"
+snippet mdlm "Generate a model file"
 /**
  * $1 Model
  * ${2:Description}
@@ -133,7 +132,7 @@ const $1Schema = new Schema({
 module.exports = connection.model('$1', $1Schema)
 endsnippet
 
-snippet model-ref-make "Generate a model ref file"
+snippet mdlrm "Generate a model ref file"
 /**
  * $1 Model
  * ${2:Description}
@@ -169,14 +168,7 @@ const $1 = connection.model('$1', $1Schema)
 export { $1Schema, $1 }
 endsnippet
 
-snippet view-make "Generate a view file"
-extends ../layout.pug
-
-block content
-	$1
-endsnippet
-
-snippet controller-make "Generate a controller file"
+snippet cm "Generate a controller file"
 /**
  * $1 Controller
  * ${2:Description}
@@ -199,7 +191,7 @@ module.exports = {
 }
 endsnippet
 
-snippet middleware-make "Generate a middleware file"
+snippet mm "Generate a middleware file"
 /**
  * $1 Middleware
  * ${2:Description}
@@ -222,21 +214,26 @@ module.exports = {
 }
 endsnippet
 
-snippet controller-insert "Insert a new controller"
+snippet ci "Insert a new controller"
 // $1 {{{
 /**
  * ${2:Controller description}
  *
+ * @async
  * @param {HTTP} request
  * @param {HTTP} response
  */
-$1: function (request, response) {
-	/** Return or render something ... */
+$1: async function (request, response) {
+	try {
+		$3
+	} catch (error) {
+		console.log(error)
+	}
 }
 // }}}
 endsnippet
 
-snippet middleware-insert "Insert a new middleware"
+snippet mi "Insert a new middleware"
 // $1 {{{
 /**
  * ${2:Middleware description}
@@ -245,20 +242,43 @@ snippet middleware-insert "Insert a new middleware"
  * @param {HTTP} response
  * @param {HTTP} next
  */
-$1: function (request, response, next) {
-	next()
+$1: async function (request, response, next) {
+	try {
+		next()
+	} catch (error) {
+		console.log(error)
+	}
 }
 // }}}
 endsnippet
 
-snippet flash-error
+# Requests
+snippet fe "Flash error"
 request.flash('error', '$1')
 endsnippet
 
-snippet flash-success
+snippet fs "Flash success"
 request.flash('success', '$1')
 endsnippet
 
-snippet redirect-back
+# Responses
+snippet rb "Redirect back"
 response.redirect('back')
+endsnippet
+
+# Tests
+snippet td "Test description"
+// ${1:Description} {{{
+describe('$1', function () {
+	$2
+})
+// }}}
+endsnippet
+
+snippet tit "Test it"
+// ${1:Description} {{{
+it('$1', function () {
+ $2
+})
+// }}}
 endsnippet

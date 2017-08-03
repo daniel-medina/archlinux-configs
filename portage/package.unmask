@@ -1,1 +1,3 @@
 =dev-libs/openssl-1.1.0e
+=app-emulation/wine-desktop-common-20150204
+=app-eselect/eselect-wine-1.1

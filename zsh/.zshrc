@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export BROWSER=chromium
+export BROWSER=firefox
 export EDITOR=emacs
 export QEMU_AUDIO_DRV=alsa
 # Path to your oh-my-zsh installation.
@@ -22,6 +22,9 @@ else
   export EDITOR='mvim'
 fi
 
+# Vim
+alias vim="nvim"
+
 # Personal wiki
 alias pwiki="vim ~/symlink/knowledge/repository/personal-wiki/main.wiki"
 alias pwiki-push="cd ~/symlink/knowledge/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
@@ -36,6 +39,14 @@ alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
 alias kernel-compile="cd /usr/src/linux && sudo make && cd ~"
 alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && cd ~"
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
+
+# Portage
+alias portage-use="sudo vim /etc/portage/package.use"
+alias portage-accept-keywords="sudo vim /etc/portage/package.accept_keywords"
+alias portage-keywords="sudo vim /etc/portage/package.keywords"
+alias portage-mask="sudo vim /etc/portage/package.mask"
+alias portage-unmask="sudo vim /etc/portage/package.unmask"
+alias portage-license="sudo vim /etc/portage/package.license"
 
 # Development
 alias dev-website="cd ~/symlink/knowledge/repository/website"

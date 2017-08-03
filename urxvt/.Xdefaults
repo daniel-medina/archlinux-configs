@@ -48,7 +48,7 @@ Xft.hintstyle:  hintfull
 
 URxvt*geometry:         112x22  
 URxvt*font:            xft:Terminess Powerline:size=10
-URxvt*urlLauncher:         chromium  
+URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
