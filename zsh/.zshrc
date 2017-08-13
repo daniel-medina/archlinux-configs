@@ -49,7 +49,7 @@ alias portage-unmask="sudo vim /etc/portage/package.unmask"
 alias portage-license="sudo vim /etc/portage/package.license"
 
 # Development
-alias dev-website="cd ~/symlink/knowledge/repository/website"
+alias dev="cd ~/symlink/knowledge/repository"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"

@@ -34,7 +34,20 @@ snippet om "Object method"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-${2:Name}: function ($3) => {
+${2:Name}: function ($3) {
+	$4
+}
+endsnippet
+
+snippet oma "Object method - asynchronous"
+/**
+ * ${1:Function description}
+ *
+ * @async
+ * @param {Type} tag Description
+ * @returns {Type} tag
+ */
+${2:Name}: async function ($3) {
 	$4
 }
 endsnippet

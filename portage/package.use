@@ -1,11 +1,12 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
-sys-firmware/edk2-ovmf qemu secure-boot
+net-misc/directvnc mouse
 sys-firmware/seabios seavgabios
 net-libs/nodejs npm
 net-libs/nodejs ssl
 net-libs/nodejs snapshot
+app-emulation/virt-viewer vnc
 app-editors/emacs -X
 app-editors/emacs -gtk
 media-libs/libpng apng
@@ -224,3 +225,4 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=app-text/poppler-0.45.0 cairo
 >=dev-java/swt-3.7.2-r1:3.7 cairo
 >=app-arch/unzip-6.0_p20 natspec
+>=dev-libs/DirectFB-1.7.6 fbcon

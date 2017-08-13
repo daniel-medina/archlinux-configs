@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/storage/ssd/dev/website/sass'
-let g:netrw_dirhist_2='/storage/ssd/dev/website/middlewares/admin/blog'
-let g:netrw_dirhist_3='/storage/ssd/dev/website/middlewares/admin'
-let g:netrw_dirhist_4='/storage/ssd/dev/website/middlewares'
-let g:netrw_dirhist_5='/storage/ssd/dev/website'
-let g:netrw_dirhist_6='/storage/ssd/dev/vue-electron-experiment/test'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/storage/ssd/knowledge/repository/quizzar/app'
+let g:netrw_dirhist_2='/storage/ssd/knowledge/repository/quizzar/app/src'
+let g:netrw_dirhist_3='/storage/ssd/knowledge/repository/quizzar/app/src/renderer'
+let g:netrw_dirhist_4='/storage/ssd/knowledge/repository/quizzar'
+let g:netrw_dirhist_5='/storage/ssd/knowledge/repository/quizzar/app'
+let g:netrw_dirhist_6='/storage/ssd/knowledge/repository/quizzar/app/src'
+let g:netrw_dirhist_7='/storage/ssd/knowledge/repository/quizzar/app/src/renderer'
+let g:netrw_dirhist_8='/storage/ssd/knowledge/repository/hottiesalert-automatic-email/build/build'
