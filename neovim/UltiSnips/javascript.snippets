@@ -22,9 +22,7 @@ snippet fu "Function"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-function ${2:Name} ($3) {
-	$4
-}
+const ${2:Name} = $3 => $4
 endsnippet
 
 snippet om "Object method"
@@ -34,9 +32,7 @@ snippet om "Object method"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-${2:Name}: function ($3) {
-	$4
-}
+${2:Name}: $3 => $4
 endsnippet
 
 snippet oma "Object method - asynchronous"
@@ -47,9 +43,7 @@ snippet oma "Object method - asynchronous"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-${2:Name}: async function ($3) {
-	$4
-}
+${2:Name}: async $3 => $4
 endsnippet
 
 snippet fa "Anonymous function"
@@ -59,19 +53,7 @@ snippet fa "Anonymous function"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-function ($2) {
-	$3
-}
-endsnippet
-
-snippet far "Arrow function"
-/**
- * $1
- *
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-$1 => $2
+$2 => $3
 endsnippet
 
 snippet af "Asynchronous function"
@@ -82,9 +64,7 @@ snippet af "Asynchronous function"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-async function ${2:Name} ($3) {
-	$4
-}
+const ${2:Name} = async $3 => $4
 endsnippet
 
 snippet afa "Asynchronous anonymous function"
@@ -95,9 +75,7 @@ snippet afa "Asynchronous anonymous function"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-async function ($2) {
-	$3
-}
+async $2 => $3
 endsnippet
 
 snippet afe "Asynchronous code execution"
@@ -236,7 +214,7 @@ snippet ci "Insert a new controller"
  * @param {HTTP} request
  * @param {HTTP} response
  */
-$1: async function (request, response) {
+$1: async (request, response) => {
 	try {
 		$3
 	} catch (error) {
@@ -251,11 +229,12 @@ snippet mi "Insert a new middleware"
 /**
  * ${2:Middleware description}
  *
+ * @async
  * @param {HTTP} request
  * @param {HTTP} response
  * @param {HTTP} next
  */
-$1: async function (request, response, next) {
+$1: async (request, response, next) => {
 	try {
 		next()
 	} catch (error) {
