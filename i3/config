@@ -37,11 +37,11 @@ bindsym $mod+c sticky toggle
 workspace_layout tabbed
 
 # setting up workspaces
-set $WS1 1 - Browse
-set $WS2 2 - Dev
-set $WS3 3 - Social
-set $WS4 4 - Media
-set $WS5 5 - System
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
+set $WS5 5
 set $WS6 6
 set $WS7 7
 set $WS8 8
