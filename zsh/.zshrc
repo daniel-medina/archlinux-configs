@@ -101,4 +101,4 @@ alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
 
 # Server aliases
 alias kehros="ssh ifthenelse@188.166.16.248 -p 4442"
-alias master="ssh ifthenelse@192.168.1.31 -p 4658"
+alias master="ssh ifthenelse@192.168.1.31 -p 4658 -Y"
