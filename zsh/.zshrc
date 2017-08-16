@@ -9,6 +9,10 @@ export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
+# Base16
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
 # Customizing the powerlevel9k theme
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status dir_writable battery ip ssh context time)

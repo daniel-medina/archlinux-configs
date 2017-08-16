@@ -1,5 +1,6 @@
 MatchTagAlways
 ale
+base16-vim
 bclose.vim
 bufexplorer
 deoplete-ternjs

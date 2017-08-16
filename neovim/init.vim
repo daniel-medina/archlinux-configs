@@ -12,9 +12,10 @@ set foldmethod=marker
 set foldmarker={{{,}}}
 highlight Folded ctermbg=black
 set relativenumber
+let base16colorspace=256
 
 " Variables
-let g:airline_theme='wombat'
+let g:airline_theme='base16'
 let g:autoformat_remove_trailing_spaces = 0
 let g:airline_powerline_fonts = 1
 let g:netrw_banner = 1
@@ -146,6 +147,7 @@ NeoBundle 'w0rp/ale'
 NeoBundle 'rbgrouleff/bclose.vim'
 NeoBundle 'francoiscabrol/ranger.vim'
 NeoBundle 'rhysd/vim-grammarous'
+NeoBundle 'chriskempson/base16-vim'
 
 call neobundle#end()
 filetype plugin indent on
@@ -154,3 +156,4 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
+colorscheme base16-default-dark
