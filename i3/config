@@ -133,7 +133,8 @@ bindsym Ctrl+Left focus left
 bindsym Ctrl+Right focus right
 
 # focusing parent container
-bindsym $mod+a focus parent
+bindsym $mod+p focus parent
+bindsym $mod+a focus child
 
 # moving containers
 bindsym $mod+Ctrl+Up move up
