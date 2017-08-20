@@ -23,8 +23,8 @@ snippet fu "Function"
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-function $1 ($2) {
-	$3
+function $1 (${3:Args}) {
+	$4
 }
 // }}}
 endsnippet
@@ -54,12 +54,44 @@ $1: async $3 => $4
 // }}}
 endsnippet
 
+snippet vf "Vue - default template file"
+<template lang='pug'>
+</template>
+
+<script>
+	export default {
+		data () {
+			return {}
+		},
+		created () {
+		},
+		method: {}
+	}
+</script>
+
+<style lang="scss" scoped>
+</style>
+endsnippet
+
+snippet vm "Vue - method"
+// Method: ${1:Name} {{{
+/**
+ * ${2:Method description}
+ *
+ * @param {Type} tag Description
+ * @returns {Type} tag
+ */
+$1: function (${3:args}) {
+	$4
+}
+// }}}
+endsnippet
+
 snippet naf "Named arrow function"
 // Function: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
- * @async
  * @param {Type} tag Description
  * @returns {Type} tag
  */
@@ -211,8 +243,8 @@ snippet cm "Generate a controller file"
 
 /** Libs imports */
 
-/** Exporting the controller */
-module.exports = {
+/** GET */
+export const get = {
 	$3
 }
 endsnippet
@@ -234,8 +266,8 @@ snippet mm "Generate a middleware file"
 
 /** Libs imports */
 
-/** Exporting the middleware */
-module.exports = {
+/** GET */
+export const get = {
 	$3
 }
 endsnippet
@@ -257,6 +289,10 @@ $1: async (request, response) => {
 	}
 }
 // }}}
+endsnippet
+
+snippet cxhr "Controller - return a xhr response"
+response.json(${1:Data to return})
 endsnippet
 
 snippet mi "Insert a new middleware"

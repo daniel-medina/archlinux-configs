@@ -2,6 +2,8 @@
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
 net-misc/directvnc mouse
+media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
+app-portage/layman mercurial
 sys-firmware/seabios seavgabios
 net-libs/nodejs npm
 net-libs/nodejs ssl
