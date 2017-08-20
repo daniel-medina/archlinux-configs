@@ -7,7 +7,7 @@ export QEMU_AUDIO_DRV=alsa
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="bira"
 
 # Base16
 BASE16_SHELL=$HOME/.config/base16-shell/

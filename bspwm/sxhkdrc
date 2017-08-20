@@ -31,7 +31,7 @@ super + x
   bspc node -c
 
 # kill window
-super + k
+super + shift + x
   bspc node -k
 
 # if the current node is automatic, send it to the last manual, otherwise pull the last leaf
