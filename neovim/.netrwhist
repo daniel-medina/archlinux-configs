@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/storage/ssd/knowledge/repository/quizzar/app'
-let g:netrw_dirhist_2='/storage/ssd/knowledge/repository/quizzar/app/src'
-let g:netrw_dirhist_3='/storage/ssd/knowledge/repository/quizzar/app/src/renderer'
-let g:netrw_dirhist_4='/storage/ssd/knowledge/repository/quizzar'
-let g:netrw_dirhist_5='/storage/ssd/knowledge/repository/quizzar/app'
-let g:netrw_dirhist_6='/storage/ssd/knowledge/repository/quizzar/app/src'
-let g:netrw_dirhist_7='/storage/ssd/knowledge/repository/quizzar/app/src/renderer'
-let g:netrw_dirhist_8='/storage/ssd/knowledge/repository/hottiesalert-automatic-email/build/build'
-let g:netrw_dirhist_9='/home/ifthenelse/.config/sxhkd'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/storage/ssd/knowledge/repository/dotfiles/neovim'

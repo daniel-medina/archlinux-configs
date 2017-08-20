@@ -2,41 +2,41 @@
 ! c o l o r -  s e t t i n g s
 
 ! special
-*.foreground:   #d0d0d0
-*.background:   #151515
-*.cursorColor:  #d0d0d0
+*.foreground:   #f8f8f2
+*.background:   #272822
+*.cursorColor:  #f8f8f2
 
 ! black
-*.color0:       #151515
-*.color8:       #505050
+*.color0:       #272822
+*.color8:       #75715e
 
 ! red
-*.color1:       #ac4142
-*.color9:       #ac4142
+*.color1:       #f92672
+*.color9:       #f92672
 
 ! green
-*.color2:       #90a959
-*.color10:      #90a959
+*.color2:       #a6e22e
+*.color10:      #a6e22e
 
 ! yellow
 *.color3:       #f4bf75
 *.color11:      #f4bf75
 
 ! blue
-*.color4:       #6a9fb5
-*.color12:      #6a9fb5
+*.color4:       #66d9ef
+*.color12:      #66d9ef
 
 ! magenta
-*.color5:       #aa759f
-*.color13:      #aa759f
+*.color5:       #ae81ff
+*.color13:      #ae81ff
 
 ! cyan
-*.color6:       #75b5aa
-*.color14:      #75b5aa
+*.color6:       #a1efe4
+*.color14:      #a1efe4
 
 ! white
-*.color7:       #d0d0d0
-*.color15:      #f5f5f5
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
 
 !------------------------------------------------------------------------------
 ! u r x v t

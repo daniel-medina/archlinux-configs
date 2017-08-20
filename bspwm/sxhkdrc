@@ -4,14 +4,14 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	urxvt -uc
 
 # program launcher
 super + @space
 	rofi -show drun
 
 # ranger
-super + r
+alt + f
   urxvt -e ranger
 
 # reload key bindings
