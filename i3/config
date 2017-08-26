@@ -51,7 +51,6 @@ set $WS20 20
 # quick applications launch
 bindsym $mod+b exec firefox
 bindsym $mod+t exec urxvt -e ranger
-bindsym $mod+m exec urxvt -e htop; focus parent; layout splitv; exec termite -e htop
 
 # default window modes
 for_window [class="Keepassx"] floating enable, sticky toggle, move window to scratchpad, scratchpad show
@@ -94,7 +93,7 @@ bindsym button2 nop
 bindsym button3 nop
 
 # locking the screen
-bindsym $mod+l exec i3lock -i ~/picture/wallpaper/lockscreen.png
+bindsym Alt+l exec i3lock -i ~/picture/wallpaper/lockscreen.png
 
 # taking screenshots
 bindsym Print exec imgur-screenshot
@@ -116,10 +115,10 @@ bindsym F1 scratchpad show
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # switching focuses
-bindsym Ctrl+Up focus up
-bindsym Ctrl+Down focus down
-bindsym Ctrl+Left focus left
-bindsym Ctrl+Right focus right
+bindsym $mod+k focus up
+bindsym $mod+j focus down
+bindsym $mod+l focus right
+bindsym $mod+h focus left
 
 # focusing parent container
 bindsym $mod+p focus parent
@@ -135,10 +134,10 @@ bindsym $mod+Ctrl+Right move right
 focus_follows_mouse no
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+Ctrl+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+Ctrl+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle

@@ -93,3 +93,4 @@
 =net-misc/directvnc-0.7.8 ~amd64
 =x11-wm/bspwm-0.9.3 ~amd64
 =x11-misc/sxhkd-0.5.8 ~amd64
+=sys-fs/android-file-transfer-linux-3.2 ~amd64

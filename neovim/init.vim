@@ -14,6 +14,9 @@ highlight Folded ctermbg=black
 set relativenumber
 let base16colorspace=256
 
+" Vue
+autocmd FileType vue syntax sync fromstart
+
 " Variables
 let g:airline_theme='base16'
 let g:autoformat_remove_trailing_spaces = 0

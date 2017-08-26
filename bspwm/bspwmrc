@@ -8,6 +8,7 @@ sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
+# bspc config focus_follows_pointer true
 bspc config border_width         2
 bspc config window_gap          12
 
