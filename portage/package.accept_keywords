@@ -94,3 +94,6 @@
 =x11-wm/bspwm-0.9.3 ~amd64
 =x11-misc/sxhkd-0.5.8 ~amd64
 =sys-fs/android-file-transfer-linux-3.2 ~amd64
+=x11-misc/i3lock-fancy-9999 ~amd64
+=x11-misc/i3lock-color-9999 ~amd64
+=www-client/torbrowser-52.3.0_p704 ~amd64

@@ -47,7 +47,7 @@ Xft.hinting:    true
 Xft.hintstyle:  hintfull
 
 URxvt*geometry:         112x22  
-URxvt*font:            xft:Terminess Powerline:size=10
+URxvt*font:            xft:xos4 Terminess Powerline:size=10
 URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
