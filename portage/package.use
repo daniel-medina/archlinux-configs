@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+net-vpn/openvpn libressl
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
 app-portage/layman mercurial

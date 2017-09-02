@@ -1,4 +1,4 @@
-#>=x11-libs/libxcb-1.12-r2
+>=x11-libs/libxcb-1.12-r2
 >=dev-libs/libxml2-2.9.4-r1
 >=sys-firmware/seabios-1.10.2
 #>=x11-misc/shared-mime-info-1.8

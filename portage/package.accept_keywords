@@ -97,3 +97,7 @@
 =x11-misc/i3lock-fancy-9999 ~amd64
 =x11-misc/i3lock-color-9999 ~amd64
 =www-client/torbrowser-52.3.0_p704 ~amd64
+=www-client/chromium-bin-debian-58.0.3029.96_p1 ~amd64
+=media-libs/libvpx-1.6.1 ~amd64
+=dev-python/pyliblzma-0.5.3-r1 ~amd64
+=www-client/torbrowser-launcher-0.2.8 ~amd64
