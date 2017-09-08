@@ -101,3 +101,4 @@
 =media-libs/libvpx-1.6.1 ~amd64
 =dev-python/pyliblzma-0.5.3-r1 ~amd64
 =www-client/torbrowser-launcher-0.2.8 ~amd64
+=sci-geosciences/googleearth-7.1.8.3036 ~amd64

@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+mail-client/thunderbird crypt pulseaudio rust
 net-vpn/openvpn libressl
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
@@ -229,3 +230,4 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=dev-java/swt-3.7.2-r1:3.7 cairo
 >=app-arch/unzip-6.0_p20 natspec
 >=dev-libs/DirectFB-1.7.6 fbcon
+>=app-crypt/pinentry-0.9.7-r1 gtk
