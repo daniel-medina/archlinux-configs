@@ -35,6 +35,9 @@ alias pwiki="vim ~/symlink/knowledge/repository/personal-wiki/main.wiki"
 alias pwiki-push="cd ~/symlink/knowledge/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias pwiki-pull="cd ~/symlink/knowledge/repository/personal-wiki && git pull && cd ~/"
 
+# Wine prefixes
+alias wine-prefix-office="WINEPREFIX=~/.wine-office WINEARCH=win32"
+
 # Dotfiles
 alias dots-push="cd ~/symlink/knowledge/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias dots-pull="cd ~/symlink/knowledge/repository/dotfiles && git pull && cd ~/"

@@ -1,7 +1,9 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+dev-lang/python tk
 mail-client/thunderbird crypt pulseaudio rust
+app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner
 net-vpn/openvpn libressl
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
@@ -178,7 +180,6 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 # >> dependencies here
 # -------------------------------------------------------------------------------- #
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
->=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
 >=dev-lang/python-2.7.12:2.7 sqlite
 >=x11-libs/gdk-pixbuf-2.36.6 tiff jpeg
 >=dev-libs/openssl-1.0.2k -bindist
@@ -231,3 +232,12 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=app-arch/unzip-6.0_p20 natspec
 >=dev-libs/DirectFB-1.7.6 fbcon
 >=app-crypt/pinentry-0.9.7-r1 gtk
+>=media-libs/mesa-17.0.6 d3d9
+>=dev-libs/elfutils-0.169-r1 static-libs
+>=net-fs/samba-4.5.10-r1 winbind
+>=media-libs/mesa-17.0.6 osmesa opencl
+>=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
+>=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
+>=app-crypt/libsecret-0.18.5 vala
+>=x11-libs/cairo-1.14.8 opengl
+>=media-libs/gst-plugins-bad-1.10.5 opengl

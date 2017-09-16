@@ -1,7 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/storage/ssd/knowledge/repository/dotfiles/neovim'
-let g:netrw_dirhist_2='/storage/ssd/knowledge/repository/quizar'
-let g:netrw_dirhist_3='/home/ifthenelse/.config/polybar'
-let g:netrw_dirhist_4='/storage/ssd/knowledge/repository/dotfiles/neovim/bundle/vim-vue'
-let g:netrw_dirhist_5='/storage/ssd/knowledge/repository/dotfiles/neovim/bundle/vim-vue/syntax'
+let g:netrw_dirhist_cnt =0

@@ -3,3 +3,6 @@
 =app-eselect/eselect-wine-1.1
 =net-misc/directvnc-0.7.8
 =sci-geosciences/googleearth-7.1.8.3036
+=app-emulation/wine-staging-2.12
+=app-emulation/wine-mono-4.7.0
+=app-emulation/wine-gecko-2.47-r1
