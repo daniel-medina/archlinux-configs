@@ -4,7 +4,7 @@
 =x11-wm/i3-gaps-4.13 ~amd64
 =media-plugins/imlib2_loaders-1.4.8 ~amd64
 =x11-themes/paper-icon-theme-20151211 ~amd64
-=net-libs/nodejs-8.1.2 ~amd64
+=net-libs/nodejs-8.5.0 ~amd64
 =dev-libs/libuv-1.11.0 ~amd64
 =media-libs/libpng-1.6.29 ~amd64
 =x11-themes/iris-light-9999 **
@@ -47,7 +47,7 @@
 =dev-lua/lpeg-1.0.1 ~amd64
 =app-office/upwork-4.1.134 ~amd64
 =dev-libs/libgcrypt-1.5.6-r101 ~amd64
-=app-emulation/qemu-2.9.0-r54 ~amd64
+=app-emulation/qemu-2.10.0 ~amd64
 =sys-firmware/seabios-1.10.2 ~amd64
 =media-libs/alsa-lib-1.1.4.1 ~amd64
 =media-sound/pasystray-0.6.0-r2 ~amd64
@@ -109,3 +109,5 @@
 =app-emulation/wine-mono-4.7.0 ~amd64
 =app-emulation/wine-gecko-2.47-r1 ~amd64
 =net-news/feedreader-2.0.2-r1 ~amd64
+=dev-libs/libuv-1.14.1 ~amd64
+=net-libs/nghttp2-1.25.0 ~amd64

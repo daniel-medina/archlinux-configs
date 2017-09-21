@@ -2,6 +2,7 @@
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
 dev-lang/python tk
+media-gfx/sane-backends usb
 mail-client/thunderbird crypt pulseaudio rust
 app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner
 net-vpn/openvpn libressl
