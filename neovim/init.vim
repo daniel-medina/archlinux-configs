@@ -151,6 +151,7 @@ NeoBundle 'rbgrouleff/bclose.vim'
 NeoBundle 'francoiscabrol/ranger.vim'
 NeoBundle 'rhysd/vim-grammarous'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'lervag/vimtex'
 
 call neobundle#end()
 filetype plugin indent on
@@ -159,4 +160,4 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
-colorscheme base16-monokai
+colorscheme base16-solarized-light

@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+dev-lang/php gd
 dev-lang/python tk
 media-gfx/sane-backends usb
 mail-client/thunderbird crypt pulseaudio rust
@@ -171,7 +172,7 @@ app-vim/youcompleteme clang
 sys-fs/mtpfs mad debug
 gnome-base/gvfs mtp nfs gtk archive fuse
 www-client/chromium cups
-x11-terms/rxvt-unicode 256-color xft unicode3 pixbuf
+x11-terms/rxvt-unicode 256-color xft unicode3 pixbuf fading-colors iso14755
 mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl
 www-client/w3m imlib
@@ -242,3 +243,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=app-crypt/libsecret-0.18.5 vala
 >=x11-libs/cairo-1.14.8 opengl
 >=media-libs/gst-plugins-bad-1.10.5 opengl
+>=dev-python/PyQt5-5.7.1 network gui webkit declarative widgets printsupport
+>=dev-qt/qtwebkit-5.7.1 printsupport
