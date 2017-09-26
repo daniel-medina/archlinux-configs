@@ -266,10 +266,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym Ctrl+Shift+Left resize shrink width 4 px or 4 ppt
-bindsym Ctrl+Shift+Down resize grow height 4 px or 4 ppt
-bindsym Ctrl+Shift+Up resize shrink height 4 px or 4 ppt
-bindsym Ctrl+Shift+Right resize grow width 4 px or 4 ppt
+bindsym Ctrl+Shift+h resize shrink width 4 px or 4 ppt
+bindsym Ctrl+Shift+j resize grow height 4 px or 4 ppt
+bindsym Ctrl+Shift+k resize shrink height 4 px or 4 ppt
+bindsym Ctrl+Shift+l resize grow width 4 px or 4 ppt
 
 ## Base16 Default Dark
 # Author: Chris Kempson (http://chriskempson.com)
