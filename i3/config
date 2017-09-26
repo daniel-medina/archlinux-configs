@@ -10,8 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # gaps
-gaps inner 10
-gaps outer 10
+#gaps inner 10
+#gaps outer 10
 
 # borders
 new_window none
