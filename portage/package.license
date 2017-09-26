@@ -3,3 +3,4 @@
 >=app-emulation/genymotion-bin-2.9.0-r1 genymotion
 >=www-client/vivaldi-1.9.818.50_p1 Vivaldi
 >=sci-geosciences/googleearth-7.1.8.3036 googleearth
+>=www-plugins/adobe-flash-27.0.0.130 AdobeFlash-11.x

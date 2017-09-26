@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+www-plugins/adobe-flash nsplugin
 dev-lang/php gd
 dev-lang/python tk
 media-gfx/sane-backends usb
