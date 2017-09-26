@@ -113,6 +113,7 @@ alias master="ssh ifthenelse@192.168.1.31 -p 4658 -Y"
 
 # VPN
 alias vpn-france="cd ~/symlink/cloud/safety/vpn && sudo openvpn France.ovpn"
+alias vpn-france-tcp="cd ~/symlink/cloud/safety/vpn && sudo openvpn France-tcp.ovpn"
 alias vpn-germany="cd ~/symlink/cloud/safety/vpn && sudo openvpn Germany.ovpn"
 alias vpn-ireland="cd ~/symlink/cloud/safety/vpn && sudo openvpn Ireland.ovpn"
 alias vpn-norway="cd ~/symlink/cloud/safety/vpn && sudo openvpn Norway.ovpn"
