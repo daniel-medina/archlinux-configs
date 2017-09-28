@@ -56,6 +56,10 @@ alias portage-mask="sudo vim /etc/portage/package.mask"
 alias portage-unmask="sudo vim /etc/portage/package.unmask"
 alias portage-license="sudo vim /etc/portage/package.license"
 
+# Devices
+alias wileyfox-mount="simple-mtpfs /media/usb/android"
+alias wileyfox-umount="sudo umount /media/usb/android"
+
 # Development
 alias dev="cd ~/symlink/knowledge/repository"
 
