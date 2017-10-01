@@ -1,21 +1,21 @@
 # ESLint
-snippet eil "Eslint - disable line"
+snippet eslint-disable-line "Eslint - disable line"
 // eslint-disable-line
 endsnippet
 
 # Comments
-snippet coms "Single line comment"
+snippet comment-single "Single line comment"
 /** $1 */
 endsnippet
 
-snippet comm "Multi line comment"
+snippet comment-multi "Multi line comment"
 /**
  * $1
  */
 endsnippet
 
 # Functions
-snippet fu "Function"
+snippet function "Function"
 // Function: ${1:Name} {{{
 /**
  * ${2:Function description}
@@ -29,7 +29,7 @@ function $1 (${3:Args}) {
 // }}}
 endsnippet
 
-snippet om "Object method"
+snippet object-method "Object method"
 // Method: ${1:Name} {{{
 /**
  * ${2:Function description}
@@ -41,7 +41,7 @@ $1: $3 => $4
 // }}}
 endsnippet
 
-snippet oma "Object method - asynchronous"
+snippet object-method-async "Object method - asynchronous"
 // Method: ${1:Name} {{{
 /**
  * ${2:Function description}
@@ -54,7 +54,7 @@ $1: async $3 => $4
 // }}}
 endsnippet
 
-snippet vf "Vue - default template file"
+snippet vue-default-template "Vue - default template file"
 <template lang='pug'>
 </template>
 
@@ -73,7 +73,7 @@ snippet vf "Vue - default template file"
 </style>
 endsnippet
 
-snippet vm "Vue - method"
+snippet vue-method "Vue - method"
 // Method: ${1:Name} {{{
 /**
  * ${2:Method description}
@@ -87,7 +87,7 @@ $1: function (${3:args}) {
 // }}}
 endsnippet
 
-snippet vw "Vue - watcher"
+snippet vue-watcher "Vue - watcher"
 // Watch: ${1:Name} {{{
 /**
  * ${2:Watcher description}
@@ -101,7 +101,7 @@ $1: function (${3:args}) {
 // }}}
 endsnippet
 
-snippet naf "Named arrow function"
+snippet function-arrow-named "Named arrow function"
 // Function: ${1:Name} {{{
 /**
  * ${2:Function description}
@@ -115,7 +115,7 @@ const $1 = $3 => {
 // }}}
 endsnippet
 
-snippet fa "Anonymous function"
+snippet function-anonymous "Anonymous function"
 // Anonymous function {{{
 /**
  * ${1:Function description}
@@ -129,7 +129,7 @@ function ($2) {
 // }}}
 endsnippet
 
-snippet af "Asynchronous function"
+snippet function-async "Asynchronous function"
 // Function: ${1:Name} {{{
 /**
  * ${2:Function description}
@@ -144,7 +144,7 @@ async function $1 ($3) {
 // }}}
 endsnippet
 
-snippet afa "Asynchronous anonymous function"
+snippet function-anonymous-async "Asynchronous anonymous function"
 // Anonymous function {{{
 /**
  * ${1:Function description}
@@ -159,7 +159,7 @@ async function ($2) {
 // }}}
 endsnippet
 
-snippet afe "Asynchronous code execution"
+snippet function-exec-async "Asynchronous code execution"
 /**
  * Asynchronous code execution
  *
@@ -175,7 +175,7 @@ snippet afe "Asynchronous code execution"
 }())
 endsnippet
 
-snippet mdlm "Generate a model file"
+snippet model-file "Generate a model file"
 /**
  * $1 Model
  * ${2:Description}
@@ -204,7 +204,7 @@ const $1Schema = new Schema({
 module.exports = connection.model('$1', $1Schema)
 endsnippet
 
-snippet mdlrm "Generate a model ref file"
+snippet model-ref-file "Generate a model ref file"
 /**
  * $1 Model
  * ${2:Description}
@@ -240,7 +240,7 @@ const $1 = connection.model('$1', $1Schema)
 export { $1Schema, $1 }
 endsnippet
 
-snippet cm "Generate a controller file"
+snippet controller-file "Generate a controller file"
 /**
  * $1 Controller
  * ${2:Description}
@@ -263,7 +263,7 @@ export const get = {
 }
 endsnippet
 
-snippet mm "Generate a middleware file"
+snippet middleware-file "Generate a middleware file"
 /**
  * $1 Middleware
  * ${2:Description}
@@ -286,7 +286,7 @@ export const get = {
 }
 endsnippet
 
-snippet ci "Insert a new controller"
+snippet controller-new "Insert a new controller"
 // Controller: ${1:Name} {{{
 /**
  * ${2:Controller description}
@@ -305,11 +305,11 @@ $1: async (request, response) => {
 // }}}
 endsnippet
 
-snippet cxhr "Controller - return a xhr response"
+snippet controller-xhr "Controller - return a xhr response"
 response.json(${1:Data to return})
 endsnippet
 
-snippet mi "Insert a new middleware"
+snippet middleware-new "Insert a new middleware"
 // Middleware: ${1:Name} {{{
 /**
  * ${2:Middleware description}
@@ -330,21 +330,21 @@ $1: async (request, response, next) => {
 endsnippet
 
 # Requests
-snippet fe "Flash error"
+snippet flash-error "Flash error"
 request.flash('error', '$1')
 endsnippet
 
-snippet fs "Flash success"
+snippet flash-success "Flash success"
 request.flash('success', '$1')
 endsnippet
 
 # Responses
-snippet rb "Redirect back"
+snippet redirect-back "Redirect back"
 response.redirect('back')
 endsnippet
 
 # Tests
-snippet td "Test description"
+snippet test-description "Test description"
 // ${1:Description} {{{
 describe('$1', function () {
 	$2
@@ -352,7 +352,7 @@ describe('$1', function () {
 // }}}
 endsnippet
 
-snippet tit "Test it"
+snippet test-it "Test it"
 // ${1:Description} {{{
 it('$1', function () {
  $2
