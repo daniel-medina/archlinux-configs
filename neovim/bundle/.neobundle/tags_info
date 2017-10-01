@@ -17,6 +17,7 @@ vim-airline-themes
 vim-autoformat
 vim-grammarous
 vim-javascript
+vim-jsx
 vim-pug
 vim-snippets
 vim-vue
