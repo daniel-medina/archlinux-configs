@@ -13,3 +13,5 @@ URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800

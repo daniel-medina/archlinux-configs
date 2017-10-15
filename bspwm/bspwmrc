@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Wallpaper
-feh --bg-center /home/ifthenelse/picture/wallpaper/white.jpg
+feh --bg-center /home/ifthenelse/picture/wallpaper/actual.jpg
 
 # Keybidings
 sxhkd &
