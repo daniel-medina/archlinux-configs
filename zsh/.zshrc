@@ -61,9 +61,10 @@ alias wileyfox-mount="simple-mtpfs /media/usb/android"
 alias wileyfox-umount="sudo umount /media/usb/android"
 
 # Development
-alias freelance="cd ~/symlink/knowledge/repository/freelance/social-media-widget"
-alias website="cd ~/symlink/knowledge/repository/website"
 alias repository="cd ~/symlink/knowledge/repository"
+alias website="cd ~/symlink/knowledge/repository/website"
+alias study="cd ~/symlink/knowledge/repository/study"
+alias freelance="cd ~/symlink/knowledge/repository/freelance/social-media-widget"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
