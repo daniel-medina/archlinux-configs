@@ -162,4 +162,4 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
-colorscheme base16-solarized-light
+colorscheme base16-solarized-dark

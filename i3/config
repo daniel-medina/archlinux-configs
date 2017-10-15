@@ -23,7 +23,7 @@ set $mod mod4
 bindsym $mod+c sticky toggle
 
 # default workspace layout
-workspace_layout default
+workspace_layout tabbed
 
 # setting up workspaces
 set $WS1 1

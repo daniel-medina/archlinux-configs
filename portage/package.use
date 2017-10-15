@@ -4,7 +4,7 @@
 www-plugins/adobe-flash nsplugin
 dev-lang/php gd
 dev-lang/python tk
-media-gfx/sane-backends usb
+media-gfx/sane-backends usb canon pixma
 mail-client/thunderbird crypt pulseaudio rust
 app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner
 net-vpn/openvpn libressl
@@ -246,3 +246,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=media-libs/gst-plugins-bad-1.10.5 opengl
 >=dev-python/PyQt5-5.7.1 network gui webkit declarative widgets printsupport
 >=dev-qt/qtwebkit-5.7.1 printsupport
+>=x11-libs/wxGTK-3.0.2.0-r2 opengl
+>=dev-python/wxpython-3.0.2.0 opengl
