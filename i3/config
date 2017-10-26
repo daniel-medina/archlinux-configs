@@ -125,19 +125,19 @@ bindsym $mod+p focus parent
 bindsym $mod+a focus child
 
 # moving containers
-bindsym $mod+Ctrl+k move up
-bindsym $mod+Ctrl+j move down        
-bindsym $mod+Ctrl+h move left
-bindsym $mod+Ctrl+l move right
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+j move down        
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
 
 # disabling mouse focus
 focus_follows_mouse no
 
 # split in horizontal orientation
-bindsym $mod+Shift+h split h
+bindsym $mod+Ctrl+h split j
 
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+Ctrl+v split l
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
