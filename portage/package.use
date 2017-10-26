@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+dev-libs/sway swaybar swaylock swaygrab swaybg swaymsg
 www-plugins/adobe-flash nsplugin
 dev-lang/php gd
 dev-lang/python tk
@@ -248,3 +249,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=dev-qt/qtwebkit-5.7.1 printsupport
 >=x11-libs/wxGTK-3.0.2.0-r2 opengl
 >=dev-python/wxpython-3.0.2.0 opengl
+>=x11-base/xorg-server-1.19.5 wayland
+>=media-libs/mesa-17.0.6 wayland gles2

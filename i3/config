@@ -13,8 +13,8 @@
 #gaps inner 10
 #gaps outer 10
 
-# borders
-new_window none
+# titles
+#new_window none
 
 # defining variable
 set $mod mod4
