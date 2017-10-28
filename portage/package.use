@@ -251,3 +251,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=dev-python/wxpython-3.0.2.0 opengl
 >=x11-base/xorg-server-1.19.5 wayland
 >=media-libs/mesa-17.0.6 wayland gles2
+>=sys-libs/libselinux-2.7 python
+>=sys-libs/libsemanage-2.7 python

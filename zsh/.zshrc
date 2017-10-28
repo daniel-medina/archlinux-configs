@@ -4,7 +4,7 @@ export BROWSER=firefox
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
-export XDG_RUNTIME_DIR=/tmp
+#export XDG_RUNTIME_DIR=/tmp
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
