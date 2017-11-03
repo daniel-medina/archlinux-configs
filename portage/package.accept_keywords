@@ -131,3 +131,6 @@
 =net-misc/rtv-1.13.0 ~amd64
 =dev-libs/sway-0.14.0 ~amd64
 =dev-libs/wlc-0.0.10 ~amd64
+=x11-plugins/pidgin-window_merge-0.3 ~amd64
+=dev-libs/libgaminggear-0.15.1 ~amd64
+=sys-apps/roccat-tools-5.7.0 ~amd64

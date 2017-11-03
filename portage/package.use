@@ -1,7 +1,8 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
-dev-libs/sway swaybar swaylock swaygrab swaybg swaymsg
+dev-libs/sway swaybar swaylock swaygrab swaybg sway
+sys-apps/roccat-tools roccat_konextd
 www-plugins/adobe-flash nsplugin
 dev-lang/php gd
 dev-lang/python tk
