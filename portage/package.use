@@ -254,3 +254,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=media-libs/mesa-17.0.6 wayland gles2
 >=sys-libs/libselinux-2.7 python
 >=sys-libs/libsemanage-2.7 python
+>=dev-libs/xmlsec-1.2.24-r1 nss
+>=dev-lang/python-3.4.5:3.4 sqlite

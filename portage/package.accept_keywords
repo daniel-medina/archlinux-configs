@@ -26,7 +26,7 @@
 =net-print/cnijfilter-drivers-3.80 ~amd64
 =net-print/cups-2.2.3 ~amd64
 =dev-lang/python-3.5.3 ~amd64
-=net-misc/youtube-dl-2017.09.15 ~amd64
+=net-misc/youtube-dl-2017.11.06 ~amd64
 =dev-python/setuptools-35.0.2 ~amd64
 =sci-mathematics/geogebra-5.0.339.0_p20170308 ~amd64
 =dev-java/gradle-bin-3.4.1 ~amd64
@@ -35,7 +35,7 @@
 =app-eselect/eselect-electron-1.0.0 ~amd64
 =x11-plugins/pidgin-skypeweb-1.4 ~amd64
 =x11-plugins/pidgin-opensteamworks-1.6.1 ~amd64
-=www-client/firefox-56.0 ~amd64
+=www-client/firefox-57.0 ~amd64
 =www-client/palemoon-27.3.0 ~amd64
 =www-client/palemoon-bin-27.3.0 ~amd64
 =app-emulation/genymotion-bin-2.9.0-r1 ~amd64
@@ -134,3 +134,10 @@
 =x11-plugins/pidgin-window_merge-0.3 ~amd64
 =dev-libs/libgaminggear-0.15.1 ~amd64
 =sys-apps/roccat-tools-5.7.0 ~amd64
+=sys-devel/llvm-common-5.0.0 ~amd64
+=sys-devel/clang-5.0.0 ~amd64
+=sys-libs/libomp-5.0.0 ~amd64
+=sys-devel/clang-runtime-5.0.0 ~amd64
+=sys-libs/compiler-rt-5.0.0 ~amd64
+=sys-libs/compiler-rt-sanitizers-5.0.0 ~amd64
+=sys-devel/llvm-5.0.0 ~amd64
