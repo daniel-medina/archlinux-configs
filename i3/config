@@ -49,7 +49,7 @@ set $WS19 19
 set $WS20 20
 
 # quick applications launch
-bindsym $mod+b exec firefox
+bindsym $mod+b exec chromium
 bindsym $mod+t exec urxvt -e ranger
 
 # default window modes
