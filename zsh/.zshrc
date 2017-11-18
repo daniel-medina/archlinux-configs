@@ -32,16 +32,16 @@ fi
 alias vim="nvim"
 
 # Personal wiki
-alias pwiki="vim ~/symlink/knowledge/repository/personal-wiki/main.wiki"
-alias pwiki-push="cd ~/symlink/knowledge/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias pwiki-pull="cd ~/symlink/knowledge/repository/personal-wiki && git pull && cd ~/"
+alias pwiki="vim ~/development/repository/personal-wiki/main.wiki"
+alias pwiki-push="cd ~/development/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias pwiki-pull="cd ~/development/repository/personal-wiki && git pull && cd ~/"
 
 # Wine prefixes
 alias wine-prefix-office="WINEPREFIX=~/.wine-office WINEARCH=win32"
 
 # Dotfiles
-alias dots-push="cd ~/symlink/knowledge/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias dots-pull="cd ~/symlink/knowledge/repository/dotfiles && git pull && cd ~/"
+alias dots-push="cd ~/development/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/development/repository/dotfiles && git pull && cd ~/"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
@@ -62,10 +62,10 @@ alias wileyfox-mount="simple-mtpfs /media/usb/android"
 alias wileyfox-umount="sudo umount /media/usb/android"
 
 # Development
-alias repository="cd ~/symlink/knowledge/repository"
-alias website="cd ~/symlink/knowledge/repository/website"
-alias study="cd ~/symlink/knowledge/repository/study"
-alias freelance="cd ~/symlink/knowledge/repository/freelance/social-media-widget"
+alias repository="cd ~/development/repository"
+alias website="cd ~/development/repository/website"
+alias study="cd ~/development/repository/study"
+alias freelance="cd ~/development/repository/freelance"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"

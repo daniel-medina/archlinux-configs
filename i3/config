@@ -53,7 +53,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+t exec urxvt -e ranger
 
 # default window modes
-for_window [class="Keepassx"] floating enable, sticky toggle, move window to scratchpad, scratchpad show
+for_window [class="keepassxc"] floating enable, sticky toggle, move window to scratchpad, scratchpad show
 for_window [class="pop-up"] floating enable
 
 # wallpaper
