@@ -5,7 +5,7 @@
 =x11-wm/i3-gaps-4.13 ~amd64
 =media-plugins/imlib2_loaders-1.4.8 ~amd64
 =x11-themes/paper-icon-theme-20151211 ~amd64
-=net-libs/nodejs-8.5.0 ~amd64
+=net-libs/nodejs-8.9.2 ~amd64
 =dev-libs/libuv-1.11.0 ~amd64
 =media-libs/libpng-1.6.29 ~amd64
 =x11-themes/iris-light-9999 **
