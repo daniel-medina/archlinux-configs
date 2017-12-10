@@ -37,7 +37,10 @@ alias pwiki-push="cd ~/development/repository/personal-wiki && git add -A && git
 alias pwiki-pull="cd ~/development/repository/personal-wiki && git pull && cd ~/"
 
 # Wine prefixes
-alias wine-prefix-office="WINEPREFIX=~/.wine-office WINEARCH=win32"
+alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
+
+# Wine games
+alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
 
 # Dotfiles
 alias dots-push="cd ~/development/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
@@ -98,7 +101,7 @@ alias install="sudo emerge --ask"
 alias uninstall="sudo emerge -C --ask"
 alias update-system="sudo emerge --ask --update --newuse --deep --with-bdeps=y @world"
 alias update-flags="sudo emerge --ask --update --changed-use --deep @world"
-alias update-clean="sudo emerge --ask -av --depclean"
+alias emerge-depclean="sudo emerge --ask -av --depclean"
 alias vsudo="sudo nvim"
 
 # files

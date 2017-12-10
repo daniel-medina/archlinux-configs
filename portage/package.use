@@ -1,6 +1,9 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+x11-misc/lemonbar xft
+app-text/asciidoc python_single_target_python2_7
+net-irc/weechat python_targets_python3_5
 dev-libs/sway swaybar swaylock swaygrab swaybg sway
 sys-apps/roccat-tools roccat_konextd
 www-plugins/adobe-flash nsplugin
@@ -8,8 +11,7 @@ dev-lang/php gd
 dev-lang/python tk
 media-gfx/sane-backends usb canon pixma
 mail-client/thunderbird crypt pulseaudio rust
-app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner
-net-vpn/openvpn libressl
+app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner abi_x86_32
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
 app-portage/layman mercurial
@@ -121,7 +123,6 @@ app-office/libreoffice pdfimport
 app-office/libreoffice cpus
 net-print/cnijfilter-drivers servicetools
 net-print/cnijfilter-drivers mg3200
-dev-vcs/git libressl
 dev-vcs/git curl
 dev-vcs/git libsecret
 dev-vcs/git ppcsha1
@@ -255,4 +256,6 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=sys-libs/libselinux-2.7 python
 >=sys-libs/libsemanage-2.7 python
 >=dev-libs/xmlsec-1.2.24-r1 nss
->=dev-lang/python-3.4.5:3.4 sqlite
+>=dev-lang/python-3.5.4:3.5 sqlite
+>=dev-python/setuptools-35.0.2 python_targets_python3_4
+>=dev-lang/python-3.4.5-r1:3.4 sqlite
