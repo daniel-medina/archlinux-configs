@@ -2,6 +2,7 @@
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
 x11-misc/lemonbar xft
+media-video/ffmpeg vaapi vdpau amr amrenc bluray bs2b cdio celt jack mp3 modplug openh264
 app-text/asciidoc python_single_target_python2_7
 net-irc/weechat python_targets_python3_5
 dev-libs/sway swaybar swaylock swaygrab swaybg sway
@@ -11,7 +12,7 @@ dev-lang/php gd
 dev-lang/python tk
 media-gfx/sane-backends usb canon pixma
 mail-client/thunderbird crypt pulseaudio rust
-app-emulation/wine cups fontconfig jpg mono openal opencl opengl samba scanner abi_x86_32
+app-emulation/wine-any cups fontconfig jpg mono openal opencl opengl samba scanner abi_x86_32
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
 app-portage/layman mercurial
@@ -25,65 +26,7 @@ app-editors/emacs -gtk
 media-libs/libpng apng
 x11-base/xorg-server glamor
 x11-libs/cairo xcb
-media-sound/cmus aac
-media-sound/cmus pulseaudio
-media-sound/cmus alsa
-media-sound/cmus cddb
-media-sound/cmus cdio
-media-sound/cmus ffmpeg
-media-sound/cmus jack
-media-sound/cmus opus
-media-sound/cmus vorbis
-media-sound/cmus wavpack
-dev-db/sqlite abi_x86_32
-dev-libs/expat abi_x86_32
-dev-libs/glib abi_x86_32
-dev-libs/libffi abi_x86_32
-dev-libs/libpthread-stubs abi_x86_32
-dev-libs/nspr abi_x86_32
-dev-libs/nss abi_x86_32
-dev-util/pkgconfig abi_x86_32
-media-libs/libtxc_dxtn abi_x86_32
-media-libs/mesa abi_x86_32
-net-misc/curl abi_x86_32
-sys-devel/llvm abi_x86_32
-sys-fs/udev abi_x86_32
-sys-libs/gpm abi_x86_32
-sys-libs/ncurses abi_x86_32
-sys-libs/readline abi_x86_32
-sys-libs/zlib abi_x86_32
-virtual/libffi abi_x86_32
-virtual/libiconv abi_x86_32
-virtual/libudev abi_x86_32
-virtual/pkgconfig abi_x86_32
-x11-libs/gdk-pixbuf abi_x86_32
-x11-libs/gtk+:2 abi_x86_32
-x11-libs/libdrm abi_x86_32
-x11-libs/libpciaccess abi_x86_32
-x11-libs/libX11 abi_x86_32
-x11-libs/libXau abi_x86_32
-x11-libs/libxcb abi_x86_32
-x11-libs/libXdamage abi_x86_32
-x11-libs/libXdmcp abi_x86_32
-x11-libs/libXext abi_x86_32
-x11-libs/libXfixes abi_x86_32
-x11-libs/libXScrnSaver abi_x86_32
-x11-libs/libxshmfence abi_x86_32
-x11-libs/libXxf86vm abi_x86_32
-x11-proto/damageproto abi_x86_32
-x11-proto/dri2proto abi_x86_32
-x11-proto/dri3proto abi_x86_32
-x11-proto/fixesproto abi_x86_32
-x11-proto/glproto abi_x86_32
-x11-proto/inputproto abi_x86_32
-x11-proto/kbproto abi_x86_32
-x11-proto/presentproto abi_x86_32
-x11-proto/xcb-proto abi_x86_32
-x11-proto/xextproto abi_x86_32
-x11-proto/xf86bigfontproto abi_x86_32
-x11-proto/xf86driproto abi_x86_32
-x11-proto/xf86vidmodeproto abi_x86_32
-x11-proto/xproto abi_x86_32
+media-sound/cmus aac pusleaudio alsa cddb cdio ffmpeg jack opus vorbis wavpack mp4 musepack modplug
 x11-misc/compton opengl drm
 app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa virtfs gtk -pulseaudio
 app-emulation/virt-manager gtk
@@ -195,7 +138,6 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=net-misc/spice-gtk-0.31 usbredir gtk3
 >=net-libs/gtk-vnc-0.6.0 python
 >=media-video/libav-11.8 vaapi threads vdpau
->=media-video/ffmpeg-3.2.4 vaapi vdpau
 >=sys-auth/consolekit-1.1.0-r1 policykit
 >=dev-libs/glib-2.50.3-r1 dbus
 >=net-dns/dnsmasq-2.76-r1 script
@@ -259,3 +201,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=dev-lang/python-3.5.4:3.5 sqlite
 >=dev-python/setuptools-35.0.2 python_targets_python3_4
 >=dev-lang/python-3.4.5-r1:3.4 sqlite
+>=app-crypt/pinentry-1.0.0-r2 gnome-keyring
+>=app-editors/vim-8.0.1298 -python_single_target_python3_4 python_single_target_python2_7

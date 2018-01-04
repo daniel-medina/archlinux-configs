@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export BROWSER=firefox
+export BROWSER=chromium
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
@@ -53,12 +53,12 @@ alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && 
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
 # Portage
-alias portage-use="sudo vim /etc/portage/package.use"
-alias portage-accept-keywords="sudo vim /etc/portage/package.accept_keywords"
-alias portage-keywords="sudo vim /etc/portage/package.keywords"
-alias portage-mask="sudo vim /etc/portage/package.mask"
-alias portage-unmask="sudo vim /etc/portage/package.unmask"
-alias portage-license="sudo vim /etc/portage/package.license"
+alias portage-use="sudo nvim /etc/portage/package.use"
+alias portage-accept-keywords="sudo nvim /etc/portage/package.accept_keywords"
+alias portage-keywords="sudo nvim /etc/portage/package.keywords"
+alias portage-mask="sudo nvim /etc/portage/package.mask"
+alias portage-unmask="sudo nvim /etc/portage/package.unmask"
+alias portage-license="sudo nvim /etc/portage/package.license"
 
 # Devices
 alias wileyfox-mount="simple-mtpfs /media/usb/android"

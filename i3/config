@@ -23,7 +23,7 @@ set $mod mod4
 bindsym $mod+c sticky toggle
 
 # default workspace layout
-workspace_layout tabbed
+workspace_layout default
 
 # setting up workspaces
 set $WS1 1
@@ -49,7 +49,7 @@ set $WS19 19
 set $WS20 20
 
 # quick applications launch
-bindsym $mod+b exec firefox
+bindsym $mod+b exec chromium
 bindsym $mod+t exec urxvt -e ranger
 
 # default window modes
@@ -81,8 +81,8 @@ floating_modifier $mod
 floating_minimum_size 500 x 200
 
 # defining borders
-new_float pixel 2
-new_window pixel 2
+new_float pixel 3
+new_window pixel 3
 
 # removing edge borders
 #hide_edge_borders both
