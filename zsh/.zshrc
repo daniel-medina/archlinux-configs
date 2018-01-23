@@ -32,9 +32,9 @@ fi
 alias vim="nvim"
 
 # Personal wiki
-alias pwiki="vim ~/development/repository/personal-wiki/main.wiki"
-alias pwiki-push="cd ~/development/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias pwiki-pull="cd ~/development/repository/personal-wiki && git pull && cd ~/"
+alias pwiki="vim ~/repository/personal-wiki/main.wiki"
+alias pwiki-push="cd ~/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias pwiki-pull="cd ~/repository/personal-wiki && git pull && cd ~/"
 
 # Wine prefixes
 alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
@@ -43,8 +43,8 @@ alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
 alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
 
 # Dotfiles
-alias dots-push="cd ~/development/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias dots-pull="cd ~/development/repository/dotfiles && git pull && cd ~/"
+alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
@@ -65,10 +65,10 @@ alias wileyfox-mount="simple-mtpfs /media/usb/android"
 alias wileyfox-umount="sudo umount /media/usb/android"
 
 # Development
-alias repository="cd ~/development/repository"
-alias website="cd ~/development/repository/website"
-alias study="cd ~/development/repository/study"
-alias freelance="cd ~/development/repository/freelance"
+alias repository="cd ~/repository"
+alias website="cd ~/repository/website"
+alias study="cd ~/repository/study"
+alias freelance="cd ~/repository/freelance"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
