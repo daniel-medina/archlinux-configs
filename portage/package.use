@@ -10,7 +10,7 @@ dev-libs/sway swaybar swaylock swaygrab swaybg sway
 sys-apps/roccat-tools roccat_konextd
 www-plugins/adobe-flash nsplugin
 dev-lang/php gd
-dev-lang/python tk
+dev-lang/python tk wininst
 media-gfx/sane-backends usb canon pixma
 mail-client/thunderbird crypt pulseaudio rust
 app-emulation/wine-any cups fontconfig jpg mono openal opencl opengl samba scanner abi_x86_32

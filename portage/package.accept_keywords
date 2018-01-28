@@ -81,7 +81,7 @@
 =dev-ruby/pdf-reader-2.0.0 ~amd64
 =dev-ruby/ttfunk-1.5.1 ~amd64
 =dev-ruby/ascii85-1.0.2-r2 ~amd64
-=sys-kernel/gentoo-sources-4.12.0 ~amd64
+=sys-kernel/gentoo-sources-4.14.15 ~amd64
 =media-sound/cava-0.4.2 ~amd64
 =dev-ruby/net-telnet-0.1.1-r1 ~amd64
 =media-gfx/w3mimgfb-0.9.1 ~amd64
