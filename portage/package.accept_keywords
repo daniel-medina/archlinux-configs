@@ -6,7 +6,7 @@
 =x11-wm/i3-gaps-4.13 ~amd64
 =media-plugins/imlib2_loaders-1.4.8 ~amd64
 =x11-themes/paper-icon-theme-20151211 ~amd64
-=net-libs/nodejs-9.3.0 ~amd64
+=net-libs/nodejs-9.5.0 ~amd64
 =dev-libs/libuv-1.11.0 ~amd64
 =media-libs/libpng-1.6.29 ~amd64
 =x11-themes/iris-light-9999 **
@@ -36,7 +36,7 @@
 =app-eselect/eselect-electron-1.0.0 ~amd64
 =x11-plugins/pidgin-skypeweb-1.4 ~amd64
 =x11-plugins/pidgin-opensteamworks-1.6.1 ~amd64
-=www-client/firefox-57.0.4 ~amd64
+=www-client/firefox-58.0.1 ~amd64
 =www-client/palemoon-27.3.0 ~amd64
 =www-client/palemoon-bin-27.3.0 ~amd64
 =app-emulation/genymotion-bin-2.9.0-r1 ~amd64
@@ -47,7 +47,7 @@
 =dev-libs/libvterm-0.0_pre20160305 ~amd64
 =app-editors/neovim-0.2.0 ~amd64
 =dev-lua/lpeg-1.0.1 ~amd64
-=app-office/upwork-4.1.134 ~amd64
+=app-office/upwork-4.2.153 ~amd64
 =dev-libs/libgcrypt-1.5.6-r101 ~amd64
 =app-emulation/qemu-2.10.0 ~amd64
 =sys-firmware/seabios-1.10.2 ~amd64
@@ -60,7 +60,7 @@
 =sci-libs/opencascade-6.9.1-r2 ~amd64
 =dev-python/neovim-python-client-0.1.13 ~amd64
 =dev-libs/nspr-4.15 ~amd64
-=dev-lang/rust-1.16.0 ~amd64
+=dev-lang/rust-1.23.0-r1 ~amd64
 =dev-util/cargo-0.17.0 ~amd64
 =dev-libs/nss-3.31 ~amd64
 =app-vim/youcompleteme-20130910 ~amd64
@@ -111,7 +111,7 @@
 =app-emulation/wine-vanilla-3.0 ~amd64
 =net-news/feedreader-2.0.2-r1 ~amd64
 =dev-libs/libuv-1.14.1 ~amd64
-=net-libs/nghttp2-1.25.0 ~amd64
+=net-libs/nghttp2-1.30.0 ~amd64
 =media-fonts/fantasque-sans-mono-2014.07 ~amd64
 =dev-python/pypeg2-2.15.2 ~amd64
 =www-client/qutebrowser-0.9.1 ~amd64
@@ -119,9 +119,9 @@
 =x11-terms/rxvt-unicode-9.22-r1 ~amd64
 =app-misc/ranger-1.9.0_beta5 ~amd64
 =dev-libs/nss-3.33 ~amd64
-=virtual/rust-1.19.0 ~amd64
+=virtual/rust-1.23.0 ~amd64
 =dev-libs/nspr-4.17 ~amd64
-=dev-util/cargo-0.21.0 ~amd64
+=dev-util/cargo-0.24.0 ~amd64
 =dev-lang/rust-1.19.0 ~amd64
 =media-libs/libpng-1.6.34 ~amd64
 =dev-python/update-checker-0.15 ~amd64
