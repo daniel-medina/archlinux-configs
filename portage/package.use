@@ -2,6 +2,8 @@
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
 x11-misc/lemonbar xft
+media-libs/sdl-mixer smpeg midi timidity
+media-libs/sdl2-mixer smpeg midi timidity
 games-emulation/pcsxr pulseaudio -sdl -alsa
 media-video/ffmpeg vaapi vdpau amr amrenc bluray bs2b cdio celt jack mp3 modplug openh264
 app-text/asciidoc python_single_target_python2_7
