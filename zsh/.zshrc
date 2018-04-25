@@ -70,6 +70,12 @@ alias website="cd ~/development/repository/website"
 alias study="cd ~/development/repository/study"
 alias freelance="cd ~/development/repository/freelance"
 
+# Repositories
+alias freelance-push="cd ~/development/repository/freelance && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias freelance-pull="cd ~/development/repository/freelance && git pull && cd ~/"
+alias study-push="cd ~/development/repository/study && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias study-pull="cd ~/development/repository/study && git pull && cd ~/"
+
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
 

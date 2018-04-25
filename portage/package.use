@@ -1,6 +1,7 @@
 # -------------------------------------------------------------------------------- #
 # >> USE flags here
 # -------------------------------------------------------------------------------- #
+www-client/firefox pulseaudio hwaccel
 x11-misc/lemonbar xft
 media-libs/sdl-mixer smpeg midi timidity
 media-libs/sdl2-mixer smpeg midi timidity
@@ -64,9 +65,7 @@ app-emulation/libvirt fuse
 app-emulation/libvirt firewalld
 net-firewall/ipset bindist
 net-firewall/ipset -modules
-app-office/libreoffice gtk3
-app-office/libreoffice pdfimport
-app-office/libreoffice cpus
+app-office/libreoffice gtk3 pdfimport cpus java
 net-print/cnijfilter-drivers servicetools
 net-print/cnijfilter-drivers mg3200
 dev-vcs/git curl
@@ -206,3 +205,5 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=dev-lang/python-3.4.5-r1:3.4 sqlite
 >=app-crypt/pinentry-1.0.0-r2 gnome-keyring
 >=app-editors/vim-8.0.1298 -python_single_target_python3_4 python_single_target_python2_7
+>=dev-libs/libpcre2-10.30 pcre16
+>=dev-dotnet/libgdiplus-4.2-r3 cairo

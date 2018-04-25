@@ -1,4 +1,6 @@
-=www-client/firefox-59.0.2 ~amd64
+=dev-util/meson-0.45.1 ~amd64
+=dev-libs/libinput-1.10.3 ~amd64
+=www-client/firefox-59.0.1 ~amd64
 =x11-misc/rofi-1.3.1 ~amd64
 =media-video/ffmpeg-3.4 ~amd64
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
@@ -7,7 +9,7 @@
 =x11-wm/i3-4.15 ~amd64
 =media-plugins/imlib2_loaders-1.4.8 ~amd64
 =x11-themes/paper-icon-theme-20151211 ~amd64
-=net-libs/nodejs-9.8.0 ~amd64
+=net-libs/nodejs-9.10.0 ~amd64
 =dev-libs/libuv-1.11.0 ~amd64
 =media-libs/libpng-1.6.29 ~amd64
 =x11-themes/iris-light-9999 **
@@ -80,7 +82,7 @@
 =dev-ruby/pdf-reader-2.0.0 ~amd64
 =dev-ruby/ttfunk-1.5.1 ~amd64
 =dev-ruby/ascii85-1.0.2-r2 ~amd64
-=sys-kernel/gentoo-sources-4.14.15 ~amd64
+=sys-kernel/gentoo-sources-4.15.14 ~amd64
 =media-sound/cava-0.4.2 ~amd64
 =dev-ruby/net-telnet-0.1.1-r1 ~amd64
 =media-gfx/w3mimgfb-0.9.1 ~amd64
@@ -121,7 +123,6 @@
 =virtual/rust-1.23.0 ~amd64
 =dev-libs/nspr-4.17 ~amd64
 =dev-util/cargo-0.24.0 ~amd64
-=dev-lang/rust-1.19.0 ~amd64
 =media-libs/libpng-1.6.34 ~amd64
 =dev-python/update-checker-0.15 ~amd64
 =dev-python/mailcap-fix-0.2.0 ~amd64
@@ -152,3 +153,8 @@
 =dev-libs/nss-3.34.1 ~amd64
 =games-emulation/pcsxr-1.9.94-r2 ~amd64
 =dev-libs/libuv-1.19.2 ~amd64
+=dev-libs/nspr-4.19 ~amd64
+=dev-libs/nss-3.36 ~amd64
+=app-crypt/argon2-20171227 ~amd64
+=app-admin/keepassxc-2.3.1 ~amd64
+=media-gfx/gscan2pdf-1.8.11 ~amd64
