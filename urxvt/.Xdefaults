@@ -8,10 +8,11 @@ Xft.hinting:    true
 Xft.hintstyle:  hintfull
 
 !URxvt*geometry:         112x22  
-URxvt*font:            xft:xos4 Terminess Powerline:style=Bold:size=10
+URxvt*font:            xft:TamzenForPowerline:style=Regular:size=10
 URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
-
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 URxvt.shading:       50
