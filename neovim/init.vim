@@ -154,6 +154,7 @@ NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'lervag/vimtex'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'ianks/vim-tsx'
 
 call neobundle#end()
 filetype plugin indent on

@@ -20,6 +20,7 @@ vim-javascript
 vim-jsx
 vim-pug
 vim-snippets
+vim-tsx
 vim-vue
 vimtex
 vimwiki
