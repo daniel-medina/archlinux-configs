@@ -1,9 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/bin/game:/usr/local/bin:$PATH
+export WINEPREFIX=$HOME/.wine
 export BROWSER=chromium
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
+export DXVK_FAKE_DX10_SUPPORT=1
 #export XDG_RUNTIME_DIR=/tmp
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
@@ -53,12 +55,12 @@ alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && 
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
 # Portage
-alias portage-use="sudo nvim /etc/portage/package.use"
-alias portage-accept-keywords="sudo nvim /etc/portage/package.accept_keywords"
-alias portage-keywords="sudo nvim /etc/portage/package.keywords"
-alias portage-mask="sudo nvim /etc/portage/package.mask"
-alias portage-unmask="sudo nvim /etc/portage/package.unmask"
-alias portage-license="sudo nvim /etc/portage/package.license"
+alias portage-use="nvim /etc/portage/package.use"
+alias portage-accept-keywords="nvim /etc/portage/package.accept_keywords"
+alias portage-keywords="nvim /etc/portage/package.keywords"
+alias portage-mask="nvim /etc/portage/package.mask"
+alias portage-unmask="nvim /etc/portage/package.unmask"
+alias portage-license="nvim /etc/portage/package.license"
 
 # Devices
 alias wileyfox-mount="simple-mtpfs /media/usb/android"
@@ -68,13 +70,12 @@ alias wileyfox-umount="sudo umount /media/usb/android"
 alias repository="cd ~/development/repository"
 alias website="cd ~/development/repository/website"
 alias study="cd ~/development/repository/study"
-alias freelance="cd ~/development/repository/freelance"
+alias factory="cd ~/development/factory"
+alias freelance="cd ~/development/factory/freelance"
 
 # Repositories
-alias freelance-push="cd ~/development/repository/freelance && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias freelance-pull="cd ~/development/repository/freelance && git pull && cd ~/"
-alias study-push="cd ~/development/repository/study && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias study-pull="cd ~/development/repository/study && git pull && cd ~/"
+alias factory-push="cd ~/development/factory && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias factory-pull="cd ~/development/factory && git pull && cd ~/"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"

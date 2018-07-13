@@ -1,6 +1,4 @@
-# -------------------------------------------------------------------------------- #
-# >> USE flags here
-# -------------------------------------------------------------------------------- #
+# USE flags - unrestricted {{{
 www-client/firefox pulseaudio hwaccel
 x11-misc/lemonbar xft
 media-libs/sdl-mixer smpeg midi timidity
@@ -19,14 +17,11 @@ mail-client/thunderbird crypt pulseaudio rust
 app-emulation/wine-any cups fontconfig jpg mono openal opencl opengl samba scanner abi_x86_32
 net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
-app-portage/layman mercurial
+app-portage/layman mercurial sync-plugin-portage git
 sys-firmware/seabios seavgabios
-net-libs/nodejs npm
-net-libs/nodejs ssl
-net-libs/nodejs snapshot
+net-libs/nodejs npm ssl snapshot
 app-emulation/virt-viewer vnc
-app-editors/emacs -X
-app-editors/emacs -gtk
+app-editors/emacs -X -gtk
 media-libs/libpng apng
 x11-base/xorg-server glamor
 x11-libs/cairo xcb
@@ -34,84 +29,25 @@ media-sound/cmus aac pusleaudio alsa cddb cdio ffmpeg jack opus vorbis wavpack m
 x11-misc/compton opengl drm
 app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa virtfs gtk -pulseaudio
 app-emulation/virt-manager gtk
-media-video/mpv X
-media-video/mpv archive
-media-video/mpv cli
-media-video/mpv encode
-media-video/mpv gbm
-media-video/mpv egl
-media-video/mpv dvd
-media-video/mpv dvb
-media-video/mpv iconv
-media-video/mpv libass
-media-video/mpv libmpv
-media-video/mpv libcaca
-media-video/mpv opengl
-media-video/mpv oss
-media-video/mpv openal
-media-video/mpv luajit
-media-video/mpv vaapi
-media-video/mpv vdpau
-media-video/mpv xv
-media-video/mpv zsh-completion
-media-video/mpv drm
-media-video/mpv lua
-app-emulation/libvirt qemu
-app-emulation/libvirt virt-network
-app-emulation/libvirt macvtp
-app-emulation/libvirt libvirtd
-app-emulation/libvirt libssh
-app-emulation/libvirt fuse
-app-emulation/libvirt firewalld
+media-video/mpv X archive cli encode gbm egl dvd dvb iconv libass libmpv libcaca opengl openal luajit vaapi vdpau xv zsh-completion drm lua
+app-emulation/libvirt qemu virt-network macvtp libvirtd libssh fuse firewalld
 net-firewall/ipset bindist
 net-firewall/ipset -modules
 app-office/libreoffice gtk3 pdfimport cpus java
 net-print/cnijfilter-drivers servicetools
 net-print/cnijfilter-drivers mg3200
-dev-vcs/git curl
-dev-vcs/git libsecret
-dev-vcs/git ppcsha1
-dev-vcs/git tk
-dev-vcs/git xinetd
+dev-vcs/git curl libsecret ppcsha1 tk xinetd
 app-office/libreoffice-l10n fr
 app-admin/system-config-printer policykit
 app-admin/system-config-printer fr
 app-admin/system-config-printer gnome-keyring
-net-print/cups java
-net-print/cups acl
-net-print/cups dbus
-net-print/cups kerberos
-net-print/cups usb
-net-print/cups zeroconf
-net-print/cups static-libs
-net-print/cups xinetd
-app-text/ghostscript-gpl cups
-app-text/ghostscript-gpl dbus
-app-text/ghostscript-gpl idn
-app-text/ghostscript-gpl static-libs
-app-text/ghostscript-gpl tiff
-net-print/gutenprint cups
-net-print/gutenprint ppds
-net-print/gutenprint nls
-net-print/gutenprint nls
-net-print/gutenprint gimp
-net-print/gutenprint static-libs
-net-print/gutenprint gimp
-net-print/gutenprint gtk
-dev-lang/python ncurses
-dev-lang/python ssl
-x11-drivers/xf86-video-intel sna
-x11-drivers/xf86-video-intel uxa
-x11-drivers/xf86-video-intel dri
-x11-drivers/xf86-video-intel xvmc
+net-print/cups acl dbus kerberos usb zeroconf static-libs xinetd
+app-text/ghostscript-gpl cups dbus idn static-libs tiff
+net-print/gutenprint cups ppds nls gimp static-libs gtk
+dev-lang/python ssl sqlite ncurses
 media-sound/audacity ffmpeg
 app-text/qpdfview pdf
 app-text/qpdfview cups
-www-client/palemoon gtk2
-www-client/palemoon pulseaudio
-www-client/palemoon -alsa
-www-client/palemoon dbus
-www-client/palemoon spell
 x11-misc/polybar i3wm
 app-editors/neovim clipboard nvimpager tui python
 media-libs/libsdl -pulseaudio
@@ -126,10 +62,17 @@ mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl
 www-client/w3m imlib
 net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
-
-# -------------------------------------------------------------------------------- #
-# >> dependencies here
-# -------------------------------------------------------------------------------- #
+media-libs/mesa classic gallium
+games-util/steam-launcher steamruntime
+cross-x86_64-w64-mingw32/mingw64-runtime -sanitize -multilib
+cross-x86_64-w64-mingw32/gcc -sanitize -multilib
+cross-x86_64-w64-mingw32/binutils -sanitize -multilib 
+media-libs/vulkan-loader demos layers
+net-misc/meganz-sdk qt libuv
+net-nds/openldap gnutls
+media-libs/imlib2 jpeg png nls tiff
+# }}}
+# USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
 >=dev-lang/python-2.7.12:2.7 sqlite
 >=x11-libs/gdk-pixbuf-2.36.6 tiff jpeg
@@ -182,10 +125,8 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=app-arch/unzip-6.0_p20 natspec
 >=dev-libs/DirectFB-1.7.6 fbcon
 >=app-crypt/pinentry-0.9.7-r1 gtk
->=media-libs/mesa-17.0.6 d3d9
 >=dev-libs/elfutils-0.169-r1 static-libs
 >=net-fs/samba-4.5.10-r1 winbind
->=media-libs/mesa-17.0.6 osmesa opencl
 >=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
 >=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
 >=app-crypt/libsecret-0.18.5 vala
@@ -196,7 +137,6 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=x11-libs/wxGTK-3.0.2.0-r2 opengl
 >=dev-python/wxpython-3.0.2.0 opengl
 >=x11-base/xorg-server-1.19.5 wayland
->=media-libs/mesa-17.0.6 wayland gles2
 >=sys-libs/libselinux-2.7 python
 >=sys-libs/libsemanage-2.7 python
 >=dev-libs/xmlsec-1.2.24-r1 nss
@@ -207,3 +147,100 @@ net-fs/nfs-utils nfsv4 nfsv41 libmount nfsdcld nfsidmap
 >=app-editors/vim-8.0.1298 -python_single_target_python3_4 python_single_target_python2_7
 >=dev-libs/libpcre2-10.30 pcre16
 >=dev-dotnet/libgdiplus-4.2-r3 cairo
+>=x11-libs/libxcb-1.13 xkb
+app-emulation/wine-vanilla vulkan
+app-emulation/wine-staging vulkan
+# }}}
+# Multilib USE requirements {{{
+x11-libs/libX11 abi_x86_32
+x11-libs/libXext abi_x86_32
+x11-libs/libxcb abi_x86_32
+x11-proto/xproto abi_x86_32
+x11-proto/xf86bigfontproto abi_x86_32
+x11-proto/inputproto abi_x86_32
+x11-proto/kbproto abi_x86_32
+x11-proto/xextproto abi_x86_32
+dev-libs/libpthread-stubs abi_x86_32
+x11-libs/libXau abi_x86_32
+x11-libs/libXdmcp abi_x86_32
+x11-base/xcb-proto abi_x86_32
+sys-libs/zlib abi_x86_32
+virtual/opengl abi_x86_32
+media-libs/mesa abi_x86_32
+dev-libs/expat abi_x86_32
+x11-libs/libxshmfence abi_x86_32
+x11-libs/libXdamage abi_x86_32
+x11-libs/libXxf86vm abi_x86_32
+x11-libs/libXfixes abi_x86_32
+dev-libs/wayland abi_x86_32
+x11-libs/libdrm abi_x86_32
+sys-devel/clang abi_x86_32
+sys-devel/llvm abi_x86_32
+sys-libs/ncurses abi_x86_32
+x11-proto/fixesproto abi_x86_32
+x11-proto/xf86vidmodeproto abi_x86_32
+x11-proto/damageproto abi_x86_32
+virtual/libffi abi_x86_32
+dev-libs/libffi abi_x86_32
+virtual/libelf abi_x86_32
+dev-libs/elfutils abi_x86_32
+app-arch/bzip2 abi_x86_32
+x11-libs/libvdpau abi_x86_32
+x11-libs/libXcursor abi_x86_32
+x11-libs/libXrandr abi_x86_32
+x11-libs/libXi abi_x86_32
+media-libs/alsa-lib abi_x86_32
+media-libs/fontconfig abi_x86_32
+media-libs/lcms abi_x86_32
+sys-devel/gettext abi_x86_32
+media-libs/libpng abi_x86_32
+media-sound/pulseaudio abi_x86_32
+net-libs/gnutls abi_x86_32
+sys-apps/attr abi_x86_32
+media-libs/freetype abi_x86_32
+sys-apps/dbus abi_x86_32
+x11-libs/libXcomposite abi_x86_32
+dev-libs/libxml2 abi_x86_32
+dev-libs/libxslt abi_x86_32
+app-emulation/wine-gecko abi_x86_32
+dev-libs/libgcrypt abi_x86_32
+dev-libs/libgpg-error abi_x86_32
+dev-libs/icu abi_x86_32
+x11-proto/compositeproto abi_x86_32
+dev-libs/libtasn1 abi_x86_32
+dev-libs/libunistring abi_x86_32
+dev-libs/nettle abi_x86_32
+dev-libs/gmp abi_x86_32
+net-dns/libidn2 abi_x86_32
+media-libs/libsndfile abi_x86_32
+x11-libs/libSM abi_x86_32
+x11-libs/libICE abi_x86_32
+x11-libs/libXtst abi_x86_32
+sys-libs/libcap abi_x86_32
+dev-libs/glib abi_x86_32
+sys-apps/tcp-wrappers abi_x86_32
+net-libs/libasyncns abi_x86_32
+media-plugins/alsa-plugins abi_x86_32
+dev-libs/libpcre abi_x86_32
+sys-apps/util-linux abi_x86_32
+x11-proto/recordproto abi_x86_32
+media-libs/flac abi_x86_32
+media-libs/libogg abi_x86_32
+media-libs/libvorbis abi_x86_32
+x11-libs/libXrender abi_x86_32
+x11-proto/randrproto abi_x86_32
+x11-proto/renderproto abi_x86_32
+virtual/libintl abi_x86_32
+virtual/libiconv abi_x86_32
+virtual/pkgconfig abi_x86_32
+dev-util/pkgconfig abi_x86_32
+virtual/glu abi_x86_32
+media-libs/glu abi_x86_32
+virtual/jpeg abi_x86_32
+media-libs/libjpeg-turbo abi_x86_32
+media-libs/vulkan-loader abi_x86_32
+dev-util/glslang abi_x86_32
+dev-util/spirv-tools abi_x86_32
+x11-libs/libXvMC abi_x86_32
+x11-libs/libXv abi_x86_32
+# }}}
