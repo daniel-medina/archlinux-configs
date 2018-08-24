@@ -1,6 +1,5 @@
 # Specific version {{{
 app-editors/neovim ~amd64
-=dev-util/meson-0.45.1 ~amd64
 =media-video/ffmpeg-3.4 ~amd64
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
 =x11-misc/polybar-9999 **
@@ -27,7 +26,6 @@ app-editors/neovim ~amd64
 =net-print/cnijfilter-drivers-3.80 ~amd64
 =net-print/cups-2.2.3 ~amd64
 =dev-lang/python-3.5.3 ~amd64
-=net-misc/youtube-dl-2017.11.06 ~amd64
 =dev-python/setuptools-35.0.2 ~amd64
 =sci-mathematics/geogebra-5.0.339.0_p20170308 ~amd64
 =dev-java/gradle-bin-3.4.1 ~amd64
@@ -57,8 +55,6 @@ app-editors/neovim ~amd64
 =sci-libs/opencascade-6.9.1-r2 ~amd64
 =dev-python/neovim-python-client-0.1.13 ~amd64
 =dev-libs/nspr-4.15 ~amd64
-=dev-lang/rust-1.23.0 ~amd64
-=dev-lang/rust-1.23.0-r1 ~amd64
 =app-vim/youcompleteme-20130910 ~amd64
 =media-libs/openh264-1.6.0 ~amd64
 =media-gfx/openscad-2015.03_p2-r2 ~amd64
@@ -146,6 +142,8 @@ app-editors/neovim ~amd64
 =app-crypt/argon2-20171227 ~amd64
 =app-admin/keepassxc-2.3.1 ~amd64
 =media-gfx/gscan2pdf-1.8.11 ~amd64
+=net-misc/megasync-9999 **
+=app-emulation/wine-staging-3.11 ~amd64
 # }}}
 # Latest stable version {{{
 x11-wm/i3-gaps amd64
@@ -165,7 +163,6 @@ sys-kernel/gentoo-sources ~amd64
 x11-drivers/nvidia-drivers ~amd64
 games-util/steam-launcher ~amd64
 sys-firmware/nvidia-firmware ~amd64
-app-emulation/wine-staging ~amd64
 app-emulation/wine-vanilla ~amd64
 app-emulation/wine-mono ~amd64
 net-im/discord-bin ~amd64
@@ -193,5 +190,30 @@ dev-python/python-evdev ~amd64
 net-nds/openldap ~amd64
 net-libs/nghttp2 ~amd64
 kde-misc/kmozillahelper **
+net-misc/youtube-dl ~amd64
 www-client/chromium ~amd64
+dev-util/gn ~amd64
+sys-libs/binutils-libs ~amd64
+sys-devel/gcc ~amd64
+sys-devel/libtool ~amd64
+sys-apps/portage ~amd64
+sys-libs/glibc ~amd64
+dev-util/meson ~amd64
+x11-base/xorg-server ~amd64
+x11-base/xorg-drivers ~amd64
+dev-lang/rust ~amd64
+dev-lang/rust-bin ~amd64
+virtual/rust ~amd64
+dev-util/vulkan-tools ~amd64
+dev-perl/File-BaseDir ~amd64
+net-libs/gnutls ~amd64
+dev-db/sqlite ~amd64
+app-emulation/playonlinux ~amd64
+app-crypt/p11-kit ~amd64
+x11-libs/libtinynotify-cli ~amd64
+x11-libs/libtinynotify ~amd64
+x11-misc/tinynotify-send ~amd64
+dev-java/icedtea ~amd64
+app-emulation/vkd3d ~amd64
+app-emulation/wine-staging ~amd64
 # }}}

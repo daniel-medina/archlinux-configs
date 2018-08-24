@@ -71,6 +71,8 @@ media-libs/vulkan-loader demos layers
 net-misc/meganz-sdk qt libuv
 net-nds/openldap gnutls
 media-libs/imlib2 jpeg png nls tiff
+games-emulation/dolphin pulseaudio evdev ffmpeg libav openal portaudio
+x11-libs/wxGTK tiff
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
@@ -126,7 +128,6 @@ media-libs/imlib2 jpeg png nls tiff
 >=dev-libs/DirectFB-1.7.6 fbcon
 >=app-crypt/pinentry-0.9.7-r1 gtk
 >=dev-libs/elfutils-0.169-r1 static-libs
->=net-fs/samba-4.5.10-r1 winbind
 >=dev-qt/qtsingleapplication-2.6.1_p20150629 qt5
 >=dev-qt/qtlockedfile-2.4.1_p20150629 qt5
 >=app-crypt/libsecret-0.18.5 vala
@@ -149,7 +150,7 @@ media-libs/imlib2 jpeg png nls tiff
 >=dev-dotnet/libgdiplus-4.2-r3 cairo
 >=x11-libs/libxcb-1.13 xkb
 app-emulation/wine-vanilla vulkan
-app-emulation/wine-staging vulkan
+app-emulation/wine-staging vulkan vkd3d
 # }}}
 # Multilib USE requirements {{{
 x11-libs/libX11 abi_x86_32
@@ -243,4 +244,16 @@ dev-util/glslang abi_x86_32
 dev-util/spirv-tools abi_x86_32
 x11-libs/libXvMC abi_x86_32
 x11-libs/libXv abi_x86_32
+media-libs/vulkan-layers abi_x86_32
+virtual/libudev abi_x86_32
+sys-fs/udev abi_x86_32
+net-fs/samba winbind
+net-nds/openldap abi_x86_32
+app-emulation/vkd3d abi_x86_32
+x11-libs/xcb-util abi_x86_32
+x11-libs/xcb-util-keysyms abi_x86_32
+x11-libs/xcb-util-wm abi_x86_32
+x11-libs/xcb-util-cursor abi_x86_32
+x11-libs/xcb-util-image abi_x86_32
+x11-libs/xcb-util-renderutil abi_x86_32
 # }}}

@@ -10,3 +10,6 @@
 =media-gfx/freecad-9999
 =app-emulation/wine-2.0
 =dev-util/mingw64-runtime-5.0.3-r2
+=sys-devel/binutils-2.24-r3
+=sys-devel/gcc-4.8.3
+

@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/bin/game:/usr/local/bin:$PATH
 export WINEPREFIX=$HOME/.wine
-export BROWSER=chromium
+export BROWSER=firefox
 export EDITOR=nvim
+export DXVK_HUD=fps
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
 export DXVK_FAKE_DX10_SUPPORT=1
@@ -43,6 +44,8 @@ alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
 
 # Wine games
 alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
+alias wow="wine /storage/ssd/game/World\ of\ Warcraft/Wow.exe"
+alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 
 # Dotfiles
 alias dots-push="cd ~/development/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
@@ -55,12 +58,12 @@ alias kernel-install-modules="cd /usr/src/linux && sudo make modules_install && 
 alias kernel-install="cd /usr/src/linux && sudo make install && cd ~"
 
 # Portage
-alias portage-use="nvim /etc/portage/package.use"
-alias portage-accept-keywords="nvim /etc/portage/package.accept_keywords"
-alias portage-keywords="nvim /etc/portage/package.keywords"
-alias portage-mask="nvim /etc/portage/package.mask"
-alias portage-unmask="nvim /etc/portage/package.unmask"
-alias portage-license="nvim /etc/portage/package.license"
+alias portage-use="nvim /etc/portage/package.use/main"
+alias portage-accept-keywords="nvim /etc/portage/package.accept_keywords/main"
+alias portage-keywords="nvim /etc/portage/package.keywords/main"
+alias portage-mask="nvim /etc/portage/package.mask/main"
+alias portage-unmask="nvim /etc/portage/package.unmask/main"
+alias portage-license="nvim /etc/portage/package.license/main"
 
 # Devices
 alias wileyfox-mount="simple-mtpfs /media/usb/android"
