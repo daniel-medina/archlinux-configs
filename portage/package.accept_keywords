@@ -1,6 +1,5 @@
 # Specific version {{{
 app-editors/neovim ~amd64
-=media-video/ffmpeg-3.4 ~amd64
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
 =x11-misc/polybar-9999 **
 =app-editors/emacs-vcs-26.0.9999 **
@@ -101,7 +100,6 @@ app-editors/neovim ~amd64
 =dev-python/pypeg2-2.15.2 ~amd64
 =www-client/qutebrowser-0.9.1 ~amd64
 =dev-python/pygments-2.2.0 ~amd64
-=x11-terms/rxvt-unicode-9.22-r1 ~amd64
 =app-misc/ranger-1.9.0_beta5 ~amd64
 =dev-libs/nss-3.33 ~amd64
 =virtual/rust-1.23.0 ~amd64
@@ -159,7 +157,6 @@ app-misc/ranger ~amd64
 dev-libs/nss ~amd64
 dev-util/cargo ~amd64
 net-misc/megasync ~amd64
-sys-kernel/gentoo-sources ~amd64
 x11-drivers/nvidia-drivers ~amd64
 games-util/steam-launcher ~amd64
 sys-firmware/nvidia-firmware ~amd64
@@ -216,4 +213,16 @@ x11-misc/tinynotify-send ~amd64
 dev-java/icedtea ~amd64
 app-emulation/vkd3d ~amd64
 app-emulation/wine-staging ~amd64
+net-im/whatsapp-purple ~amd64
+sci-visualization/gcalc ~amd64
+sys-kernel/gentoo-sources ~amd64
+app-eselect/eselect-infinality ~amd64
+media-fonts/powerline-fonts ~amd64
+x11-terms/xterm ~amd64
+media-libs/freetype ~amd64
+media-video/ffmpeg ~amd64
+virtual/ffmpeg ~amd64
+media-video/libav ~amd64
+x11-terms/rxvt-unicode ~amd64
+dev-python/neovim-remote ~amd64
 # }}}

@@ -57,7 +57,7 @@ app-vim/youcompleteme clang
 sys-fs/mtpfs mad debug
 gnome-base/gvfs mtp nfs gtk archive fuse
 www-client/chromium cups
-x11-terms/rxvt-unicode 256-color xft unicode3 pixbuf fading-colors iso14755
+x11-terms/rxvt-unicode xft pixbuf wcwidth -vanilla
 mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl
 www-client/w3m imlib
@@ -71,8 +71,9 @@ media-libs/vulkan-loader demos layers
 net-misc/meganz-sdk qt libuv
 net-nds/openldap gnutls
 media-libs/imlib2 jpeg png nls tiff
-games-emulation/dolphin pulseaudio evdev ffmpeg libav openal portaudio
+games-emulation/dolphin pulseaudio evdev ffmpeg openal portaudio
 x11-libs/wxGTK tiff
+media-fonts/powerline-fonts fonts terminus_pcf
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
@@ -256,4 +257,29 @@ x11-libs/xcb-util-wm abi_x86_32
 x11-libs/xcb-util-cursor abi_x86_32
 x11-libs/xcb-util-image abi_x86_32
 x11-libs/xcb-util-renderutil abi_x86_32
+app-arch/xz-utils abi_x86_32
+dev-libs/libaio abi_x86_32
+media-libs/libsdl abi_x86_32
+media-libs/libsoundtouch abi_x86_32
+media-libs/portaudio abi_x86_32
+x11-libs/gtk+ abi_x86_32
+x11-libs/wxGTK abi_x86_32
+x11-libs/gdk-pixbuf abi_x86_32
+x11-libs/pango abi_x86_32
+media-libs/tiff abi_x86_32
+media-libs/harfbuzz abi_x86_32
+x11-libs/cairo abi_x86_32
+dev-libs/fribidi abi_x86_32
+x11-libs/libXft abi_x86_32
+dev-libs/lzo abi_x86_32
+sys-libs/binutils-libs abi_x86_32
+x11-libs/pixman abi_x86_32
+media-gfx/graphite2 abi_x86_32
+dev-libs/atk abi_x86_32
+gnome-base/librsvg abi_x86_32
+dev-libs/libcroco abi_x86_32
+media-libs/audiofile abi_x86_32
+media-libs/libepoxy abi_x86_32
+app-accessibility/at-spi2-atk abi_x86_32
+app-accessibility/at-spi2-core abi_x86_32
 # }}}
