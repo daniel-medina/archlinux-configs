@@ -225,4 +225,8 @@ virtual/ffmpeg ~amd64
 media-video/libav ~amd64
 x11-terms/rxvt-unicode ~amd64
 dev-python/neovim-remote ~amd64
+net-wireless/wpa_supplicant ~amd64
+dev-tex/latexmk ~amd64
+net-libs/nodejs ~amd64
+dev-python/pygame ~amd64
 # }}}

@@ -1,5 +1,6 @@
 # USE flags - unrestricted {{{
 www-client/firefox pulseaudio hwaccel
+net-filter/wpa_supplicant tdls wps eap-sim
 x11-misc/lemonbar xft
 media-libs/sdl-mixer smpeg midi timidity
 media-libs/sdl2-mixer smpeg midi timidity
@@ -74,6 +75,8 @@ media-libs/imlib2 jpeg png nls tiff
 games-emulation/dolphin pulseaudio evdev ffmpeg openal portaudio
 x11-libs/wxGTK tiff
 media-fonts/powerline-fonts fonts terminus_pcf
+media-libs/sdl-image jpeg png
+media-libs/sdl-mixer mp3
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

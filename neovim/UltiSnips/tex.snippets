@@ -1,0 +1,90 @@
+# Content
+snippet content "Content template - for studies."
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{xcolor}
+\author{Daniel Medina}
+\date{$1}
+\title{$2}
+
+\begin{document}
+
+\end{document}
+endsnippet
+
+# Chapter
+snippet chapter "Chapter template."
+% $1 {{{
+\chapter{$1}
+
+% Content of the chapter...
+
+% }}}
+endsnippet
+
+# Section
+snippet section "Section template."
+% $1 {{{
+\section{$1}
+
+% Content of the section ...
+
+% }}}
+endsnippet
+
+# Note
+snippet note "Note template. For CMs"
+% $1 {{{
+\subsection{$1}
+% Leçon {{{
+\subsubsection{Leçon}
+% }}}
+% Explication {{{
+\subsubsection{Explication}
+% }}}
+% Vulgarisation {{{
+\subsubsection{Vulgarisation}
+% }}}
+% }}}
+endsnippet
+
+# Exercice
+snippet exercice "Exercice template."
+% $1 {{{
+\subsection{$1}
+% Intitulé {{{
+\subsubsection{Intitulé}
+% }}}
+% Essai {{{
+\subsubsection{Essai}
+% }}}
+% Correction {{{
+\subsubsection{Correction}
+% }}}
+% Explication {{{
+\subsubsection{Explication}
+% }}}
+% Vulgarisation {{{
+\subsubsection{Vulgarisation}
+% }}}
+% }}}
+endsnippet
+
+# Numbers
+snippet snum "Number symbols."
+\varmathbb{$1}
+endsnippet
+
+# Colors
+snippet color "Font color."
+\textcolor{$1}{$2}
+endsnippet
+
+# Bold
+snippet bold "Bold text."
+\textbf{$1}
+endsnippet

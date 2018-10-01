@@ -6,7 +6,6 @@ export EDITOR=nvim
 export DXVK_HUD=fps
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
-export DXVK_FAKE_DX10_SUPPORT=1
 #export XDG_RUNTIME_DIR=/tmp
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
@@ -24,12 +23,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status dir_writable battery ip ssh context t
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
-
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='vim'
-fi
 
 # Vim
 alias vim="nvim"
@@ -49,8 +42,8 @@ alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.
 alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 
 # Dotfiles
-alias dots-push="cd ~/development/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias dots-pull="cd ~/development/repository/dotfiles && git pull && cd ~/"
+alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
