@@ -41,9 +41,11 @@ alias wow="wine /storage/ssd/game/World\ of\ Warcraft/Wow.exe"
 alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
 alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 
-# Dotfiles
-alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
+# Classes
+alias algebra="cd ~/repository/class/algebra"
+alias algorithmic="cd ~/repository/class/algebra"
+alias binary="cd ~/repository/class/binary"
+alias calculus="cd ~/repository/class/calculus"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
@@ -64,15 +66,18 @@ alias wileyfox-mount="simple-mtpfs /media/usb/android"
 alias wileyfox-umount="sudo umount /media/usb/android"
 
 # Development
-alias repository="cd ~/development/repository"
-alias website="cd ~/development/repository/website"
-alias study="cd ~/development/repository/study"
-alias factory="cd ~/development/factory"
-alias freelance="cd ~/development/factory/freelance"
+alias repository="cd ~/repository"
+alias website="cd ~/repository/website"
+alias factory="cd ~/repository/factory"
+alias freelance="cd ~/repository/factory/freelance"
 
 # Repositories
-alias factory-push="cd ~/development/factory && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias factory-pull="cd ~/development/factory && git pull && cd ~/"
+alias class-push="cd ~/repository/class && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias class-pull="cd ~/repository/class && git pull"
+alias factory-push="cd ~/repository/factory && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias factory-pull="cd ~/repository/factory && git pull && cd ~/"
+alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
 
 # arch-mobile-ifthenelse specific
 alias light="xbacklight -set"
