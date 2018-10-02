@@ -44,7 +44,7 @@ alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam
 # Classes
 alias class="cd ~/repository/class"
 alias algebra="cd ~/repository/class/algebra"
-alias algorithmic="cd ~/repository/class/algebra"
+alias algorithmic="cd ~/repository/class/algorithmic"
 alias binary="cd ~/repository/class/binary"
 alias calculus="cd ~/repository/class/calculus"
 
