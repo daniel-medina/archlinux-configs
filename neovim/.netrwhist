@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/ifthenelse/class/algorithmic/first-year/document'
 let g:netrw_dirhist_2='/home/ifthenelse/class/algorithmic/first-year'
 let g:netrw_dirhist_3='/etc/portage/package.keywords'
+let g:netrw_dirhist_4='/home/ifthenelse/repository/dotfiles/neovim/UltiSnips'
