@@ -1,6 +1,7 @@
 # Content
 snippet content "Content template - for studies."
 \documentclass{report}
+\usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -39,15 +40,15 @@ endsnippet
 # Note
 snippet lesson "Lesson template. For CMs"
 % $1 {{{
-\subsection{$1}
+\section{$1}
 % Leçon {{{
-\subsubsection{Leçon}
+\subsection{Leçon}
 % }}}
 % Explication {{{
-\subsubsection{Explication}
+\subsection{Explication}
 % }}}
 % Vulgarisation {{{
-\subsubsection{Vulgarisation}
+\subsection{Vulgarisation}
 % }}}
 % }}}
 endsnippet
