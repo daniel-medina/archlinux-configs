@@ -20,7 +20,7 @@ net-misc/directvnc mouse
 media-sound/mpd pulseaudio audiofile ffmpeg mpg123 ogg musepack wavpack vorbis
 app-portage/layman mercurial sync-plugin-portage git
 sys-firmware/seabios seavgabios
-net-libs/nodejs npm ssl snapshot
+net-libs/nodejs npm ssl snapshot inspector icu
 app-emulation/virt-viewer vnc
 app-editors/emacs -X -gtk
 media-libs/libpng apng

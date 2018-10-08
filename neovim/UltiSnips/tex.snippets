@@ -1,6 +1,7 @@
 # Content
 snippet content "Content template - for studies."
-\documentclass{report}
+\documentclass[12pt,a4paper]{report}
+\usepackage{fullpage}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -18,27 +19,31 @@ endsnippet
 
 # Chapter
 snippet chapter "Chapter template."
-% $1 {{{
+% Chapitre: $1 {{{
 \chapter{$1}
-
-% Content of the chapter...
-
+$2
 % }}}
 endsnippet
 
 # Section
 snippet section "Section template."
-% $1 {{{
+% Section: $1 {{{
 \section{$1}
+$2
+% }}}
+endsnippet
 
-% Content of the section ...
-
+# Paragraph
+snippet paragraph "Paragraph template."
+% Paragraphe: $1 {{{
+\paragraph{$1}
+$2
 % }}}
 endsnippet
 
 # Note
 snippet lesson "Lesson template. For CMs"
-% $1 {{{
+% Leçon: $1 {{{
 \subsection{$1}
 % Leçon {{{
 \subsubsection{Leçon}
@@ -47,14 +52,16 @@ snippet lesson "Lesson template. For CMs"
 \subsubsection{Explication}
 % }}}
 % Vulgarisation {{{
+\pagebreak
 \subsubsection{Vulgarisation}
+\pagebreak
 % }}}
 % }}}
 endsnippet
 
 # Exercice
 snippet exercice "Exercice template."
-% $1 {{{
+% Exercice: $1 {{{
 \subsection{$1}
 % Intitulé {{{
 \subsubsection{Intitulé}
@@ -66,10 +73,9 @@ snippet exercice "Exercice template."
 \subsubsection{Correction}
 % }}}
 % Explication {{{
+\pagebreak
 \subsubsection{Explication}
-% }}}
-% Vulgarisation {{{
-\subsubsection{Vulgarisation}
+\pagebreak
 % }}}
 % }}}
 endsnippet
@@ -87,4 +93,25 @@ endsnippet
 # Bold
 snippet bold "Bold text."
 \textbf{$1}
+endsnippet
+
+# Verbatim
+snippet verbatim "Verbatim environment."
+\begin{verbatim}
+$1
+\end{verbatim}
+endsnippet
+
+# Enumerate
+snippet enumerate "Enumerate environment."
+\begin{enumerate}
+$1
+\end{enumerate}
+endsnippet
+
+# Equation
+snippet equation "Equation environment."
+\begin{equation*}
+$1
+\end{equation*}
 endsnippet

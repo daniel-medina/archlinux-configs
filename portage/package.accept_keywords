@@ -229,4 +229,7 @@ net-wireless/wpa_supplicant ~amd64
 dev-tex/latexmk ~amd64
 net-libs/nodejs ~amd64
 dev-python/pygame ~amd64
+sys-apps/yarn ~amd64
+media-libs/harfbuzz ~amd64
+dev-libs/icu ~amd64
 # }}}
