@@ -232,4 +232,7 @@ dev-python/pygame ~amd64
 sys-apps/yarn ~amd64
 media-libs/harfbuzz ~amd64
 dev-libs/icu ~amd64
+dev-cpp/glibmm ~amd64
+dev-libs/glib ~amd64
+dev-util/glib-utils ~amd64
 # }}}
