@@ -17,6 +17,10 @@ let base16colorspace=256
 " Vue
 autocmd FileType vue syntax sync fromstart
 
+" Filetypes
+autocmd BufEnter *.ts :setlocal filetype=javascript.jsx
+autocmd BufEnter *.tsx :setlocal filetype=javascript.jsx
+
 " Variables
 let g:airline_theme='base16'
 let g:autoformat_remove_trailing_spaces = 0
