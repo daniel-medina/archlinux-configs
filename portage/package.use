@@ -1,4 +1,5 @@
 # USE flags - unrestricted {{{
+media-sound/pulseaudio dbus
 www-client/firefox pulseaudio hwaccel
 net-filter/wpa_supplicant tdls wps eap-sim
 x11-misc/lemonbar xft
@@ -77,6 +78,7 @@ x11-libs/wxGTK tiff
 media-fonts/powerline-fonts fonts terminus_pcf
 media-libs/sdl-image jpeg png
 media-libs/sdl-mixer mp3
+net-wireless/bluez deprecated
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
