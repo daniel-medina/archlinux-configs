@@ -57,7 +57,7 @@ media-libs/libsdl audio
 app-vim/youcompleteme clang
 sys-fs/mtpfs mad debug
 gnome-base/gvfs mtp nfs gtk archive fuse
-www-client/chromium cups
+www-client/chromium cups widevine
 x11-terms/rxvt-unicode xft pixbuf wcwidth
 mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl

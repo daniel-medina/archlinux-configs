@@ -28,9 +28,9 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 
 # Personal wiki
-alias pwiki="vim ~/development/repository/personal-wiki/main.wiki"
-alias pwiki-push="cd ~/development/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias pwiki-pull="cd ~/development/repository/personal-wiki && git pull && cd ~/"
+alias pwiki="vim ~/repository/personal-wiki/main.wiki"
+alias pwiki-push="cd ~/repository/personal-wiki && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias pwiki-pull="cd ~/repository/personal-wiki && git pull && cd ~/"
 
 # Wine prefixes
 alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
