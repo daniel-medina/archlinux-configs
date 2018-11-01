@@ -41,6 +41,8 @@ alias wow="wine /storage/ssd/game/World\ of\ Warcraft/Wow.exe"
 alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
 alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"
+alias ckan="mono /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
+alias ksp="/storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/KSP.x86_64"
 
 # Classes
 alias class="cd ~/repository/class"

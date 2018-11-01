@@ -236,4 +236,15 @@ dev-cpp/glibmm ~amd64
 dev-libs/glib ~amd64
 dev-util/glib-utils ~amd64
 app-emulation/vmware-horizon-client-bin ~amd64
+app-editors/atom ~amd64
+app-eselect/eselect-electron ~amd64
+dev-util/electron ~amd64
+sci-CRAN/magrittr ~amd64
+sci-CRAN/openssl ~amd64
+sci-CRAN/curl ~amd64
+sci-CRAN/R6 ~amd64
+sci-CRAN/jsonlite ~amd64
+sci-CRAN/httr ~amd64
+sci-CRAN/ckanr ~amd64
+sci-CRAN/mime ~amd64
 # }}}
