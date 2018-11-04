@@ -78,13 +78,10 @@ x11-libs/wxGTK tiff
 media-fonts/powerline-fonts fonts terminus_pcf
 media-libs/sdl-image jpeg png
 media-libs/sdl-mixer mp3
-<<<<<<< HEAD
 media-libs/libvpx svc
 media-sound/pulseaudio gnome
 sys-devel/distcc crossdev
-=======
 net-wireless/bluez deprecated
->>>>>>> af8db7cbfa1bf874b1552ef063e80fc84c9a8ea8
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
