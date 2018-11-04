@@ -147,6 +147,7 @@ app-editors/neovim ~amd64
 x11-wm/i3-gaps amd64
 app-editors/neovim amd64
 dev-libs/libinput amd64
+dev-dotnet/gtk-sharp amd64
 # }}}
 # Latest unstable version {{{
 net-libs/nodejs ~amd64
