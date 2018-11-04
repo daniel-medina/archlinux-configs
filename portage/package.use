@@ -82,6 +82,7 @@ media-libs/libvpx svc
 media-sound/pulseaudio gnome
 sys-devel/distcc crossdev
 net-wireless/bluez deprecated
+media-libs/gegl cairo
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
@@ -290,4 +291,7 @@ media-libs/audiofile abi_x86_32
 media-libs/libepoxy abi_x86_32
 app-accessibility/at-spi2-atk abi_x86_32
 app-accessibility/at-spi2-core abi_x86_32
+# }}}
+# Python targets {{{
+dev-python/certifi python_targets_python3_4
 # }}}

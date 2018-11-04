@@ -9,11 +9,23 @@ snippet content "Content template - for studies."
 \usepackage{amsmath}
 \usepackage{txfonts}
 \usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{svg}
+\usepackage{float}
+\graphicspath{{./figure/}}
+\setlength{\headheight}{10pt}
+\setlength{\headsep}{5pt}
+\pagenumbering{gobble}
+\pagestyle{fancy}
+\renewcommand\thesection{\arabic{section}}
 \author{Daniel Medina}
 \date{$1}
 \title{$2}
 
 \begin{document}
+\maketitle
+\pagebreak
+
 $3
 \end{document}
 endsnippet
@@ -47,11 +59,11 @@ snippet lesson "Lesson template. For CMs"
 % $1 {{{
 \section{$1}
 % Leçon: $1 {{{
-\subsection{$1}
+\subsection*{$1}
 % }}}
 % Explication {{{
 \pagebreak
-\subsection{Explication}
+\subsection*{Explication}
 \pagebreak
 % }}}
 % }}}
@@ -60,19 +72,19 @@ endsnippet
 # Exercice
 snippet exercice "Exercice template."
 % Exercice: $1 {{{
-\subsection{$1}
+\section{$1}
 % Intitulé {{{
-\subsubsection{Intitulé}
+\subsection*{Intitulé}
 % }}}
 % Essai {{{
-\subsubsection{Essai}
+\subsection*{Essai}
 % }}}
 % Correction {{{
-\subsubsection{Correction}
+\subsection*{Correction}
 % }}}
 % Explication {{{
 \pagebreak
-\subsubsection{Explication}
+\subsection*{Explication}
 \pagebreak
 % }}}
 % }}}

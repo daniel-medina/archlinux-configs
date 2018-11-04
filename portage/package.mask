@@ -1,2 +1,0 @@
-=media-libs/fontconfig-2.13.0-r4
-=x11-libs/pango-1.42.4

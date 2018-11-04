@@ -241,4 +241,6 @@ app-eselect/eselect-electron ~amd64
 dev-util/electron ~amd64
 sys-libs/libcxx ~amd64
 sys-libs/libcxxabi ~amd64
+media-gfx/inkscape ~amd64
+dev-util/cbindgen ~amd64
 # }}}
