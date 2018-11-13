@@ -46,10 +46,10 @@ alias ksp="cd /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program &&
 
 # Classes
 alias class="cd ~/repository/class"
-alias algebra="cd ~/repository/class/algebra"
-alias algorithmic="cd ~/repository/class/algorithmic"
-alias binary="cd ~/repository/class/binary"
-alias calculus="cd ~/repository/class/calculus"
+alias algebra="cd ~/repository/class/algebra/first-year"
+alias algorithmic="cd ~/repository/class/algorithmic/first-year"
+alias web-binary="cd ~/repository/class/web-binary/first-year"
+alias calculus="cd ~/repository/class/calculus/first-year"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
