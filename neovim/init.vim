@@ -74,6 +74,10 @@ let g:UltiSnipsExpandTrigger = "<C-a>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
+" Fzf
+let g:fzf_layout = { 'down': '~10%' }
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
 " GrammarousCheck
 let g:grammarous#hooks = {}
 function! g:grammarous#hooks.on_check(errs) abort
@@ -92,7 +96,7 @@ endfunction
 
 nmap <silent> <F6> :GrammarousCheck<CR>
 nmap <silent> <F7> :BufExplorer<CR>
-nmap <silent> <F8> :Ranger<CR>
+nmap <silent> <F8> :FZF<CR>
 nmap <silent> <F9> :Autoformat<CR>
 nmap <silent> <C-p> :bnext<CR>
 nmap <silent> <C-n> :tabnew<CR>
@@ -152,13 +156,13 @@ NeoBundle 'othree/jspc.vim'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'w0rp/ale'
 NeoBundle 'rbgrouleff/bclose.vim'
-NeoBundle 'francoiscabrol/ranger.vim'
 NeoBundle 'rhysd/vim-grammarous'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'lervag/vimtex'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'ianks/vim-tsx'
+NeoBundle 'junegunn/fzf'
 
 call neobundle#end()
 filetype plugin indent on

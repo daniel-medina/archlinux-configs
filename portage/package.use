@@ -83,6 +83,7 @@ media-sound/pulseaudio gnome
 sys-devel/distcc crossdev
 net-wireless/bluez deprecated
 media-libs/gegl cairo
+app-shells/fzf tmux neovim bash-completion zsh-completion
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

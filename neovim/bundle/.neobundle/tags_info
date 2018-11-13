@@ -5,10 +5,10 @@ bclose.vim
 bufexplorer
 deoplete-ternjs
 deoplete.nvim
+fzf
 html5.vim
 jspc.vim
 neobundle.vim
-ranger.vim
 supertab
 tern_for_vim
 ultisnips
