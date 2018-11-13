@@ -27,7 +27,6 @@ snippet content "Content template - for studies."
 \pagebreak
 
 $3
-
 \end{document}
 endsnippet
 
@@ -62,9 +61,9 @@ snippet lesson "Lesson template. For CMs"
 % Leçon: $1 {{{
 \subsection*{$1}
 % }}}
-% Compréhension {{{
+% Explication {{{
 \pagebreak
-\subsection*{Compréhension}
+\subsection*{Explication}
 \pagebreak
 % }}}
 % }}}
@@ -77,13 +76,45 @@ snippet exercice "Exercice template."
 % Intitulé {{{
 \subsubsection*{Intitulé}
 % }}}
-% Contenu {{{
-\subsubsection*{Contenu}
+% Essai {{{
+\subsubsection*{Essai}
 % }}}
-% Compréhension {{{
+% Correction {{{
+\subsubsection*{Correction}
+% }}}
+% Explication {{{
 \pagebreak
-\subsubsection*{Compréhension}
+\subsubsection*{Explication}
 \pagebreak
+% }}}
+% }}}
+endsnippet
+
+snippet algorithm "Algorithm template."
+% Algorithm: $1 {{{
+% Algorithme {{{
+\paragraph{Algorithme}
+$1
+% }}}
+% Données {{{
+\paragraph{Données}
+$2
+% }}}
+% Résultat {{{
+\paragraph{Résultat}
+$3
+% }}}
+% Variables {{{
+\paragraph{Variables}
+$4
+% }}}
+% Contenu {{{
+\paragraph{Contenu}
+$5
+% }}}
+% LRE {{{
+\paragraph{Le résultat est}
+$6
 % }}}
 % }}}
 endsnippet
