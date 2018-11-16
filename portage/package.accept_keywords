@@ -244,4 +244,5 @@ sys-libs/libcxx ~amd64
 sys-libs/libcxxabi ~amd64
 media-gfx/inkscape ~amd64
 dev-util/cbindgen ~amd64
+app-misc/crunch ~amd64
 # }}}
