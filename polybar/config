@@ -45,7 +45,7 @@ tray-scale = 1
 ; Bar: bottom {{{
 [bar/bottom]
 bottom = true
-width = 1895
+width = 100%
 height = 30
 offset-x = 12
 offset-y = 10
