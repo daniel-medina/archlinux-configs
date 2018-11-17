@@ -59,7 +59,7 @@ app-vim/youcompleteme clang
 sys-fs/mtpfs mad debug
 gnome-base/gvfs mtp nfs gtk archive fuse
 www-client/chromium cups widevine
-x11-terms/rxvt-unicode xft pixbuf wcwidth
+x11-terms/rxvt-unicode xft pixbuf wcwidth 256-color font-styles iso14755 mousewheel perl unicode3
 mail-client/mutt sidebar smtp ssl pop imap
 www-client/lynx ssl
 www-client/w3m imlib

@@ -245,4 +245,5 @@ sys-libs/libcxxabi ~amd64
 media-gfx/inkscape ~amd64
 dev-util/cbindgen ~amd64
 app-misc/crunch ~amd64
+media-fonts/iosevka ~amd64
 # }}}
