@@ -84,6 +84,7 @@ sys-devel/distcc crossdev
 net-wireless/bluez deprecated
 media-libs/gegl cairo
 app-shells/fzf tmux neovim bash-completion zsh-completion
+media-libs/libvpx postproc
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

@@ -82,7 +82,6 @@ app-editors/neovim ~amd64
 =app-arch/lzma-9.20-r1 ~amd64
 =app-emulation/libguestfs-appliance-1.28.1-r1 ~amd64
 =net-misc/directvnc-0.7.8 ~amd64
-=x11-wm/bspwm-0.9.3 ~amd64
 =x11-misc/sxhkd-0.5.8 ~amd64
 =sys-fs/android-file-transfer-linux-3.2 ~amd64
 =x11-misc/i3lock-fancy-9999 ~amd64
@@ -140,7 +139,6 @@ app-editors/neovim ~amd64
 =app-crypt/argon2-20171227 ~amd64
 =app-admin/keepassxc-2.3.1 ~amd64
 =media-gfx/gscan2pdf-1.8.11 ~amd64
-=net-misc/megasync-9999 **
 =app-emulation/wine-staging-3.11 ~amd64
 # }}}
 # Latest stable version {{{
@@ -153,11 +151,11 @@ dev-dotnet/gtk-sharp amd64
 net-libs/nodejs ~amd64
 media-fonts/fira-code ~amd64
 x11-misc/rofi ~amd64
+net-misc/megasync **
 www-client/firefox ~amd64
 app-misc/ranger ~amd64
 dev-libs/nss ~amd64
 dev-util/cargo ~amd64
-net-misc/megasync ~amd64
 x11-drivers/nvidia-drivers ~amd64
 games-util/steam-launcher ~amd64
 sys-firmware/nvidia-firmware ~amd64
@@ -246,4 +244,23 @@ media-gfx/inkscape ~amd64
 dev-util/cbindgen ~amd64
 app-misc/crunch ~amd64
 media-fonts/iosevka ~amd64
+x11-wm/bspwm ~amd64
+media-libs/nv-codec-headers ~amd64
+dev-lang/spidermonkey ~amd64
+dev-qt/qtcore ~amd64
+dev-libs/glib ~amd64
+dev-util/gdbus-codegen ~amd64
+dev-libs/gobject-introsception ~amd64
+media-libs/graphene ~amd64
+dev-libs/atk ~amd64
+app-accessibility/at-spi2-atk ~amd64
+media-libs/libmypaint ~amd64
+media-libs/gegl ~amd64
+app-accessibility/at-spi2-core ~amd64
+sys-devel/llvm ~amd64
+dev-lang/perl ~amd64
+media-libs/libvpx ~amd64
+xfce-base/xfconf ~amd64
+sys-kernel/linux-headers ~amd64
+app-eselect/eselect-qtgraphicssystem ~amd64
 # }}}

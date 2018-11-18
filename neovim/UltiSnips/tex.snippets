@@ -32,7 +32,7 @@ endsnippet
 
 # Chapter
 snippet chapter "Chapter template."
-% Chapitre: $1 {{{
+% Chapter: $1 {{{
 \chapter{$1}
 $2
 % }}}
@@ -48,7 +48,7 @@ endsnippet
 
 # Paragraph
 snippet paragraph "Paragraph template."
-% Paragraphe: $1 {{{
+% Paragraph: $1 {{{
 \paragraph{$1}
 $2
 % }}}
@@ -72,19 +72,19 @@ endsnippet
 # Exercice
 snippet exercice "Exercice template."
 % Exercice: $1 {{{
-\subsection{$1}
+\section{$1}
 % Intitulé {{{
-\subsubsection*{Intitulé}
+\subsection*{Intitulé}
 % }}}
 % Essai {{{
-\subsubsection*{Essai}
+\subsection*{Essai}
 % }}}
 % Correction {{{
-\subsubsection*{Correction}
+\subsection*{Correction}
 % }}}
 % Explication {{{
 \pagebreak
-\subsubsection*{Explication}
+\subsection*{Explication}
 \pagebreak
 % }}}
 % }}}
@@ -92,7 +92,6 @@ endsnippet
 
 snippet algorithm "Algorithm template."
 % Algorithm: $1 {{{
-% Algorithme {{{
 \paragraph{Algorithme}
 $1
 % }}}
@@ -109,10 +108,10 @@ $3
 $4
 % }}}
 % Contenu {{{
-\paragraph{Contenu}
+\paragraph{Début}
 $5
 % }}}
-% LRE {{{
+% Le résultat est {{{
 \paragraph{Le résultat est}
 $6
 % }}}

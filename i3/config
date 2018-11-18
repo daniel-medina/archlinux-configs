@@ -19,9 +19,6 @@ gaps outer 10
 # defining variable
 set $mod mod4
 
-# sticky floating window
-bindsym $mod+c sticky toggle
-
 # default workspace layout
 workspace_layout default
 
@@ -112,7 +109,7 @@ bindsym F1 scratchpad show
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+space exec --no-startup-id rofi -show drun
 
 # switching focuses
 bindsym $mod+k focus up
@@ -122,7 +119,7 @@ bindsym $mod+h focus left
 
 # focusing parent container
 bindsym $mod+p focus parent
-bindsym $mod+a focus child
+bindsym $mod+c focus child
 
 # moving containers
 bindsym $mod+Shift+k move up
@@ -151,7 +148,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+r focus mode_toggle
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -179,8 +176,8 @@ bindsym $mod+Ctrl+9 workspace $WS19
 bindsym $mod+Ctrl+0 workspace $WS20
 
 # moving around workspaces
-bindsym $mod+Left workspace prev
-bindsym $mod+Right workspace next
+bindsym $mod+a workspace prev
+bindsym $mod+d workspace next
 
 # alternative with numpad
 bindcode $mod+87 workspace $WS1
