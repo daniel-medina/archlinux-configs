@@ -12,7 +12,7 @@ net-irc/weechat python_targets_python3_5
 dev-libs/sway swaybar swaylock swaygrab swaybg sway
 sys-apps/roccat-tools roccat_konextd
 www-plugins/adobe-flash nsplugin
-dev-lang/php gd
+dev-lang/php gd curl ssl
 dev-lang/python tk wininst
 media-gfx/sane-backends usb canon pixma
 mail-client/thunderbird crypt pulseaudio rust
