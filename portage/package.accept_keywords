@@ -279,4 +279,6 @@ dev-php/phar-utils ~amd64
 dev-php/symfony-config ~amd64
 dev-php/jsonlint ~amd64
 dev-php/symfony-process ~amd64
+dev-lang/php ~amd64
+dev-php/composer ~amd64
 # }}}
