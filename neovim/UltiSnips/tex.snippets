@@ -122,7 +122,7 @@ endsnippet
 
 # Colors
 snippet color "Font color."
-\textcolor{$1}{$2}
+\textcolor{$1}{$2} $3
 endsnippet
 
 # Bold
@@ -156,4 +156,38 @@ snippet split "Split, for multilines equation i.e."
 \begin{split}
 $1
 \end{split}
+endsnippet
+
+# Cases
+snippet cases "Math cases."
+\begin{cases}
+$1
+\end{cases}
+endsnippet
+
+# matrix
+snippet matrix "Matrix."
+\begin{bmatrix}
+$1
+\end{bmatrix}
+endsnippet
+
+# Diagonal dots
+snippets ddots "Diagonal dots for use in matrices."
+\ddots
+endsnippet
+
+# Vertical dots
+snippets vdots "Vertical dots for use in matrices."
+\ddots
+endsnippet
+
+# Horizontal dots
+snippets hdots "Horizontal dots for use in matrices."
+\hdotsfor{$1} $2
+endsnippet
+
+# Mbox
+snippet mbox "Text inside equations."
+\mbox{$1}$2
 endsnippet
