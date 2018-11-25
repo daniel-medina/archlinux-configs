@@ -55,15 +55,17 @@ $2
 endsnippet
 
 # Note
-snippet lesson "Lesson template. For CMs"
+snippet lesson "Lesson template. For CMs and notes."
 % Lesson: $1 {{{
 \section{$1}
-% Leçon: $1 {{{
-\subsection*{$1}
+% Contenu {{{
+\subsection*{Contenu}
+$2
 % }}}
 % Compréhension {{{
 \pagebreak
 \subsection*{Compréhension}
+$3
 \pagebreak
 % }}}
 % }}}
