@@ -61,9 +61,9 @@ snippet lesson "Lesson template. For CMs"
 % Leçon: $1 {{{
 \subsection*{$1}
 % }}}
-% Explication {{{
+% Compréhension {{{
 \pagebreak
-\subsection*{Explication}
+\subsection*{Compréhension}
 \pagebreak
 % }}}
 % }}}
@@ -76,15 +76,12 @@ snippet exercice "Exercice template."
 % Intitulé {{{
 \subsection*{Intitulé}
 % }}}
-% Essai {{{
-\subsection*{Essai}
+% Contenu {{{
+\subsection*{Contenu}
 % }}}
-% Correction {{{
-\subsection*{Correction}
-% }}}
-% Explication {{{
+% Compréhension {{{
 \pagebreak
-\subsection*{Explication}
+\subsection*{Compréhension}
 \pagebreak
 % }}}
 % }}}
@@ -107,7 +104,7 @@ $3
 \paragraph{Variables}
 $4
 % }}}
-% Contenu {{{
+% Début {{{
 \paragraph{Début}
 $5
 % }}}
@@ -152,4 +149,11 @@ snippet equation "Equation environment."
 \begin{equation*}
 $1
 \end{equation*}
+endsnippet
+
+# Split
+snippet split "Split, for multilines equation i.e."
+\begin{split}
+$1
+\end{spli}
 endsnippet
