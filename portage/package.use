@@ -294,6 +294,7 @@ media-libs/audiofile abi_x86_32
 media-libs/libepoxy abi_x86_32
 app-accessibility/at-spi2-atk abi_x86_32
 app-accessibility/at-spi2-core abi_x86_32
+x11-libs/libpciaccess abi_x86_32
 # }}}
 # Python targets {{{
 dev-python/certifi python_targets_python3_4
