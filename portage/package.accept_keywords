@@ -137,7 +137,7 @@ app-editors/neovim ~amd64
 =app-admin/keepassxc-2.3.1 ~amd64
 =media-gfx/gscan2pdf-1.8.11 ~amd64
 =app-emulation/wine-staging-3.11 ~amd64
-=x11-drivers/nvidia-drivers-410.66 ~amd64
+=x11-drivers/nvidia-drivers-410.78 ~amd64
 # }}}
 # Latest stable version {{{
 x11-wm/i3-gaps amd64
@@ -293,4 +293,7 @@ dev-libs/mpfr ~amd64
 dev-libs/mpc ~amd64
 sys-apps/sysvinit ~amd64
 dev-util/ninja ~amd64
+net-dns/libidn2 ~amd64
+dev-util/webstorm ~amd64
+net-misc/rtv ~amd64
 # }}}
