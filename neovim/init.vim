@@ -96,7 +96,7 @@ endfunction
 
 nmap <silent> <F6> :GrammarousCheck<CR>
 nmap <silent> <F7> :BufExplorer<CR>
-nmap <silent> <F8> :FZF<CR>
+nmap <silent> <F8> :Ranger<CR>
 nmap <silent> <F9> :Autoformat<CR>
 nmap <silent> <C-p> :bnext<CR>
 nmap <silent> <C-n> :tabnew<CR>
@@ -162,7 +162,7 @@ NeoBundle 'lervag/vimtex'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'ianks/vim-tsx'
-NeoBundle 'junegunn/fzf'
+NeoBundle 'francoiscabrol/ranger.vim'
 
 call neobundle#end()
 filetype plugin indent on
