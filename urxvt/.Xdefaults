@@ -4,8 +4,7 @@ Xft.dpi:        96
 Xft.antialias:  true
 Xft.lcdfilter:lcddefault
 Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.hintstyle:  hintfull
+Xft.hinting:    false
 
 !URxvt*geometry:         112x22  
 URxvt*font:            xft:xos4 Terminess Powerline:style=Regular:size=8
