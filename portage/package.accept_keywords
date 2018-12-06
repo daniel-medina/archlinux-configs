@@ -38,7 +38,6 @@ app-editors/neovim ~amd64
 =dev-libs/msgpack-1.1.0 ~amd64
 =dev-lua/mpack-1.0.4 ~amd64
 =dev-libs/libvterm-0.0_pre20160305 ~amd64
-=app-editors/neovim-0.2.0 ~amd64
 =dev-lua/lpeg-1.0.1 ~amd64
 =app-office/upwork-4.2.153 ~amd64
 =dev-libs/libgcrypt-1.5.6-r101 ~amd64
@@ -86,7 +85,6 @@ app-editors/neovim ~amd64
 =x11-misc/i3lock-fancy-9999 ~amd64
 =x11-misc/i3lock-color-9999 ~amd64
 =www-client/torbrowser-52.3.0_p704 ~amd64
-=media-libs/libvpx-1.6.1 ~amd64
 =dev-python/pyliblzma-0.5.3-r1 ~amd64
 =www-client/torbrowser-launcher-0.2.8 ~amd64
 =sci-geosciences/googleearth-7.1.8.3036 ~amd64
@@ -150,9 +148,11 @@ media-libs/gst-plugins-base amd64
 # }}}
 # Latest unstable version {{{
 net-libs/nodejs ~amd64
+media-libs/libvpx ~amd64
+dev-util/electron ~amd64
+app-editors/atom ~amd64
 media-fonts/fira-code ~amd64
 x11-misc/rofi ~amd64
-dev-util/electron ~amd64
 net-misc/megasync **
 www-client/firefox ~amd64
 app-misc/ranger ~amd64
@@ -236,7 +236,6 @@ dev-cpp/glibmm ~amd64
 dev-libs/glib ~amd64
 dev-util/glib-utils ~amd64
 app-emulation/vmware-horizon-client-bin ~amd64
-app-editors/atom ~amd64
 app-eselect/eselect-electron ~amd64
 sys-libs/libcxx ~amd64
 sys-libs/libcxxabi ~amd64
@@ -258,7 +257,6 @@ media-libs/gegl ~amd64
 app-accessibility/at-spi2-core ~amd64
 sys-devel/llvm ~amd64
 dev-lang/perl ~amd64
-media-libs/libvpx ~amd64
 xfce-base/xfconf ~amd64
 sys-kernel/linux-headers ~amd64
 app-eselect/eselect-qtgraphicssystem ~amd64
@@ -296,4 +294,10 @@ dev-util/ninja ~amd64
 net-dns/libidn2 ~amd64
 dev-util/webstorm ~amd64
 net-misc/rtv ~amd64
+app-editors/vscode ~amd64
+app-editors/oni ~amd64
+dev-libs/libuv ~amd64
+dev-libs/re2 ~amd64
+x11-terms/kitty ~amd64
+dev-util/idea-ultimate ~amd64
 # }}}

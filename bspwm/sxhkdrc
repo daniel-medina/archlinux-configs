@@ -14,7 +14,7 @@ super + alt + l
 
 # terminal emulator
 super + Return
-	urxvt -uc
+	kitty
 
 # program launcher
 super + @space

@@ -1,6 +1,5 @@
 # Content
 snippet content "Content template - for studies."
-\documentclass{report}
 \documentclass[12pt,a4paper]{report}
 \usepackage{fullpage}
 \usepackage{graphicx}
@@ -9,18 +8,38 @@ snippet content "Content template - for studies."
 \usepackage{amsmath}
 \usepackage{txfonts}
 \usepackage{xcolor}
-\usepackage{fancyhdr}
+\usepackage{float} 
 \usepackage{svg}
-\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage{etoolbox}
 \graphicspath{{./figure/}}
-\setlength{\headheight}{10pt}
-\setlength{\headsep}{5pt}
-\pagenumbering{gobble}
-\pagestyle{fancy}
-\renewcommand\thesection{\arabic{section}}
 \author{Daniel Medina}
 \date{$1}
 \title{$2}
+\fancyhf{}
+\fancyhead[L]{
+  \textcolor{violet}{\textbf{\leftmark}}
+}
+\fancyhead[R]{
+  \textcolor{orange}{\textbf{\rightmark}}
+}
+\pagestyle{fancy}
+\pagenumbering{gobble}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{5pt}
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries\centering}
+{\LARGE\thechapter}
+{1pc}
+{\vspace{1pc}
+\Huge}[\clearpage]
+\newcommand{\hsp}{\hspace{20pt}}
+\renewcommand{\thechapter}{}
+\renewcommand{\thesection}{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
 
 \begin{document}
 \maketitle
@@ -32,97 +51,62 @@ endsnippet
 
 # Chapter
 snippet chapter "Chapter template."
-% Chapter: $1 {{{
 \chapter{$1}
 $2
-% }}}
 endsnippet
 
 # Section
 snippet section "Section template."
-% Section: $1 {{{
 \section{$1}
 $2
-% }}}
 endsnippet
 
 # Subsection
 snippet subsection "Subsection template."
-% Subsection: $1 {{{
 \subsection*{$1}
 $2
-% }}}
 endsnippet
 
 # Paragraph
 snippet paragraph "Paragraph template."
-% Paragraph: $1 {{{
 \paragraph{$1}
 $2
-% }}}
 endsnippet
 
 # Note
 snippet lesson "Lesson template. For CMs and notes."
-% Lesson: $1 {{{
 \section{$1}
-% Contenu {{{
 \subsection*{Contenu}
 $2
-% }}}
-% Compréhension {{{
 \pagebreak
 \subsection*{Compréhension}
 $3
 \pagebreak
-% }}}
-% }}}
 endsnippet
 
 # Exercice
 snippet exercice "Exercice template."
-% Exercice: $1 {{{
 \section{$1}
-% Intitulé {{{
 \subsection*{Intitulé}
-% }}}
-% Contenu {{{
 \subsection*{Contenu}
-% }}}
-% Compréhension {{{
 \pagebreak
 \subsection*{Compréhension}
 \pagebreak
-% }}}
-% }}}
 endsnippet
 
 snippet algorithm "Algorithm template."
-% Algorithm: $1 {{{
 \paragraph{Algorithme}
 $1
-% }}}
-% Données {{{
 \paragraph{Données}
 $2
-% }}}
-% Résultat {{{
 \paragraph{Résultat}
 $3
-% }}}
-% Variables {{{
 \paragraph{Variables}
 $4
-% }}}
-% Début {{{
 \paragraph{Début}
 $5
-% }}}
-% Le résultat est {{{
 \paragraph{Le résultat est}
 $6
-% }}}
-% }}}
 endsnippet
 
 # Numbers

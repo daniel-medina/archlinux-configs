@@ -18,6 +18,7 @@ vim-autoformat
 vim-grammarous
 vim-javascript
 vim-jsx
+vim-latex
 vim-pug
 vim-snippets
 vim-tsx

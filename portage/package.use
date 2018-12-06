@@ -86,6 +86,7 @@ media-libs/gegl cairo
 app-shells/fzf tmux neovim bash-completion zsh-completion
 media-libs/libvpx postproc
 net-im/pidgin -gstreamer
+dev-util/electron -system-ffmpeg
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

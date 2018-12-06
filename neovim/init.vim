@@ -8,8 +8,7 @@ set hidden
 set expandtab
 set shiftwidth=2
 set tabstop=2
-set foldmethod=marker
-set foldmarker={{{,}}}
+set foldmethod=syntax
 highlight Folded ctermbg=black
 set relativenumber
 let base16colorspace=256
@@ -159,6 +158,7 @@ NeoBundle 'rbgrouleff/bclose.vim'
 NeoBundle 'rhysd/vim-grammarous'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'lervag/vimtex'
+NeoBundle 'vim-latex/vim-latex'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'ianks/vim-tsx'
