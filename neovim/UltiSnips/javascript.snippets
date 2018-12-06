@@ -16,7 +16,6 @@ endsnippet
 
 # Functions
 snippet function "Function"
-// Function: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
@@ -26,11 +25,9 @@ snippet function "Function"
 function $1 (${3:Args}) {
 	$4
 }
-// }}}
 endsnippet
 
 snippet object-method "Object method"
-// Method: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
@@ -38,11 +35,9 @@ snippet object-method "Object method"
  * @returns {Type} tag
  */
 $1: $3 => $4
-// }}}
 endsnippet
 
 snippet object-method-async "Object method - asynchronous"
-// Method: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
@@ -51,7 +46,6 @@ snippet object-method-async "Object method - asynchronous"
  * @returns {Type} tag
  */
 $1: async $3 => $4
-// }}}
 endsnippet
 
 snippet vue-default-template "Vue - default template file"
@@ -74,7 +68,6 @@ snippet vue-default-template "Vue - default template file"
 endsnippet
 
 snippet vue-method "Vue - method"
-// Method: ${1:Name} {{{
 /**
  * ${2:Method description}
  *
@@ -84,11 +77,9 @@ snippet vue-method "Vue - method"
 $1: function (${3:args}) {
 	$4
 }
-// }}}
 endsnippet
 
 snippet vue-watcher "Vue - watcher"
-// Watch: ${1:Name} {{{
 /**
  * ${2:Watcher description}
  *
@@ -98,11 +89,9 @@ snippet vue-watcher "Vue - watcher"
 $1: function (${3:args}) {
 	$4
 }
-// }}}
 endsnippet
 
 snippet function-arrow-named "Named arrow function"
-// Function: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
@@ -112,11 +101,9 @@ snippet function-arrow-named "Named arrow function"
 const $1 = $3 => {
 	$4
 }
-// }}}
 endsnippet
 
 snippet function-anonymous "Anonymous function"
-// Anonymous function {{{
 /**
  * ${1:Function description}
  *
@@ -126,11 +113,9 @@ snippet function-anonymous "Anonymous function"
 function ($2) {
 	$3
 }
-// }}}
 endsnippet
 
 snippet function-async "Asynchronous function"
-// Function: ${1:Name} {{{
 /**
  * ${2:Function description}
  *
@@ -141,11 +126,9 @@ snippet function-async "Asynchronous function"
 async function $1 ($3) {
 	$4
 }
-// }}}
 endsnippet
 
 snippet function-anonymous-async "Asynchronous anonymous function"
-// Anonymous function {{{
 /**
  * ${1:Function description}
  *
@@ -156,7 +139,6 @@ snippet function-anonymous-async "Asynchronous anonymous function"
 async function ($2) {
 	$3
 }
-// }}}
 endsnippet
 
 snippet function-exec-async "Asynchronous code execution"
@@ -287,7 +269,6 @@ export const get = {
 endsnippet
 
 snippet controller-new "Insert a new controller"
-// Controller: ${1:Name} {{{
 /**
  * ${2:Controller description}
  *
@@ -302,7 +283,6 @@ $1: async (request, response) => {
 		console.log(error)
 	}
 }
-// }}}
 endsnippet
 
 snippet controller-xhr "Controller - return a xhr response"
@@ -310,7 +290,6 @@ response.json(${1:Data to return})
 endsnippet
 
 snippet middleware-new "Insert a new middleware"
-// Middleware: ${1:Name} {{{
 /**
  * ${2:Middleware description}
  *
@@ -326,7 +305,6 @@ $1: async (request, response, next) => {
 		console.log(error)
 	}
 }
-// }}}
 endsnippet
 
 # Requests
@@ -345,17 +323,13 @@ endsnippet
 
 # Tests
 snippet test-description "Test description"
-// ${1:Description} {{{
 describe('$1', function () {
 	$2
 })
-// }}}
 endsnippet
 
 snippet test-it "Test it"
-// ${1:Description} {{{
 it('$1', function () {
  $2
 })
-// }}}
 endsnippet
