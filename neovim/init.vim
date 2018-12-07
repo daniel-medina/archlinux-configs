@@ -171,4 +171,4 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
-colorscheme base16-tomorrow-night
+colorscheme base16-eighties
