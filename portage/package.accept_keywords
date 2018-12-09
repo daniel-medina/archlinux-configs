@@ -1,5 +1,5 @@
 # Specific version {{{
-app-editors/neovim ~amd64
+=sys-kernel/gentoo-sources-4.19.8
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
 =x11-misc/polybar-9999 **
 =app-editors/emacs-vcs-26.0.9999 **
@@ -183,6 +183,7 @@ sys-apps/sc-controller ~amd64
 dev-python/python-uinput ~amd64
 net-misc/meganz-sdk ~amd64
 media-libs/libmtp ~amd64
+app-editors/neovim ~amd64
 games-util/lutris ~amd64
 dev-python/python-evdev ~amd64
 net-nds/openldap ~amd64
@@ -215,7 +216,6 @@ app-emulation/vkd3d ~amd64
 app-emulation/wine-staging ~amd64
 net-im/whatsapp-purple ~amd64
 sci-visualization/gcalc ~amd64
-sys-kernel/gentoo-sources ~amd64
 app-eselect/eselect-infinality ~amd64
 media-fonts/powerline-fonts ~amd64
 x11-terms/xterm ~amd64
@@ -300,4 +300,7 @@ dev-libs/libuv ~amd64
 dev-libs/re2 ~amd64
 x11-terms/kitty ~amd64
 dev-util/idea-ultimate ~amd64
+dev-util/premake ~amd64
+dev-util/otfcc ~amd64
+media-gfx/ttfautohint ~amd64
 # }}}

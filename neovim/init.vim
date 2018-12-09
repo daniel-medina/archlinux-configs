@@ -16,6 +16,11 @@ let base16colorspace=256
 " Vue
 autocmd FileType vue syntax sync fromstart
 
+" Cursor
+let &t_SI .= "\<Esc>[4 q"
+let &t_EI .= "\<Esc>[4 q"
+let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
+
 " Filetypes
 autocmd BufEnter *.ts :setlocal filetype=javascript.jsx
 autocmd BufEnter *.tsx :setlocal filetype=javascript.jsx

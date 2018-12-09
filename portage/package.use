@@ -3,6 +3,7 @@ media-sound/pulseaudio dbus
 www-client/firefox pulseaudio hwaccel
 net-filter/wpa_supplicant tdls wps eap-sim
 x11-misc/lemonbar xft
+x11-terms/kitty imagemagick
 media-libs/sdl-mixer smpeg midi timidity
 media-libs/sdl2-mixer smpeg midi timidity
 games-emulation/pcsxr pulseaudio -sdl -alsa
