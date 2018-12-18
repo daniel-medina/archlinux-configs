@@ -12,6 +12,11 @@ export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
 export LC_MESSAGES="C"
 ZSH_THEME="agnoster"
+export ANDROID_HOME=$HOME/android
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Base16
 BASE16_SHELL=$HOME/.config/base16-shell/

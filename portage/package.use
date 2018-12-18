@@ -32,6 +32,7 @@ media-sound/cmus aac pusleaudio alsa cddb cdio ffmpeg jack opus vorbis wavpack m
 x11-misc/compton opengl drm
 app-emulation/qemu ovmf sdl sdl2 usb usbredir alsa virtfs gtk -pulseaudio
 app-emulation/virt-manager gtk
+sys-libs/ncurses tinfo
 media-video/mpv X archive cli encode gbm egl dvd dvb iconv libass libmpv libcaca opengl openal luajit vaapi vdpau xv zsh-completion drm lua
 app-emulation/libvirt qemu virt-network macvtp libvirtd libssh fuse firewalld
 net-firewall/ipset bindist

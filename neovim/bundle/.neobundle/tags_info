@@ -15,6 +15,7 @@ ultisnips
 vim-airline
 vim-airline-themes
 vim-autoformat
+vim-closetag
 vim-grammarous
 vim-javascript
 vim-jsx

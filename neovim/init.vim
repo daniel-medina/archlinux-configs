@@ -168,6 +168,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'ianks/vim-tsx'
 NeoBundle 'francoiscabrol/ranger.vim'
+NeoBundle 'alvan/vim-closetag'
 
 call neobundle#end()
 filetype plugin indent on
