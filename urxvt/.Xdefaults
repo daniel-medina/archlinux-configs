@@ -7,7 +7,7 @@ Xft.rgba:       rgb
 Xft.hinting:    false
 
 !URxvt*geometry:         112x22  
-URxvt*font:            xft:Fira Code Medium:style=Regular:size=12
+URxvt*font:            xft:Fira Code:size=12
 URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true

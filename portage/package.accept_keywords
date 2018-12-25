@@ -303,4 +303,5 @@ dev-util/idea-ultimate ~amd64
 dev-util/premake ~amd64
 dev-util/otfcc ~amd64
 media-gfx/ttfautohint ~amd64
+media-fonts/firacode ~amd64
 # }}}

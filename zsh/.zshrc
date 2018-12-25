@@ -47,7 +47,7 @@ alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.
 alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"
 alias ckan="mono /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
-alias ksp="cd /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program && ./KSP.x86_64"
+alias ksp="cd ~/game/steam/steamapps/common/Kerbal\ Space\ Program && ./KSP.x86_64"
 
 # Classes
 alias class="cd ~/repository/class"
