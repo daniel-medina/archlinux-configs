@@ -48,6 +48,7 @@ alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"
 alias ckan="mono /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
 alias ksp="cd ~/game/steam/steamapps/common/Kerbal\ Space\ Program && ./KSP.x86_64"
+alias minecraft="./game/minecraft/minecraft-launcher.sh"
 
 # Classes
 alias class="cd ~/repository/class"

@@ -111,7 +111,7 @@ endsnippet
 
 # Numbers
 snippet snum "Number symbols."
-\varmathbb{$1}
+\varmathbb{$1}$2
 endsnippet
 
 # Colors
@@ -203,8 +203,16 @@ snippet amatrix "Augmented coefficient matrix."
 \right]
 endsnippet
 
-snippet frac "Fraction."
+snippet fraction "Fraction."
 \frac{$1}{$2}
+endsnippet
+
+snippet limit "A limit."
+\lim_{$1} $2
+endsnippet
+
+snippet limit-blunt "Blunt limit."
+\lim_{\substack{$1 \\ $2}} $3
 endsnippet
 
 snippet underbrace "Underbrace."

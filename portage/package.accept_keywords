@@ -304,4 +304,9 @@ dev-util/premake ~amd64
 dev-util/otfcc ~amd64
 media-gfx/ttfautohint ~amd64
 media-fonts/firacode ~amd64
+sci-CRAN/ckanr ~amd64
+net-libs/http-parser ~amd64
+net-dns/c-ares ~amd64
+dev-libs/nettle ~amd64
+games-server/minecraft-server ~amd64
 # }}}

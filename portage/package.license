@@ -5,3 +5,5 @@
 >=sci-geosciences/googleearth-7.1.8.3036 googleearth
 >=www-plugins/adobe-flash-27.0.0.130 AdobeFlash-11.x
 >=www-plugins/chrome-binary-plugins-69.0.3497.100:stable google-chrome
+www-client/google-chrome google-chrome
+games-server/minecraft-server Mojang
