@@ -309,4 +309,6 @@ net-libs/http-parser ~amd64
 net-dns/c-ares ~amd64
 dev-libs/nettle ~amd64
 games-server/minecraft-server ~amd64
+app-office/libreoffice-l10n ~amd64
+app-office/libreoffice-bin ~amd64
 # }}}
