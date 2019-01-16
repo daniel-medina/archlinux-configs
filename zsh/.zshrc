@@ -91,8 +91,11 @@ alias factory-pull="cd ~/repository/factory && git pull && cd ~/"
 alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
 
-# arch-mobile-ifthenelse specific
+# slave specific
 alias light="xbacklight -set"
+
+# beta specific
+alias light2="sudo sh -c 'echo \$(expr 255 \* $1 / 100) > /sys/class/backlight/radeon_bl0/brightness'
 
 # computer infos
 alias devices="sudo lsblk -o NAME,MOUNTPOINT,FSTYPE,LABEL,PARTUUID,SIZE,HOTPLUG"
