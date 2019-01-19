@@ -90,6 +90,8 @@ alias factory-push="cd ~/repository/factory && git add -A && git commit -m 'upda
 alias factory-pull="cd ~/repository/factory && git pull && cd ~/"
 alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias dots-pull="cd ~/repository/dotfiles && git pull && cd ~/"
+alias safety-push="cd ~/repository/safety && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias safety-pull="cd ~/repository/safety && git pull && cd ~/"
 
 # slave specific
 alias light="xbacklight -set"
