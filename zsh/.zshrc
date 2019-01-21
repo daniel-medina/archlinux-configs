@@ -145,6 +145,10 @@ alias nginx-off="sudo systemctl stop mysqld nginx php-fpm"
 alias kehros="ssh ifthenelse@188.166.16.248 -p 4442"
 alias master="ssh ifthenelse@192.168.1.31 -p 4658 -Y"
 
+# FiveM
+alias fivem="cd ~/repository/factory/fivem"
+alias fivem-start="cd ~/repository/factory/fivem/server-data && bash ~/repository/factory/fivem/server/run.sh +exec server.cfg"
+
 # VPN
 alias vpn-france="cd ~/cloud/safety/vpn && sudo openvpn France.ovpn"
 alias vpn-france-tcp="cd ~/cloud/safety/vpn && sudo openvpn France-tcp.ovpn"
