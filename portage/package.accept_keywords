@@ -30,7 +30,6 @@
 =dev-java/gradle-bin-3.4.1 ~amd64
 =virtual/jdk-1.7 ~amd64
 =app-eselect/eselect-electron-1.0.0 ~amd64
-=x11-plugins/pidgin-skypeweb-1.4 ~amd64
 =x11-plugins/pidgin-opensteamworks-1.6.1 ~amd64
 =app-emulation/genymotion-bin-2.9.0-r1 ~amd64
 =dev-libs/unibilium-1.1.4 ~amd64
@@ -330,4 +329,5 @@ sci-CRAN/assertthat ~amd64
 sci-CRAN/cli ~amd64
 sci-CRAN/bindr ~amd64
 sci-CRAN/tidyselect ~amd64
+x11-plugins/pidgin-skypeweb ~amd64
 # }}}
