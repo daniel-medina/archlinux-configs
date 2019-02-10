@@ -24,6 +24,7 @@ let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
 " Filetypes
 autocmd BufEnter *.ts :setlocal filetype=javascript.jsx
 autocmd BufEnter *.tsx :setlocal filetype=javascript.jsx
+autocmd BufEnter *.asm :setlocal filetype=nasm
 
 " Variables
 let g:airline_theme='base16'
@@ -35,6 +36,28 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#ale#enabled = 1
 let g:UltiSnipsSnippetsDir="~/.config/nvim/UltiSnips"
 
+" Cpp auto completion
+" configure tags - add additional tags here or comment out not-used ones
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/gl
+set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/qt4
+" build tags of your own project with Ctrl-F12
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
+
 " omnifuncs
 augroup omnifuncs
   autocmd!
@@ -44,6 +67,7 @@ augroup omnifuncs
   autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
   autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 augroup end
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
 " Folds
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
@@ -154,6 +178,7 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'Shougo/deoplete.nvim'
+NeoBundle 'zchee/deoplete-clang'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'carlitux/deoplete-ternjs'
 NeoBundle 'othree/jspc.vim'

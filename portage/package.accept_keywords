@@ -330,4 +330,7 @@ sci-CRAN/cli ~amd64
 sci-CRAN/bindr ~amd64
 sci-CRAN/tidyselect ~amd64
 x11-plugins/pidgin-skypeweb ~amd64
+games-util/xboxdrv ~amd64
+dev-util/cmake ~amd64
+media-libs/libwebp ~amd64
 # }}}

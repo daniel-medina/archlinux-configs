@@ -1,6 +1,7 @@
 # USE flags - unrestricted {{{
 media-sound/pulseaudio dbus
 www-client/firefox pulseaudio hwaccel
+dev-db/sqlite secure-delete
 net-filter/wpa_supplicant tdls wps eap-sim
 x11-misc/lemonbar xft
 x11-terms/kitty imagemagick
