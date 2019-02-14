@@ -49,7 +49,6 @@
 =dev-python/pivy-0.5_alpha20110303-r1 ~amd64
 =media-libs/SoQt-1.5.0-r1 ~amd64
 =sci-libs/opencascade-6.9.1-r2 ~amd64
-=dev-python/neovim-python-client-0.1.13 ~amd64
 =dev-libs/nspr-4.15 ~amd64
 =app-vim/youcompleteme-20130910 ~amd64
 =media-libs/openh264-1.6.0 ~amd64
@@ -333,4 +332,8 @@ x11-plugins/pidgin-skypeweb ~amd64
 games-util/xboxdrv ~amd64
 dev-util/cmake ~amd64
 media-libs/libwebp ~amd64
+media-libs/libsdl ~amd64
+media-libs/libsdl2 ~amd64
+dev-python/neovim-python-client ~amd64
+dev-python/msgpack ~amd64
 # }}}
