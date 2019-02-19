@@ -80,6 +80,7 @@ games-emulation/dolphin pulseaudio evdev ffmpeg openal portaudio
 x11-libs/wxGTK tiff
 media-fonts/powerline-fonts fonts terminus_pcf
 media-libs/sdl-image jpeg png
+media-libs/sdl2-image jpeg png gif
 media-libs/sdl-mixer mp3
 media-libs/libvpx svc
 media-sound/pulseaudio gnome
@@ -90,6 +91,7 @@ app-shells/fzf tmux neovim bash-completion zsh-completion
 media-libs/libvpx postproc
 net-im/pidgin -gstreamer
 dev-util/electron -system-ffmpeg
+media-libs/libsdl2 opengl
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions

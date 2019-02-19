@@ -143,6 +143,7 @@ dev-dotnet/gtk-sharp amd64
 dev-qt/qtcore amd64
 dev-util/meson amd64
 media-libs/gst-plugins-base amd64
+dev-libs/openssl amd64
 # }}}
 # Latest unstable version {{{
 net-libs/nodejs ~amd64
@@ -164,7 +165,6 @@ app-emulation/wine-mono ~amd64
 net-im/discord-bin ~amd64
 net-im/skypeforlinux ~amd64
 dev-util/mingw64-runtime ~amd64
-dev-libs/openssl ~amd64
 dev-lang/mono ~amd64
 sys-devel/crossdev ~amd64
 dev-python/ntlm-auth ~amd64
@@ -336,4 +336,5 @@ media-libs/libsdl ~amd64
 media-libs/libsdl2 ~amd64
 dev-python/neovim-python-client ~amd64
 dev-python/msgpack ~amd64
+media-libs/opusfile ~amd64
 # }}}
