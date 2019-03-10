@@ -194,6 +194,7 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'ianks/vim-tsx'
 NeoBundle 'francoiscabrol/ranger.vim'
 NeoBundle 'alvan/vim-closetag'
+NeoBundle 'godlygeek/tabular'
 
 call neobundle#end()
 filetype plugin indent on

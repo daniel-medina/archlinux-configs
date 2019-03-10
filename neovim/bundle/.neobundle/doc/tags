@@ -34,6 +34,7 @@
 :NeoBundleUpdate	neobundle.txt	/*:NeoBundleUpdate*
 :NeoBundleUpdate!	neobundle.txt	/*:NeoBundleUpdate!*
 :NeoBundleUpdatesLog	neobundle.txt	/*:NeoBundleUpdatesLog*
+:Tabularize	Tabular.txt	/*:Tabularize*
 :TernDef	tern.txt	/*:TernDef*
 :TernDefPreview	tern.txt	/*:TernDefPreview*
 :TernDefSplit	tern.txt	/*:TernDefSplit*
@@ -261,6 +262,7 @@ TPartView	latex-suite.txt	/*TPartView*
 TSection	latex-suite.txt	/*TSection*
 TSectionAdvanced	latex-suite.txt	/*TSectionAdvanced*
 TTemplate	latex-suite.txt	/*TTemplate*
+Tabular.txt	Tabular.txt	/*Tabular.txt*
 Tex_AutoFolding	latex-suite.txt	/*Tex_AutoFolding*
 Tex_BIBINPUTS	latex-suite.txt	/*Tex_BIBINPUTS*
 Tex_CatchVisMapErrors	latex-suite.txt	/*Tex_CatchVisMapErrors*
@@ -2927,6 +2929,12 @@ supertab-preventcomplete	supertab.txt	/*supertab-preventcomplete*
 supertab-usage	supertab.txt	/*supertab-usage*
 supertab.txt	supertab.txt	/*supertab.txt*
 supporting-packages	latex-suite.txt	/*supporting-packages*
+tabular	Tabular.txt	/*tabular*
+tabular-intro	Tabular.txt	/*tabular-intro*
+tabular-scripting	Tabular.txt	/*tabular-scripting*
+tabular-toc	Tabular.txt	/*tabular-toc*
+tabular-walkthrough	Tabular.txt	/*tabular-walkthrough*
+tabular.vim	Tabular.txt	/*tabular.vim*
 tern-commands	tern.txt	/*tern-commands*
 tern-contents	tern.txt	/*tern-contents*
 tern-install	tern.txt	/*tern-install*

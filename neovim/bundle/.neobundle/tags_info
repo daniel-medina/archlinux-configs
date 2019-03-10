@@ -11,6 +11,7 @@ jspc.vim
 neobundle.vim
 ranger.vim
 supertab
+tabular
 tern_for_vim
 ultisnips
 vim-airline

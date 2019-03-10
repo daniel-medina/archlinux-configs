@@ -143,9 +143,9 @@ dev-dotnet/gtk-sharp amd64
 dev-qt/qtcore amd64
 dev-util/meson amd64
 media-libs/gst-plugins-base amd64
-dev-libs/openssl amd64
 # }}}
 # Latest unstable version {{{
+dev-libs/openssl ~amd64
 net-libs/nodejs ~amd64
 media-libs/libvpx ~amd64
 dev-util/electron ~amd64
@@ -337,4 +337,8 @@ media-libs/libsdl2 ~amd64
 dev-python/neovim-python-client ~amd64
 dev-python/msgpack ~amd64
 media-libs/opusfile ~amd64
+x11-plugins/whatsapp-purple ~amd64
+media-gfx/gimp ~amd64
+media-libs/babl ~amd64
+mail-client/thunderbird ~amd64
 # }}}
