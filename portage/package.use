@@ -5,8 +5,9 @@ dev-db/sqlite secure-delete
 net-filter/wpa_supplicant tdls wps eap-sim
 x11-misc/lemonbar xft
 x11-terms/kitty imagemagick
+sys-auth/polkit consolekit
 media-libs/sdl-mixer smpeg midi timidity
-media-libs/sdl2-mixer smpeg midi timidity
+media-libs/sdl2-mixer mp3 smpeg midi timidity
 media-gfx/imagemagick perl jpeg png
 games-emulation/pcsxr pulseaudio -sdl -alsa
 media-video/ffmpeg vaapi vdpau amr amrenc bluray bs2b cdio celt jack mp3 modplug openh264
@@ -301,6 +302,12 @@ media-libs/libepoxy abi_x86_32
 app-accessibility/at-spi2-atk abi_x86_32
 app-accessibility/at-spi2-core abi_x86_32
 x11-libs/libpciaccess abi_x86_32
+media-libs/libsdl2 abi_x86_32
+virtual/pam abi_x86_32
+sys-libs/pam abi_x86_32
+sys-libs/cracklib abi_x86_32
+sys-libs/db abi_x86_32
+sys-devel/flex abi_x86_32
 # }}}
 # Python targets {{{
 dev-python/certifi python_targets_python3_4

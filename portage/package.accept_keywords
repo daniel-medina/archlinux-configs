@@ -145,8 +145,15 @@ dev-util/meson amd64
 media-libs/gst-plugins-base amd64
 # }}}
 # Latest unstable version {{{
-dev-libs/openssl ~amd64
+net-libs/http-parser ~amd64
 net-libs/nodejs ~amd64
+app-emulation/faudio ~amd64
+dev-libs/openssl ~amd64
+media-libs/libaom ~amd64
+media-libs/dav1d ~amd64
+sci-CRAN/openssl ~amd64
+sci-CRAN/sys ~amd64
+sci-CRAN/askpass ~amd64
 media-libs/libvpx ~amd64
 dev-util/electron ~amd64
 app-editors/atom ~amd64
@@ -303,7 +310,6 @@ dev-util/otfcc ~amd64
 media-gfx/ttfautohint ~amd64
 media-fonts/firacode ~amd64
 sci-CRAN/ckanr ~amd64
-net-libs/http-parser ~amd64
 net-dns/c-ares ~amd64
 dev-libs/nettle ~amd64
 games-server/minecraft-server ~amd64
