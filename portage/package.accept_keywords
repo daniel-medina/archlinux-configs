@@ -134,6 +134,7 @@
 =media-gfx/gscan2pdf-1.8.11 ~amd64
 =app-emulation/wine-staging-3.11 ~amd64
 =x11-drivers/nvidia-drivers-410.78 ~amd64
+=x11-libs/pango-1.38.1 ~amd64
 # }}}
 # Latest stable version {{{
 x11-wm/i3-gaps amd64
@@ -146,6 +147,9 @@ media-libs/gst-plugins-base amd64
 # }}}
 # Latest unstable version {{{
 net-libs/http-parser ~amd64
+media-libs/fontconfig ~amd64
+net-im/pidgin ~amd64
+www-client/firefox ~amd64
 net-libs/nodejs ~amd64
 app-emulation/faudio ~amd64
 dev-libs/openssl ~amd64
@@ -160,7 +164,6 @@ app-editors/atom ~amd64
 media-fonts/fira-code ~amd64
 x11-misc/rofi ~amd64
 net-misc/megasync **
-www-client/firefox ~amd64
 app-misc/ranger ~amd64
 dev-libs/nss ~amd64
 dev-util/cargo ~amd64
@@ -347,4 +350,9 @@ x11-plugins/whatsapp-purple ~amd64
 media-gfx/gimp ~amd64
 media-libs/babl ~amd64
 mail-client/thunderbird ~amd64
+dev-libs/nspr ~amd64
+media-sound/spotify ~amd64
+dev-util/patchelf ~amd64
+perl-core/File-Temp ~amd64
+dev-dotnet/libgdiplus ~amd64
 # }}}

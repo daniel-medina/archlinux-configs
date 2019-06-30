@@ -7,3 +7,5 @@
 >=www-plugins/chrome-binary-plugins-69.0.3497.100:stable google-chrome
 www-client/google-chrome google-chrome
 games-server/minecraft-server Mojang
+>=x11-drivers/nvidia-drivers-430.14 NVIDIA-r2
+>=media-sound/spotify-1.1.5-r1 Spotify
