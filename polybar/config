@@ -13,9 +13,9 @@ alert = #bd2c40
 ;monitor = ${env:MONITOR:HDMI-1}
 bottom = false
 width = 100%
-height = 30
+height = 15
 ;offset-x = 12
-;offset-y = 10
+;offset-y = 5
 radius = 0.0
 fixed-center = true
 
@@ -30,7 +30,7 @@ padding-right = 0
 
 module-margin-right = 2
 
-font-0 = Fira Code Medium:pixelsize=12;1
+font-0 = TamzenForPowerline:pixelsize=12;1
 label-active-font = 0
 
 modules-center = date
@@ -44,9 +44,9 @@ tray-scale = 1
 [bar/bottom]
 bottom = true
 width = 100%
-height = 30
-offset-x = 12
-offset-y = 10
+height = 20
+;offset-x = 12
+;offset-y = 10
 radius = 0.0
 fixed-center = true
 wm-restack = bspwm
@@ -63,10 +63,10 @@ padding-right = 2
 module-margin-left = 30
 module-margin-right = 2
 
-font-0 = Fira Code Medium:pixelsize=12;1
+font-0 = TamzenForPowerline:pixelsize=12;1
 label-active-font = 0
 
-modules-center = bspwm
+modules-center = i3
 
 ; Module: xwindow {{{
 [module/xwindow]
