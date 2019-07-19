@@ -42,7 +42,7 @@ alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
 
 # Wine games
 alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
-alias wow="wine /storage/ssd/game/World\ of\ Warcraft/Wow.exe"
+alias wow="wine ~/game/World\ of\ Warcraft/Wow.exe"
 alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
 alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"

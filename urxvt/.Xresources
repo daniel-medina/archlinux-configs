@@ -1,11 +1,5 @@
 ! Base16 Tomorrow Night
 ! Scheme: Chris Kempson (http://chriskempson.com)
-XTerm*faceName: TamzenForPowerline 
-xterm*termName: xterm-256color
-xterm*font: 7x13
-xterm*maximized: true
-xterm*locale: true
-
 #define base00 #1d1f21
 #define base01 #282a2e
 #define base02 #373b41

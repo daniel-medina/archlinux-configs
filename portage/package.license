@@ -9,3 +9,5 @@ www-client/google-chrome google-chrome
 games-server/minecraft-server Mojang
 >=x11-drivers/nvidia-drivers-430.14 NVIDIA-r2
 >=media-sound/spotify-1.1.5-r1 Spotify
+>=net-im/discord-bin-0.0.9 all-rights-reserved
+
