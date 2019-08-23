@@ -135,6 +135,7 @@
 =app-emulation/wine-staging-3.11 ~amd64
 =x11-drivers/nvidia-drivers-410.78 ~amd64
 =x11-libs/pango-1.38.1 ~amd64
+=media-libs/libvpx-1.7.0 ~amd64
 # }}}
 # Latest stable version {{{
 x11-wm/i3-gaps amd64
@@ -146,7 +147,16 @@ dev-util/meson amd64
 media-libs/gst-plugins-base amd64
 # }}}
 # Latest unstable version {{{
+net-analyzer/hydra ~amd64
 net-libs/http-parser ~amd64
+net-print/brother-hll2300d ~amd64
+sci-CRAN/zeallot ~amd64
+sci-CRAN/backports ~amd64
+sci-CRAN/digest ~amd64
+sci-CRAN/ellipsis ~amd64
+sci-CRAN/vctrs ~amd64
+sci-CRAN/dbplyr ~amd64
+sci-CRAN/DBI ~amd64
 media-libs/fontconfig ~amd64
 net-im/pidgin ~amd64
 www-client/firefox ~amd64
@@ -158,7 +168,6 @@ media-libs/dav1d ~amd64
 sci-CRAN/openssl ~amd64
 sci-CRAN/sys ~amd64
 sci-CRAN/askpass ~amd64
-media-libs/libvpx ~amd64
 dev-util/electron ~amd64
 app-editors/atom ~amd64
 media-fonts/fira-code ~amd64
@@ -200,6 +209,8 @@ kde-misc/kmozillahelper **
 net-misc/youtube-dl ~amd64
 www-client/chromium ~amd64
 dev-util/gn ~amd64
+net-p2p/armory ~amd64
+net-p2p/armory **
 sys-libs/binutils-libs ~amd64
 sys-devel/gcc ~amd64
 sys-devel/libtool ~amd64

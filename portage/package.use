@@ -94,6 +94,8 @@ media-libs/libvpx postproc
 net-im/pidgin -gstreamer
 dev-util/electron -system-ffmpeg
 media-libs/libsdl2 opengl
+dev-python/PyQt5 svg
+x11-libs/gtk+ cups
 # }}}
 # USE flags - restricted {{{
 >=dev-qt/qtwebkit-4.8.6-r1:4 -exceptions
@@ -114,6 +116,7 @@ media-libs/libsdl2 opengl
 >=net-wireless/lorcon-0.0_p20150109 python
 >=media-libs/harfbuzz-1.4.5 icu
 >=net-print/cups-2.1.4 dbus
+
 >=app-crypt/gcr-3.20.0 gtk
 >=dev-ml/lablgl-1.05-r1 glut
 >=dev-java/oracle-jdk-bin-1.8.0.131 javafx
@@ -308,6 +311,17 @@ sys-libs/pam abi_x86_32
 sys-libs/cracklib abi_x86_32
 sys-libs/db abi_x86_32
 sys-devel/flex abi_x86_32
+net-print/cups abi_x86_32
+net-dns/avahi abi_x86_32
+sys-libs/gdbm abi_x86_32
+sys-libs/readline abi_x86_32
+virtual/krb5 abi_x86_32
+app-crypt/mit-krb5 abi_x86_32
+sys-libs/e2fsprogs-libs abi_x86_32
+sys-apps/keyutils abi_x86_32
+dev-libs/openssl abi_x86_32
+dev-libs/libverto abi_x86_32
+dev-libs/libev abi_x86_32
 # }}}
 # Python targets {{{
 dev-python/certifi python_targets_python3_4

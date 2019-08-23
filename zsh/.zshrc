@@ -3,7 +3,7 @@ export PATH=$HOME/bin:$HOME/bin/game:/usr/local/bin:$PATH
 export WINEPREFIX=$HOME/.wine
 export BROWSER=firefox
 export EDITOR=nvim
-export DXVK_HUD=fps
+export DXVK_HUD=0
 export GIT_EDITOR=nvim
 export QEMU_AUDIO_DRV=alsa
 #export XDG_RUNTIME_DIR=/tmp
@@ -42,13 +42,14 @@ alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
 
 # Wine games
 alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
-alias wow="wine ~/game/World\ of\ Warcraft/Wow.exe"
+alias wow="wine ~/game/World\ of\ Warcraft/_retail_/Wow.exe"
 alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
-alias steam-wine="wine /storage/sshd/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe"
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"
-alias ckan="mono /storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
+alias ckan="mono ~/storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
 alias ksp="cd ~/game/steam/steamapps/common/Kerbal\ Space\ Program && ./KSP.x86_64"
 alias minecraft="./game/minecraft/minecraft-launcher.sh"
+alias sims="wine ~/game/The\ Sims\ 3/Game/Bin/TS3W.exe"
+alias stalker="cd /storage/ssd/stalker-call-of-chernobyl && wine Stalker-CoC.exe && cd"
 
 # Classes
 alias class="cd ~/repository/class"
