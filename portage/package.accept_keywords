@@ -1,5 +1,4 @@
 # Specific version {{{
-=sys-kernel/gentoo-sources-4.19.8
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
 =x11-misc/polybar-9999 **
 =app-editors/emacs-vcs-26.0.9999 **
@@ -208,6 +207,7 @@ net-libs/nghttp2 ~amd64
 kde-misc/kmozillahelper **
 net-misc/youtube-dl ~amd64
 www-client/chromium ~amd64
+www-client/torbrowser ~amd64
 dev-util/gn ~amd64
 net-p2p/armory ~amd64
 net-p2p/armory **
@@ -362,6 +362,7 @@ media-gfx/gimp ~amd64
 media-libs/babl ~amd64
 mail-client/thunderbird ~amd64
 dev-libs/nspr ~amd64
+sys-kernel/gentoo-sources
 media-sound/spotify ~amd64
 dev-util/patchelf ~amd64
 perl-core/File-Temp ~amd64
