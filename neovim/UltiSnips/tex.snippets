@@ -130,6 +130,16 @@ snippet underline "Underlined text."
 \underline{$1}
 endsnippet
 
+# Underbold
+snippet underbold "Underlined and bold text."
+\textbf{\underline{$1}}
+endsnippet
+
+# Important
+snippet important "Important text."
+\paragraph{\textbf{\underline{$1}}}
+endsnippet
+
 # Verbatim
 snippet verbatim "Verbatim environment."
 \begin{verbatim}
