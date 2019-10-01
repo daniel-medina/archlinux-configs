@@ -16,6 +16,7 @@
 =games-util/steam-client-meta-0-r20160828 ~amd64
 =app-emulation/virtio-win-0.1.126 ~amd64
 =app-emulation/qt-virt-manager-9999 **
+=net-misc/rtv-1.24.0 ~amd64
 =sys-firmware/edk2-ovmf-2017_pre20170505 ~amd64
 =sys-kernel/mkinitcpio-9999 **
 =net-wireless/reaver-wps-fork-t6x-1.5.2_p20161210-r2 ~amd64
@@ -101,7 +102,6 @@
 =dev-python/mailcap-fix-0.2.0 ~amd64
 =dev-python/praw-3.6.0 ~amd64
 =dev-python/kitchen-1.2.4 ~amd64
-=net-misc/rtv-1.13.0 ~amd64
 =dev-libs/sway-0.14.0 ~amd64
 =dev-libs/wlc-0.0.10 ~amd64
 =x11-plugins/pidgin-window_merge-0.3 ~amd64
@@ -312,7 +312,6 @@ sys-apps/sysvinit ~amd64
 dev-util/ninja ~amd64
 net-dns/libidn2 ~amd64
 dev-util/webstorm ~amd64
-net-misc/rtv ~amd64
 app-editors/vscode ~amd64
 app-editors/oni ~amd64
 dev-libs/libuv ~amd64

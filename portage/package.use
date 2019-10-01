@@ -1,4 +1,5 @@
 # USE flags - unrestricted {{{
+net-misc/remmina vnc rdp telepathy ayatana
 media-sound/pulseaudio dbus
 www-client/firefox pulseaudio hwaccel
 dev-db/sqlite secure-delete

@@ -79,8 +79,8 @@ floating_modifier $mod
 floating_minimum_size 500 x 200
 
 # defining borders
-new_float pixel 1
-new_window pixel 1
+new_float pixel 2
+new_window pixel 2
 
 # removing edge borders
 #hide_edge_borders both
