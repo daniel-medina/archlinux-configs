@@ -70,7 +70,7 @@ endsnippet
 
 # Paragraph
 snippet paragraph "Paragraph template."
-\paragraph{$1}
+\paragraph{$1 :}
 $2
 endsnippet
 
@@ -135,9 +135,10 @@ snippet underbold "Underlined and bold text."
 \textbf{\underline{$1}}
 endsnippet
 
-# Important
-snippet important "Important text."
-\paragraph{\textbf{\underline{$1}}}
+# Title
+snippet title "A title."
+\textbf{$1}
+\dotfill
 endsnippet
 
 # Verbatim
@@ -152,6 +153,13 @@ snippet enumerate "Enumerate environment."
 \begin{enumerate}
 $1
 \end{enumerate}
+endsnippet
+
+# Itemize
+snippet itemize "Itemize environment."
+\begin{itemize}
+$1
+\end{itemize}
 endsnippet
 
 # Equation
