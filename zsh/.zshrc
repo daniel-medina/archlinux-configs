@@ -54,12 +54,10 @@ alias mod-organizer="wine ~/.wine/drive_c/Modding/MO2/ModOrganizer.exe"
 
 # Classes
 alias class="cd ~/repository/class"
-alias algebra="cd ~/repository/class/algebra/first-year"
-alias algorithmic="cd ~/repository/class/algorithmic/first-year"
-alias programming="cd ~/repository/class/algorithmic/first-year/programming"
-alias web-binary="cd ~/repository/class/web-binary/first-year"
-alias calculus="cd ~/repository/class/calculus/first-year"
-alias knowledge="cd ~/repository/class/knowledge/1"
+alias algebra="cd ~/repository/class/hlma101"
+alias calculus="cd ~/repository/class/hlse101"
+alias physics="cd ~/repository/class/hlph101"
+alias knowledge="cd ~/repository/class/knowledge"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
