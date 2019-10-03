@@ -345,3 +345,22 @@ snippet graph "Graph."
 	\end{tikzpicture}
 \end{center}
 endsnippet
+
+# Array
+snippet array "An array."
+\begin{center}
+	\begin{tabular}{|c|} 
+		\hline $1
+	\end{tabular}
+\end{center}
+endsnippet
+
+# Array with merged columns / rows
+snippet arraym "An array with merged colums or rows."
+\begin{center}
+	\begin{tabular}{|c|}
+		\hline \multicolumns{1}{|c|}{$1} \\
+		\hline \multirow{1}{*}{$2} \\\cline{1-2}\\
+		\hline
+	\end{tabular}
+\end{center}
