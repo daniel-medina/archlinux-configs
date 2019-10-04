@@ -84,7 +84,7 @@ alias factory="cd ~/repository/factory"
 alias freelance="cd ~/repository/factory/freelance"
 
 # Repositories
-alias universit-push="cd ~/repository/university && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias university-push="cd ~/repository/university && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias university-pull="cd ~/repository/university && git pull"
 alias factory-push="cd ~/repository/factory && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias factory-pull="cd ~/repository/factory && git pull && cd ~/"
