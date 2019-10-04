@@ -53,11 +53,11 @@ alias stalker="cd /storage/ssd/stalker-call-of-chernobyl && wine Stalker-CoC.exe
 alias mod-organizer="wine ~/.wine/drive_c/Modding/MO2/ModOrganizer.exe"
 
 # Classes
-alias class="cd ~/repository/class"
-alias algebra="cd ~/repository/class/hlma101"
-alias calculus="cd ~/repository/class/hlse101"
-alias physics="cd ~/repository/class/hlph101"
-alias knowledge="cd ~/repository/class/knowledge"
+alias university="cd ~/repository/university"
+alias algebra="cd ~/repository/university/hlma101"
+alias calculus="cd ~/repository/university/hlse101"
+alias physics="cd ~/repository/university/hlph101"
+alias revision-sheet="cd ~/repository/university/revision-sheet"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
@@ -84,8 +84,8 @@ alias factory="cd ~/repository/factory"
 alias freelance="cd ~/repository/factory/freelance"
 
 # Repositories
-alias class-push="cd ~/repository/class && git add -A && git commit -m 'updated' && git push && cd ~/"
-alias class-pull="cd ~/repository/class && git pull"
+alias universit-push="cd ~/repository/university && git add -A && git commit -m 'updated' && git push && cd ~/"
+alias university-pull="cd ~/repository/university && git pull"
 alias factory-push="cd ~/repository/factory && git add -A && git commit -m 'updated' && git push && cd ~/"
 alias factory-pull="cd ~/repository/factory && git pull && cd ~/"
 alias dots-push="cd ~/repository/dotfiles && git add -A && git commit -m 'updated' && git push && cd ~/"
