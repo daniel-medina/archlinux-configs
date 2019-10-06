@@ -1,6 +1,5 @@
 set nocompatible
 filetype plugin indent on
-syntax on
 set number
 set autoindent
 set smartindent
@@ -9,9 +8,21 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set foldmethod=syntax
+syntax on
 highlight Folded ctermbg=black
 set relativenumber
 let base16colorspace=256
+
+" Folding
+nmap <Leader>ff :call <SID>ToggleFold()<CR>
+function! s:ToggleFold()
+    if &foldmethod == 'marker'
+        let &l:foldmethod = 'syntax'
+    else
+        let &l:foldmethod = 'marker'
+    endif
+    echo 'foldmethod is now ' . &l:foldmethod
+  endfunction
 
 " Vue
 autocmd FileType vue syntax sync fromstart
