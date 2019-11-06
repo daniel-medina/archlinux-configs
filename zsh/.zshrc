@@ -54,9 +54,9 @@ alias mod-organizer="wine ~/.wine/drive_c/Modding/MO2/ModOrganizer.exe"
 
 # Classes
 alias university="cd ~/repository/university"
-alias algebra="cd ~/repository/university/hlma101"
-alias calculus="cd ~/repository/university/hlse101"
-alias physics="cd ~/repository/university/hlph101"
+alias hlma101="cd ~/repository/university/hlma101"
+alias hlse101="cd ~/repository/university/hlse101"
+alias hlph101="cd ~/repository/university/hlph101"
 alias revision-sheet="cd ~/repository/university/revision-sheet"
 
 # Kernel
