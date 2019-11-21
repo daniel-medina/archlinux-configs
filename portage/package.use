@@ -4,6 +4,10 @@ media-sound/pulseaudio dbus
 www-client/firefox pulseaudio hwaccel
 dev-db/sqlite secure-delete
 net-filter/wpa_supplicant tdls wps eap-sim
+media-libs/gd png
+xfce-base/exo gtk2
+dev-libs/libdbusmenu gtk3
+dev-lua/luv luajit
 x11-misc/lemonbar xft
 x11-terms/kitty imagemagick
 sys-auth/polkit consolekit

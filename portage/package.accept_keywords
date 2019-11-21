@@ -157,6 +157,8 @@ sci-CRAN/vctrs ~amd64
 sci-CRAN/dbplyr ~amd64
 sci-CRAN/DBI ~amd64
 media-libs/fontconfig ~amd64
+app-text/cpdf ~amd64
+dev-ml/camlpdf ~amd64
 net-im/pidgin ~amd64
 www-client/firefox ~amd64
 net-libs/nodejs ~amd64
@@ -366,4 +368,9 @@ media-sound/spotify ~amd64
 dev-util/patchelf ~amd64
 perl-core/File-Temp ~amd64
 dev-dotnet/libgdiplus ~amd64
+dev-libs/boost ~amd64
+dev-libs/libvterm ~amd64
+dev-lua/luv ~amd64
+app-text/hunspell ~amd64
+dev-util/boost-build ~amd64
 # }}}

@@ -14,3 +14,4 @@ net-print/brother-hll2300d GPL
 net-print/brother-genml1-bin brother-eula
 app-text/foxitreader foxitreader
 games-util/steam-launcher ValveSteamLicense
+app-text/cpdf Coherent-Graphics
