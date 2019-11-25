@@ -139,7 +139,9 @@
 # Latest stable version {{{
 x11-wm/i3-gaps amd64
 app-editors/neovim amd64
+www-client/chromium amd64
 dev-libs/libinput amd64
+dev-util/mingw64-runtime amd64
 dev-dotnet/gtk-sharp amd64
 dev-qt/qtcore amd64
 dev-util/meson amd64
@@ -184,7 +186,6 @@ app-emulation/wine-vanilla ~amd64
 app-emulation/wine-mono ~amd64
 net-im/discord-bin ~amd64
 net-im/skypeforlinux ~amd64
-dev-util/mingw64-runtime ~amd64
 dev-lang/mono ~amd64
 sys-devel/crossdev ~amd64
 dev-python/ntlm-auth ~amd64
@@ -208,7 +209,6 @@ net-nds/openldap ~amd64
 net-libs/nghttp2 ~amd64
 kde-misc/kmozillahelper **
 net-misc/youtube-dl ~amd64
-www-client/chromium ~amd64
 www-client/torbrowser ~amd64
 dev-util/gn ~amd64
 net-p2p/armory ~amd64
