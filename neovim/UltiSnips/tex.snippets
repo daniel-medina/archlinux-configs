@@ -680,3 +680,45 @@ endsnippet
 snippet prime "For derivative."
 ^\prime $1
 endsnippet
+
+# Bloc
+snippet bloc "A bloc."
+\begin{bloc}{$1}
+$2
+\end{bloc}
+endsnippet
+
+# Bloc - definition
+snippet bloc-definition "A bloc for definitions."
+\begin{bloc-definition}{$1}
+$2
+\end{bloc}
+endsnippet
+
+# Bloc - 2 columns
+snippet bloc-2 "A bloc with 2 columns."
+\begin{bloc-2}{$1}  
+	$2 & $3
+\end{bloc-2}
+endsnippet
+
+# Bloc - 3 columns
+snippet bloc-3 "A bloc with 3 columns."
+\begin{bloc-3}{$1}  
+	$2 & $3 & $4
+\end{bloc-3}
+endsnippet
+
+# Bloc - 4 columns
+snippet bloc-4 "A bloc with 4 columns."
+\begin{bloc-4}{$1}  
+	$2 & $3 & $4 & $5
+\end{bloc-4}
+endsnippet
+
+# Raster
+snippet raster "Raster - for equal heights between blocs"
+\begin{tcbraster}[raster columns=$1, raster column skip=0.0015\columnwidth, raster equal height]
+	$2
+\end{tcbraster}
+endsnippet
