@@ -1,6 +1,8 @@
 # USE flags - unrestricted {{{
+sys-fs/ntfs3g external-fuse
 net-misc/remmina vnc rdp telepathy ayatana
 media-sound/pulseaudio dbus
+media-fonts/nerd-fonts terminus robotomono inconsolata ubuntu ubuntumono mononoki firacode hack hasklig
 www-client/firefox pulseaudio hwaccel
 dev-db/sqlite secure-delete
 net-filter/wpa_supplicant tdls wps eap-sim

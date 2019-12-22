@@ -1,4 +1,5 @@
 # Specific version {{{
+=sys-kernel/gentoo-sources-4.19.86 ~amd64
 =x11-misc/lemonbar-1.2_p20161116 ~amd64
 =x11-misc/polybar-9999 **
 =app-editors/emacs-vcs-26.0.9999 **
@@ -40,7 +41,6 @@
 =dev-lua/lpeg-1.0.1 ~amd64
 =app-office/upwork-4.2.153 ~amd64
 =dev-libs/libgcrypt-1.5.6-r101 ~amd64
-=app-emulation/qemu-2.10.0 ~amd64
 =sys-firmware/seabios-1.10.2 ~amd64
 =media-libs/alsa-lib-1.1.4.1 ~amd64
 =media-sound/pasystray-0.6.0-r2 ~amd64
@@ -363,7 +363,6 @@ media-gfx/gimp ~amd64
 media-libs/babl ~amd64
 mail-client/thunderbird ~amd64
 dev-libs/nspr ~amd64
-sys-kernel/gentoo-sources
 media-sound/spotify ~amd64
 dev-util/patchelf ~amd64
 perl-core/File-Temp ~amd64
@@ -371,6 +370,8 @@ dev-dotnet/libgdiplus ~amd64
 dev-libs/boost ~amd64
 dev-libs/libvterm ~amd64
 dev-lua/luv ~amd64
+app-emulation/qemu ~amd64
 app-text/hunspell ~amd64
 dev-util/boost-build ~amd64
+media-fonts/nerd-fonts ~amd64
 # }}}
