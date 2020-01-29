@@ -57,7 +57,9 @@ alias university="cd ~/repository/university"
 alias hlma101="cd ~/repository/university/hlma101"
 alias hlse101="cd ~/repository/university/hlse101"
 alias hlph101="cd ~/repository/university/hlph101"
-alias synthesis="cd ~/repository/university/synthesis"
+alias synthesis="cd ~/repository/university/class/synthesis"
+alias example="cd ~/repository/university/class/example"
+alias visual="cd ~/repository/university/class/visual"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
