@@ -9,6 +9,7 @@ deoplete.nvim
 html5.vim
 jspc.vim
 neobundle.vim
+omnisharp-vim
 ranger.vim
 supertab
 tabular
