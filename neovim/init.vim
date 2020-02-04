@@ -7,7 +7,7 @@ set hidden
 set expandtab
 set shiftwidth=2
 set tabstop=2
-set foldmethod=expr
+set foldmethod=marker
 syntax on
 highlight Folded ctermbg=black
 set relativenumber
@@ -15,6 +15,9 @@ let base16colorspace=256
 
 " CS
 let g:OmniSharp_server_stdio = 1
+let g:ale_linters = {
+\ 'cs': ['OmniSharp']
+\}
 
 " Folding
 nmap <Leader>ff :call <SID>ToggleFold()<CR>
@@ -209,6 +212,7 @@ NeoBundle 'ianks/vim-tsx'
 NeoBundle 'francoiscabrol/ranger.vim'
 NeoBundle 'alvan/vim-closetag'
 NeoBundle 'godlygeek/tabular'
+NeoBundle 'OrangeT/vim-csharp'
 NeoBundle 'OmniSharp/omnisharp-vim'
 
 call neobundle#end()
