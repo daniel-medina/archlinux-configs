@@ -1,5 +1,5 @@
-set nocompatible
 filetype plugin indent on
+set nocompatible
 set number
 set autoindent
 set smartindent
@@ -8,9 +8,9 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set foldmethod=marker
-syntax on
 highlight Folded ctermbg=black
 set relativenumber
+syntax on
 let base16colorspace=256
 
 " CS
