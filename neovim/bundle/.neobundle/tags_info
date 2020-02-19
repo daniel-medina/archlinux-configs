@@ -26,6 +26,7 @@ vim-jsx
 vim-latex
 vim-pug
 vim-snippets
+vim-tex-fold
 vim-tsx
 vim-vue
 vimtex

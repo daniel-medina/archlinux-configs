@@ -30,6 +30,8 @@ function! s:ToggleFold()
     echo 'foldmethod is now ' . &l:foldmethod
   endfunction
 
+let g:Tex_FoldedSections = 'tcbraster'
+
 " Vue
 autocmd FileType vue syntax sync fromstart
 
@@ -214,7 +216,7 @@ NeoBundle 'alvan/vim-closetag'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'OrangeT/vim-csharp'
 NeoBundle 'OmniSharp/omnisharp-vim'
-
+NeoBundle 'matze/vim-tex-fold'
 call neobundle#end()
 filetype plugin indent on
 

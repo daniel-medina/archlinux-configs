@@ -1,4 +1,4 @@
-# Content
+# Conten
 snippet content "Content template - for studies."
 \documentclass[12pt,a4paper]{report}
 \usepackage{fullpage}
@@ -51,15 +51,19 @@ endsnippet
 
 # Chapter
 snippet chapter "Chapter template."
+% {{{ Chapter: $1
 \chapter{$1}
 $2
+% }}}
 endsnippet
 
 # Section
 snippet section "Section template."
+% {{{ Section: $1
 \fakesection{$1}
 \parindent=0em
 $2
+% }}}
 endsnippet
 
 # Subsection
@@ -592,6 +596,16 @@ snippet ez "Projection ez."
 \overrightarrow{e_z} $1
 endsnippet
 
+# Projection theta
+snippet et "Projection e theta."
+\overrightarrow{e_\theta} $1
+endsnippet
+
+# Projection rho
+snippet ep "Projection e phi."
+\overrightarrow{e_\varphi} $1
+endsnippet
+
 # Norme
 snippet norme "Norme."
 ~\mid \mid \overrightarrow{$1} \mid \mid~ $2
@@ -684,44 +698,56 @@ endsnippet
 
 # Bloc
 snippet bloc "A bloc."
+% {{{ Bloc: $1
 \begin{bloc}{$1}
 $2
 \end{bloc}
+% }}}
 endsnippet
 
 # Bloc - definition
 snippet bloc-definition "A bloc for definitions."
+% {{{ Bloc: $1
 \begin{bloc-definition}{$1}
 $2
 \end{bloc-definition}
+% }}}
 endsnippet
 
 # Bloc - 2 columns
 snippet bloc-2 "A bloc with 2 columns."
+% {{{ Bloc: $1
 \begin{bloc-2}{~$1}  
 	$2 & $3
 \end{bloc-2}
+% }}}
 endsnippet
 
 # Bloc - 3 columns
 snippet bloc-3 "A bloc with 3 columns."
+% {{{ Bloc: $1
 \begin{bloc-3}{~$1}  
 	$2 & $3 & $4
 \end{bloc-3}
+% }}}
 endsnippet
 
 # Bloc - 4 columns
 snippet bloc-4 "A bloc with 4 columns."
+% {{{ Bloc: $1
 \begin{bloc-4}{~$1}  
 	$2 & $3 & $4 & $5
 \end{bloc-4}
+% }}}
 endsnippet
 
 # Raster
 snippet raster "Raster - for equal heights between blocs"
+% {{{ Raster: $1 columns
 \begin{tcbraster}[raster columns=$1, raster column skip=0.0015\columnwidth, raster equal height]
 	$2
 \end{tcbraster}
+% }}}
 endsnippet
 
 # Item
