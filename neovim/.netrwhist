@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/ifthenelse/class/algorithmic/first-year/document'
-let g:netrw_dirhist_2='/home/ifthenelse/class/algorithmic/first-year'
-let g:netrw_dirhist_3='/etc/portage/package.keywords'
-let g:netrw_dirhist_4='/home/ifthenelse/repository/dotfiles/neovim/UltiSnips'
-let g:netrw_dirhist_5='/home/ifthenelse/repository/license/website/database'
-let g:netrw_dirhist_6='/home/ifthenelse/repository/factory/website/.idea'
-let g:netrw_dirhist_7='/storage/ssd/game/steam/steamapps/common/Kerbal Space Program/saves'
-let g:netrw_dirhist_8='/storage/ssd/game/steam/steamapps/common/Kerbal Space Program/saves/Alkian Order'
-let g:netrw_dirhist_9='/home/ifthenelse/repository/tetris-man'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/ifthenelse/repository/university/class/synthesis/hlee205'
