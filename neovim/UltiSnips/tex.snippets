@@ -63,6 +63,8 @@ snippet section "Section template."
 \fakesection{$1}
 \parindent=0em
 $2
+
+\pagebreak
 % }}}
 endsnippet
 
@@ -783,4 +785,14 @@ endsnippet
 # Line - arrow
 snippet d-linea "Draw a line with an arrow."
 \draw[->] ($1,$2) -- (x,y);
+endsnippet
+
+# Memorize
+snippet mem "Important line that helps memorizing stuff."
+\memorize{$1}
+endsnippet
+
+# Memorize bold
+snippet memb "Important line that helps memorizing stuff, bolded."
+\memorizeb{$1}
 endsnippet
