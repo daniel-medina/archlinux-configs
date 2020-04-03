@@ -777,15 +777,6 @@ snippet ppcm "Plus Petit Commun Multiplicateur."
 \ppcm{($1)} $2
 endsnippet
 
-# Line
-snippet d-line "Draw a line."
-\draw ($1,$2) -- (x,y);
-endsnippet
-
-# Line - arrow
-snippet d-linea "Draw a line with an arrow."
-\draw[->] ($1,$2) -- (x,y);
-endsnippet
 
 # Information
 snippet info "Information about a bloc."
@@ -819,4 +810,38 @@ endsnippet
 # 10 pow
 snippet e "10 power to x"
 \cdot 10^{$1} $2
+endsnippet
+
+# Sub
+snippet sub "Sub"
+_{\mbox{\small $1}} $2
+endsnippet
+
+# Visual environment
+snippet visual "Visual environment, for visual sheets"
+% {{{ Visual
+\begin{visual}
+	$1
+\end{visual}
+% }}}
+endsnippet
+
+# Circle
+snippet dcirc "Draw a circle"
+\draw[thick] ($1,$2) circle ($3,$4);
+endsnippet
+
+# Line
+snippet dline "Draw a line."
+\draw[thick] ($1,$2) -- ($3,$4);
+endsnippet
+
+# Line - arrow
+snippet dlinea "Draw a line with an arrow."
+\draw[thick,->] ($1,$2) -- ($3,$4);
+endsnippet
+
+# Line - arrow
+snippet ddot "Draw a dot."
+\draw[thick,-*] ($1,$2) -- ($3,$4);
 endsnippet
