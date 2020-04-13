@@ -10,8 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # gaps
-gaps inner 10
-gaps outer 10
+#gaps inner 10
+#gaps outer 10
 
 # titles
 #new_window none
@@ -79,8 +79,8 @@ floating_modifier $mod
 floating_minimum_size 500 x 200
 
 # defining borders
-new_float pixel 6
-new_window pixel 6
+new_float pixel 3
+new_window pixel 3
 
 # removing edge borders
 #hide_edge_borders both
