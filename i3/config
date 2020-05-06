@@ -177,8 +177,11 @@ bindsym $mod+Ctrl+9 workspace $WS19
 bindsym $mod+Ctrl+0 workspace $WS20
 
 # moving around workspaces
-bindsym $mod+a workspace prev
+bindsym $mod+q workspace prev
 bindsym $mod+d workspace next
+
+bindsym Mod5+Left workspace prev
+bindsym Mod5+Right workspace next
 
 # alternative with numpad
 bindcode $mod+87 workspace $WS1
