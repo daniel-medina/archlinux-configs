@@ -79,8 +79,8 @@ floating_modifier $mod
 floating_minimum_size 500 x 200
 
 # defining borders
-new_float pixel 3
-new_window pixel 3
+new_float pixel 1
+new_window pixel 1
 
 # removing edge borders
 #hide_edge_borders both
@@ -103,7 +103,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+x kill
 
 # scratchpad
-bindsym F1 scratchpad show
+#bindsym F1 scratchpad show
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -177,7 +177,7 @@ bindsym $mod+Ctrl+9 workspace $WS19
 bindsym $mod+Ctrl+0 workspace $WS20
 
 # moving around workspaces
-bindsym $mod+q workspace prev
+bindsym $mod+a workspace prev
 bindsym $mod+d workspace next
 
 bindsym Mod5+Left workspace prev

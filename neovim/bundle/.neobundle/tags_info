@@ -3,9 +3,6 @@ ale
 base16-vim
 bclose.vim
 bufexplorer
-deoplete-clang
-deoplete-ternjs
-deoplete.nvim
 html5.vim
 jspc.vim
 neobundle.vim

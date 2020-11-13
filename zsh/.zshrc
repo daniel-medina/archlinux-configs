@@ -10,7 +10,7 @@ export QEMU_AUDIO_DRV=alsa
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ifthenelse/.oh-my-zsh
 export LANG=en_US.UTF-8
-export LC_MESSAGES="C"
+export LC_COLLATE="C"
 ZSH_THEME="agnoster"
 export ANDROID_HOME=$HOME/android
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -54,12 +54,7 @@ alias mod-organizer="wine ~/.wine/drive_c/Modding/MO2/ModOrganizer.exe"
 
 # Classes
 alias university="cd ~/repository/university"
-alias hlma101="cd ~/repository/university/hlma101"
-alias hlse101="cd ~/repository/university/hlse101"
-alias hlph101="cd ~/repository/university/hlph101"
-alias synthesis="cd ~/repository/university/class/synthesis"
-alias example="cd ~/repository/university/class/example"
-alias visual="cd ~/repository/university/class/visual"
+alias synthesis="cd ~/repository/university/second-year/synthesis"
 
 # Kernel
 alias kernel-config="cd /usr/src/linux && sudo make menuconfig && cd ~"
@@ -73,7 +68,7 @@ alias portage-accept-keywords="nvim /etc/portage/package.accept_keywords/main"
 alias portage-keywords="nvim /etc/portage/package.keywords/main"
 alias portage-mask="nvim /etc/portage/package.mask/main"
 alias portage-unmask="nvim /etc/portage/package.unmask/main"
-alias portage-license="nvim /etc/portage/package.license/main"
+alias portage-license="nvim /etc/portage/package.license"
 
 # Devices
 alias wileyfox-mount="simple-mtpfs /media/usb/android"

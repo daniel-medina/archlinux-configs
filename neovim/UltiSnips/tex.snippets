@@ -845,3 +845,13 @@ endsnippet
 snippet ddot "Draw a dot."
 \draw[thick,-*] ($1,$2) -- ($3,$4);
 endsnippet
+
+# Rectangle
+snippet drectangle
+\draw[thick] ($1,$2) rectangle ($3,$4);
+endsnippet
+
+# Rectangle - filled with pattern
+snippet drectanglef
+\draw[thick, pattern=north west lines, pattern color=black] ($1,$2) rectangle ($3,$4);
+endsnippet

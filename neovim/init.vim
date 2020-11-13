@@ -45,6 +45,8 @@ autocmd BufEnter *.ts :setlocal filetype=javascript.jsx
 autocmd BufEnter *.tsx :setlocal filetype=javascript.jsx
 autocmd BufEnter *.asm :setlocal filetype=nasm
 
+let g:tex_flavor = 'latex'
+
 " Variables
 let g:airline_theme='base16'
 let g:autoformat_remove_trailing_spaces = 0
@@ -196,10 +198,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ternjs/tern_for_vim'
-NeoBundle 'Shougo/deoplete.nvim'
-NeoBundle 'zchee/deoplete-clang'
 NeoBundle 'ervandew/supertab'
-NeoBundle 'carlitux/deoplete-ternjs'
 NeoBundle 'othree/jspc.vim'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'w0rp/ale'

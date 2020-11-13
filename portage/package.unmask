@@ -12,4 +12,6 @@
 =dev-util/mingw64-runtime-5.0.3-r2
 =sys-devel/binutils-2.24-r3
 =sys-devel/gcc-4.8.3
-
+=dev-cpp/mm-common-1.0.0
+=media-libs/livpx-1.8.2
+=dev-libs/libgt2-1.0.0-r1

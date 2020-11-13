@@ -12,5 +12,7 @@
 # Ignore errors (like private video)
 --ignore-errors
 
+-f 'bestaudio[ext=m4a]'
+
 # Save all videos under Movies directory in your home directory
 -o ~/download/youtube/%(uploader)s/%(playlist)s/%(title)s.%(ext)s
