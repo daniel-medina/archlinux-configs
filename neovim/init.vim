@@ -13,6 +13,17 @@ set relativenumber
 syntax on
 let base16colorspace=256
 
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#ternjs#docs = 1
+let g:deoplete#sources#ternjs#guess = 0
+let g:deoplete#sources#ternjs#filetypes = [
+                \ 'jsx',
+                \ 'javascript.jsx',
+                \ 'ts',
+                \ 'tsx',
+                \ 'vue',
+                \ '...'
+                \ ]
 " CS
 let g:OmniSharp_server_stdio = 1
 let g:ale_linters = {
@@ -163,6 +174,7 @@ nmap <silent> <A-Up> :res -3<CR>
 nmap <silent> <A-Down> :res +3<CR>
 nmap <silent> <A-Left> :vertical res -3<CR>
 nmap <silent> <A-Right> :vertical res +3<CR>
+nnoremap <leader>d "_d
 
 " NeoBundle Scripts-----------------------------
 if has('vim_starting')
@@ -216,6 +228,8 @@ NeoBundle 'godlygeek/tabular'
 NeoBundle 'OrangeT/vim-csharp'
 NeoBundle 'OmniSharp/omnisharp-vim'
 NeoBundle 'matze/vim-tex-fold'
+NeoBundle 'jbyuki/instant.nvim'
+NeoBundle 'Shougo/deoplete.nvim'
 call neobundle#end()
 filetype plugin indent on
 

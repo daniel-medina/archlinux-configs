@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/bin/game:/usr/local/bin:$PATH
 export WINEPREFIX=$HOME/.wine
-export BROWSER=chromium
+export BROWSER=brave
+export __GL_SYNC_DISPLAY_DEVICE=DP-1
 export EDITOR=nvim
 export DXVK_HUD=0
 export GIT_EDITOR=nvim
@@ -42,10 +43,10 @@ alias wine-32="WINEPREFIX=~/.wine-32 WINEARCH=win32"
 
 # Wine games
 alias stronghold="WINEPREFIX=~/.wine-32 WINEARCH=win32 ~/.wine/drive_c/Program\ Files\ \(x86\)/Firefly\ Studios/Stronghold\ Kingdoms/StrongholdKingdoms.exe"
-alias wow="wine ~/game/World\ of\ Warcraft/_retail_/Wow.exe"
+alias wow="wine ~/storage/ssd-2/Program\ Files\ \(x86\)/World\ Of\ Warcraft/_classic_/WowClassic.exe"
 alias battlenet="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/Battle.net\ Launcher.exe"
 alias faf="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Downlord\'s\ FAF\ Client/downlords-faf-client.exe"
-alias ckan="mono ~/storage/ssd/game/steam/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
+alias ckan="mono ~/storage/ssd-1/game/steamapps/common/Kerbal\ Space\ Program/ckan.exe"
 alias ksp="cd ~/game/steam/steamapps/common/Kerbal\ Space\ Program && ./KSP.x86_64"
 alias minecraft="./game/minecraft/minecraft-launcher.sh"
 alias sims="wine ~/game/The\ Sims\ 3/Game/Bin/TS3W.exe"

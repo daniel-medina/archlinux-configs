@@ -7,10 +7,13 @@ net-misc/curl http2
 sys-fs/ntfs3g external-fuse
 gnome-base/gvfs udev
 sys-libs/libblockdev cryptsetup
+sys-fs/udisks daemon
+sys-auth/elogind pam
 sys-fs/cryptsetup openssl
 dev-scheme/guile regex
 x11-misc/rofi drun
 dev-qt/qtsql sqlite
+media-libs/freetype png
 dev-qt/qtwebengine geolocation
 dev-qt/qtgui dbus accessibility
 app-emulation/faudio ffmpeg
@@ -38,8 +41,10 @@ app-emulation/virtualbox python
 dev-qt/qtwebchannel qml
 dev-python/PyQt5 webchannel
 dev-qt/qtwebengine widgets
-media-sound/pulseaudio dbus
+sys-process/procps ncurses kill elogind modern-top
+media-sound/pulseaudio dbus elogind caps jack udev -bluetooth
 media-fonts/nerd-fonts terminus robotomono inconsolata ubuntu ubuntumono mononoki firacode hack hasklig
+media-sound/pulseaudio-modules-bt ffmpeg native-headset ofono-headset
 www-client/firefox pulseaudio hwaccel
 dev-db/sqlite secure-delete
 net-filter/wpa_supplicant tdls wps eap-sim
@@ -49,7 +54,7 @@ xfce-base/exo gtk2
 dev-libs/libdbusmenu gtk3
 x11-misc/lemonbar xft
 x11-terms/kitty imagemagick
-sys-auth/polkit consolekit elogind
+sys-auth/polkit elogind 
 media-libs/sdl-mixer smpeg midi timidity
 media-libs/sdl2-mixer mp3 smpeg midi timidity
 media-gfx/imagemagick perl jpeg png
@@ -86,6 +91,7 @@ app-emulation/libvirt qemu virt-network macvtp libvirtd libssh fuse firewalld
 net-firewall/ipset bindist
 net-firewall/ipset -modules
 app-office/libreoffice gtk3 pdfimport cpus java
+app-office/libreoffice-bin python_single_target_python3_8
 net-print/cnijfilter-drivers servicetools
 net-print/cnijfilter-drivers mg3200
 dev-vcs/git curl libsecret ppcsha1 tk xinetd
@@ -134,7 +140,7 @@ media-libs/sdl-mixer mp3
 media-libs/libvpx svc
 media-sound/pulseaudio gnome
 sys-devel/distcc crossdev
-net-wireless/bluez deprecated
+net-wireless/bluez readline deprecated udev extra-tools cups
 media-libs/gegl cairo
 app-shells/fzf tmux neovim bash-completion zsh-completion
 media-libs/libvpx postproc
@@ -215,15 +221,19 @@ x11-libs/gtk+ cups
 >=dev-libs/libpcre2-10.30 pcre16
 >=dev-dotnet/libgdiplus-4.2-r3 cairo
 >=x11-libs/libxcb-1.13 xkb
-app-emulation/wine-vanilla vulkan
-app-emulation/wine-staging faudio vulkan run-exes mono udev truetype threads abi_x86_64 jpeg png sdl fontconfig
+app-emulation/wine-staging ldap nls openal opencl faudio vulkan run-exes mono udev truetype threads abi_x86_64 jpeg png sdl fontconfig
+app-emulation/wine-vanilla faudio vulkan run-exes mono udev truetype threads abi_x86_64 jpeg png sdl fontconfig
 virtual/wine abi_x86_64 abi_x86_32
 # }}}
 # Multilib USE requirements {{{
 virtual/rust abi_x86_32
 dev-lang/rust abi_x86_32
+media-libs/openal abi_x86_32
+virtual/opencl abi_x86_32
+dev-libs/opencl-icd-loader abi_x86_32
 virtual/wine abi_x86_64 abi_x86_32
 app-emulation/wine-staging abi_x86_64 abi_x86_32
+app-emulation/wine-vanilla abi_x86_64 abi_x86_32
 app-emulation/faudio abi_x86_32
 x11-libs/libX11 abi_x86_32
 media-video/ffmpeg abi_x86_32

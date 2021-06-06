@@ -45,11 +45,6 @@ set $WS18 18
 set $WS19 19
 set $WS20 20
 
-# quick applications launch
-bindsym $mod+b exec chromium
-bindsym $mod+t exec thunar
-bindsym $mod+y exec urxvt -e ranger ~/repository/class/license/semester-1
-
 # default window modes
 for_window [class="keepassxc"] floating enable, sticky toggle, move window to scratchpad, scratchpad show
 for_window [class="pop-up"] floating enable
@@ -59,7 +54,7 @@ exec_always --no-startup-id feh --bg-scale /home/ifthenelse/storage/hdd-1/pictur
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:xos4 Terminess Powerline 12px
+font pango:Terminess Powerline 12px
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -183,6 +178,8 @@ bindsym $mod+d workspace next
 bindsym Mod5+Left workspace prev
 bindsym Mod5+Right workspace next
 
+bindsym Ctrl+Left workspace prev
+bindsym Ctrl+Right workspace next
 # alternative with numpad
 bindcode $mod+87 workspace $WS1
 bindcode $mod+88 workspace $WS2

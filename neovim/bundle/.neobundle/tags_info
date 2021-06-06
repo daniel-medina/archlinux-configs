@@ -3,7 +3,9 @@ ale
 base16-vim
 bclose.vim
 bufexplorer
+deoplete.nvim
 html5.vim
+instant.nvim
 jspc.vim
 neobundle.vim
 omnisharp-vim

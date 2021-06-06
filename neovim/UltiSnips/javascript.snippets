@@ -14,97 +14,49 @@ snippet comment-multi "Multi line comment"
  */
 endsnippet
 
+snippet part "Part of a source code file"
+// --------------------------- ${1:Part name} --------------------------- {{{
+
+$2
+
+// }}}
+endsnippet
+
 # Functions
 snippet function "Function"
-/**
+/** ${1:Function name} {{{
+ *
  * ${2:Function description}
  *
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-function $1 (${3:Args}) {
-	$4
+function $1 (${3:Args}) : ${4:Type} {
+	$5
 }
+// }}}
 endsnippet
 
-snippet object-method "Object method"
-/**
- * ${2:Function description}
+# Functions asynchronous
+snippet function-async "Asynchronous function"
+/** ${1:Function name} {{{
  *
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-$1: $3 => $4
-endsnippet
-
-snippet object-method-async "Object method - asynchronous"
-/**
  * ${2:Function description}
  *
  * @async
  * @param {Type} tag Description
  * @returns {Type} tag
  */
-$1: async $3 => $4
-endsnippet
-
-snippet vue-default-template "Vue - default template file"
-<template lang='pug'>
-</template>
-
-<script>
-	export default {
-		data () {
-			return {}
-		},
-		created () {
-		},
-		method: {}
-	}
-</script>
-
-<style lang="scss" scoped>
-</style>
-endsnippet
-
-snippet vue-method "Vue - method"
-/**
- * ${2:Method description}
- *
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-$1: function (${3:args}) {
-	$4
+async function $1 (${3:Args}) : ${4:Type} {
+	$5
 }
+// }}}
 endsnippet
 
-snippet vue-watcher "Vue - watcher"
-/**
- * ${2:Watcher description}
- *
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-$1: function (${3:args}) {
-	$4
-}
-endsnippet
-
-snippet function-arrow-named "Named arrow function"
-/**
- * ${2:Function description}
- *
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-const $1 = $3 => {
-	$4
-}
-endsnippet
-
+# Anonymous function
 snippet function-anonymous "Anonymous function"
-/**
+/** anonymous function {{{
+ *
  * ${1:Function description}
  *
  * @param {Type} tag Description
@@ -113,23 +65,13 @@ snippet function-anonymous "Anonymous function"
 function ($2) {
 	$3
 }
+// }}}
 endsnippet
 
-snippet function-async "Asynchronous function"
-/**
- * ${2:Function description}
+# Asynchronous anonymous function
+snippet function-anonymous-async "Anonymous asynchronous function"
+/** anonymous function {{{
  *
- * @async
- * @param {Type} tag Description
- * @returns {Type} tag
- */
-async function $1 ($3) {
-	$4
-}
-endsnippet
-
-snippet function-anonymous-async "Asynchronous anonymous function"
-/**
  * ${1:Function description}
  *
  * @async
@@ -139,11 +81,11 @@ snippet function-anonymous-async "Asynchronous anonymous function"
 async function ($2) {
 	$3
 }
+// }}}
 endsnippet
 
 snippet function-exec-async "Asynchronous code execution"
-/**
- * Asynchronous code execution
+/** asynchronous code execution {{{
  *
  * @async
  * @throws Will throw an error to the console if it catches one
@@ -155,181 +97,16 @@ snippet function-exec-async "Asynchronous code execution"
 		console.log(error)
 	}
 }())
+// }}}
 endsnippet
 
-snippet model-file "Generate a model file"
+snippet new-file "Generate the first comment of a file with author name and date"
 /**
- * $1 Model
- * ${2:Description}
+ * ${1:Description}
  *
  * @author Daniel Medina
  * Date: `system("date +%Y-%m-%d")`
  */
 
-/** Configs imports */
-import {url} from '../../config/database'
-
-/** Modules imports */
-import mongoose from 'mongoose'
-
-/** Models imports */
-
-const connection = mongoose.createConnection(url)
-mongoose.Promise = global.Promise
-const Schema = mongoose.Schema
-const $1Schema = new Schema({
-	created: Date
-}, {
-	collection: '$3'
-})
-
-module.exports = connection.model('$1', $1Schema)
-endsnippet
-
-snippet model-ref-file "Generate a model ref file"
-/**
- * $1 Model
- * ${2:Description}
- *
- * @see ${3:Parent model}
- * @author Daniel Medina
- * Date: `system("date +%Y-%m-%d")`
- */
-
-/** Configs imports */
-import {url} from '../../config/database'
-
-/** Modules imports */
-import mongoose from 'mongoose'
-
-/** Models imports */
-
-/** Libs imports */
-
-const Schema = mongoose.Schema
-const connection = mongoose.createConnection(url)
-
-mongoose.Promise = global.Promise
-
-const $1Schema = new Schema({
-	created: Date
-}, {
-	collection: '$1'
-})
-
-const $1 = connection.model('$1', $1Schema)
-
-export { $1Schema, $1 }
-endsnippet
-
-snippet controller-file "Generate a controller file"
-/**
- * $1 Controller
- * ${2:Description}
- *
- * @author Daniel Medina
- * Date: `system("date +%Y-%m-%d")`
- */
-
-/** Configs imports */
-
-/** Modules imports */
-
-/** Models imports */
-
-/** Libs imports */
-
-/** GET */
-export const get = {
-	$3
-}
-endsnippet
-
-snippet middleware-file "Generate a middleware file"
-/**
- * $1 Middleware
- * ${2:Description}
- *
- * @author Daniel Medina
- * Date: `system("date +%Y-%m-%d")`
- */
-
-/** Configs imports */
-
-/** Modules imports */
-
-/** Models imports */
-
-/** Libs imports */
-
-/** GET */
-export const get = {
-	$3
-}
-endsnippet
-
-snippet controller-new "Insert a new controller"
-/**
- * ${2:Controller description}
- *
- * @async
- * @param {HTTP} request
- * @param {HTTP} response
- */
-$1: async (request, response) => {
-	try {
-		$3
-	} catch (error) {
-		console.log(error)
-	}
-}
-endsnippet
-
-snippet controller-xhr "Controller - return a xhr response"
-response.json(${1:Data to return})
-endsnippet
-
-snippet middleware-new "Insert a new middleware"
-/**
- * ${2:Middleware description}
- *
- * @async
- * @param {HTTP} request
- * @param {HTTP} response
- * @param {HTTP} next
- */
-$1: async (request, response, next) => {
-	try {
-		next()
-	} catch (error) {
-		console.log(error)
-	}
-}
-endsnippet
-
-# Requests
-snippet flash-error "Flash error"
-request.flash('error', '$1')
-endsnippet
-
-snippet flash-success "Flash success"
-request.flash('success', '$1')
-endsnippet
-
-# Responses
-snippet redirect-back "Redirect back"
-response.redirect('back')
-endsnippet
-
-# Tests
-snippet test-description "Test description"
-describe('$1', function () {
-	$2
-})
-endsnippet
-
-snippet test-it "Test it"
-it('$1', function () {
- $2
-})
+$2
 endsnippet
