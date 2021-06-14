@@ -10,9 +10,11 @@ jspc.vim
 neobundle.vim
 omnisharp-vim
 ranger.vim
+scss-syntax.vim
 supertab
 tabular
 tern_for_vim
+typescript-vim
 ultisnips
 vim-airline
 vim-airline-themes
@@ -22,6 +24,7 @@ vim-csharp
 vim-grammarous
 vim-javascript
 vim-jsx
+vim-jsx-typescript
 vim-latex
 vim-pug
 vim-snippets

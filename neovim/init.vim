@@ -52,8 +52,10 @@ let &t_EI .= "\<Esc>[4 q"
 let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
 
 " Filetypes
+autocmd BufEnter *.scss :setlocal filetype=scss.css
 autocmd BufEnter *.ts :setlocal filetype=javascript.jsx
-autocmd BufEnter *.tsx :setlocal filetype=javascript.jsx
+autocmd BufEnter *.tsx :setlocal filetype=typescriptreact
+autocmd BufEnter *.jsx :setlocal filetype=typescriptreact
 autocmd BufEnter *.asm :setlocal filetype=nasm
 
 let g:tex_flavor = 'latex'
@@ -230,6 +232,9 @@ NeoBundle 'OmniSharp/omnisharp-vim'
 NeoBundle 'matze/vim-tex-fold'
 NeoBundle 'jbyuki/instant.nvim'
 NeoBundle 'Shougo/deoplete.nvim'
+NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'peitalin/vim-jsx-typescript'
 call neobundle#end()
 filetype plugin indent on
 

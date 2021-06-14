@@ -1,0 +1,43 @@
+# Comment line
+snippet cl "Comment line"
+// ${1:Comment}
+endsnippet
+
+# Class inner selector
+snippet sel "Selector."
+// selector: ${1:Name} {{{
+//
+// ${2:Description}
+//
+// @see
+
+$1 {
+  ${3:Content}
+}
+
+// }}}
+endsnippet
+
+# Class parent selector
+snippet selc "Child selector."
+// child selector: ${1:Name} {{{
+//
+// ${2:Description}
+
+$1 {
+  $3
+}
+
+// }}}
+endsnippet
+
+
+snippet nf "Generate the first comment of a file with author name and date"
+// ${1:File name}
+// ${2:File description}
+//
+// @author Daniel Medina
+// Date: $3
+
+$4
+endsnippet
